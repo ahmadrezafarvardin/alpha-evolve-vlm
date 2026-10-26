@@ -1,0 +1,4163 @@
+{
+  "schema_version": 1,
+  "candidate_id": "g004_c04",
+  "status": "ok",
+  "program": "/home/ubuntu/evolving-vlm-inference/population/instruct_20261015-1207/candidates/candidate_g004_c04.py",
+  "code_sha256": "79eb28591e2543d18fd71312c1abb3943c5cbd655854e622c32d9816ab41c6ab",
+  "split": "evo",
+  "num_samples": 400,
+  "offset": 0,
+  "accuracy": 0.5725,
+  "num_evaluated": 400,
+  "num_errors": 0,
+  "total_time": 141.71378827095032,
+  "avg_time_per_query": 0.3542844706773758,
+  "num_correct": 229,
+  "first_query_time": 9.959990739822388,
+  "per_qid": {
+    "1": {
+      "correct": 21,
+      "total": 25,
+      "accuracy": 0.84
+    },
+    "2": {
+      "correct": 18,
+      "total": 23,
+      "accuracy": 0.782608695652174
+    },
+    "3": {
+      "correct": 12,
+      "total": 23,
+      "accuracy": 0.5217391304347826
+    },
+    "4": {
+      "correct": 25,
+      "total": 27,
+      "accuracy": 0.9259259259259259
+    },
+    "5": {
+      "correct": 21,
+      "total": 23,
+      "accuracy": 0.9130434782608695
+    },
+    "6": {
+      "correct": 10,
+      "total": 24,
+      "accuracy": 0.4166666666666667
+    },
+    "7": {
+      "correct": 9,
+      "total": 22,
+      "accuracy": 0.4090909090909091
+    },
+    "8": {
+      "correct": 12,
+      "total": 21,
+      "accuracy": 0.5714285714285714
+    },
+    "9": {
+      "correct": 5,
+      "total": 19,
+      "accuracy": 0.2631578947368421
+    },
+    "10": {
+      "correct": 8,
+      "total": 17,
+      "accuracy": 0.47058823529411764
+    },
+    "11": {
+      "correct": 11,
+      "total": 21,
+      "accuracy": 0.5238095238095238
+    },
+    "12": {
+      "correct": 7,
+      "total": 22,
+      "accuracy": 0.3181818181818182
+    },
+    "13": {
+      "correct": 15,
+      "total": 20,
+      "accuracy": 0.75
+    },
+    "14": {
+      "correct": 21,
+      "total": 27,
+      "accuracy": 0.7777777777777778
+    },
+    "15": {
+      "correct": 9,
+      "total": 35,
+      "accuracy": 0.2571428571428571
+    },
+    "16": {
+      "correct": 2,
+      "total": 3,
+      "accuracy": 0.6666666666666666
+    },
+    "17": {
+      "correct": 1,
+      "total": 15,
+      "accuracy": 0.06666666666666667
+    },
+    "18": {
+      "correct": 19,
+      "total": 29,
+      "accuracy": 0.6551724137931034
+    },
+    "19": {
+      "correct": 3,
+      "total": 4,
+      "accuracy": 0.75
+    }
+  },
+  "per_category": {
+    "bool": {
+      "correct": 11,
+      "total": 21,
+      "accuracy": 0.5238095238095238
+    },
+    "enum": {
+      "correct": 15,
+      "total": 20,
+      "accuracy": 0.75
+    },
+    "layout": {
+      "correct": 19,
+      "total": 29,
+      "accuracy": 0.6551724137931034
+    },
+    "ocr": {
+      "correct": 95,
+      "total": 142,
+      "accuracy": 0.6690140845070423
+    },
+    "quant": {
+      "correct": 66,
+      "total": 160,
+      "accuracy": 0.4125
+    },
+    "title": {
+      "correct": 21,
+      "total": 25,
+      "accuracy": 0.84
+    },
+    "trend": {
+      "correct": 2,
+      "total": 3,
+      "accuracy": 0.6666666666666666
+    }
+  },
+  "responses": [
+    {
+      "key": "144_0",
+      "qid": 9,
+      "category": "quant",
+      "response": "10",
+      "gold": "20",
+      "correct": false,
+      "latency": 9.959990739822388,
+      "raw_response": "10"
+    },
+    {
+      "key": "144_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "Update",
+      "gold": "ReLU",
+      "correct": false,
+      "latency": 0.2212083339691162,
+      "raw_response": "Update"
+    },
+    {
+      "key": "144_2",
+      "qid": 12,
+      "category": "quant",
+      "response": "4",
+      "gold": "5",
+      "correct": false,
+      "latency": 0.20336008071899414,
+      "raw_response": "4"
+    },
+    {
+      "key": "144_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2785971164703369,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "183_0",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "14",
+      "correct": false,
+      "latency": 0.29256486892700195,
+      "raw_response": "10"
+    },
+    {
+      "key": "183_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0.000",
+      "gold": "0.000",
+      "correct": true,
+      "latency": 0.39733147621154785,
+      "raw_response": "0.000"
+    },
+    {
+      "key": "183_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Frequency",
+      "gold": "Frequency",
+      "correct": true,
+      "latency": 0.2380688190460205,
+      "raw_response": "Frequency"
+    },
+    {
+      "key": "183_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.32611751556396484,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "196_0",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0.1",
+      "gold": "0",
+      "correct": false,
+      "latency": 0.259274959564209,
+      "raw_response": "0.1"
+    },
+    {
+      "key": "196_1",
+      "qid": 12,
+      "category": "quant",
+      "response": "2",
+      "gold": "2",
+      "correct": true,
+      "latency": 0.17202019691467285,
+      "raw_response": "2"
+    },
+    {
+      "key": "196_2",
+      "qid": 2,
+      "category": "ocr",
+      "response": "ratio in Twitter",
+      "gold": "ratio in Twitter",
+      "correct": true,
+      "latency": 0.25677990913391113,
+      "raw_response": "ratio in Twitter"
+    },
+    {
+      "key": "196_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "2",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.1784055233001709,
+      "raw_response": "2"
+    },
+    {
+      "key": "228_0",
+      "qid": 10,
+      "category": "quant",
+      "response": "2",
+      "gold": "2",
+      "correct": true,
+      "latency": 0.2964928150177002,
+      "raw_response": "2"
+    },
+    {
+      "key": "228_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "0.5",
+      "gold": "0.5",
+      "correct": true,
+      "latency": 0.3510003089904785,
+      "raw_response": "0.5"
+    },
+    {
+      "key": "228_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.39326906204223633,
+      "raw_response": "1 by 1"
+    },
+    {
+      "key": "228_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3719656467437744,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "244_0",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0.3",
+      "gold": "0.3",
+      "correct": true,
+      "latency": 0.23803210258483887,
+      "raw_response": "0.3"
+    },
+    {
+      "key": "244_1",
+      "qid": 12,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "2",
+      "correct": false,
+      "latency": 0.24082732200622559,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "244_2",
+      "qid": 7,
+      "category": "ocr",
+      "response": "0.9",
+      "gold": "0.9",
+      "correct": true,
+      "latency": 0.23237252235412598,
+      "raw_response": "0.9"
+    },
+    {
+      "key": "244_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "0.75",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.26700782775878906,
+      "raw_response": "0.75"
+    },
+    {
+      "key": "269_0",
+      "qid": 9,
+      "category": "quant",
+      "response": "1.0",
+      "gold": "0.5",
+      "correct": false,
+      "latency": 0.2802886962890625,
+      "raw_response": "1.0"
+    },
+    {
+      "key": "269_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "SSL",
+      "gold": "E+I_SSL",
+      "correct": false,
+      "latency": 0.2037818431854248,
+      "raw_response": "SSL"
+    },
+    {
+      "key": "269_2",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "11",
+      "correct": false,
+      "latency": 0.23866581916809082,
+      "raw_response": "10"
+    },
+    {
+      "key": "269_3",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Ensem. Efficiency (%)",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.36127495765686035,
+      "raw_response": "Ensem. Efficiency (%)"
+    },
+    {
+      "key": "334_0",
+      "qid": 8,
+      "category": "quant",
+      "response": "0.05",
+      "gold": "0.05",
+      "correct": true,
+      "latency": 0.39176392555236816,
+      "raw_response": "0.05"
+    },
+    {
+      "key": "334_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": ".2",
+      "gold": ".2",
+      "correct": true,
+      "latency": 0.306873083114624,
+      "raw_response": ".2"
+    },
+    {
+      "key": "334_2",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Effect of Good/Bad News on P(True)",
+      "gold": "Effect of Good/Bad News on P(True)",
+      "correct": true,
+      "latency": 0.6467151641845703,
+      "raw_response": "Effect of Good/Bad News on P(True)"
+    },
+    {
+      "key": "334_3",
+      "qid": 12,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.34836363792419434,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "391_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "0.0100",
+      "gold": "0.0100",
+      "correct": true,
+      "latency": 0.4641706943511963,
+      "raw_response": "0.0100"
+    },
+    {
+      "key": "391_1",
+      "qid": 16,
+      "category": "trend",
+      "response": "increases",
+      "gold": "increases",
+      "correct": true,
+      "latency": 0.2945263385772705,
+      "raw_response": "increases"
+    },
+    {
+      "key": "391_2",
+      "qid": 13,
+      "category": "enum",
+      "response": "FEMALE, MALE",
+      "gold": "FEMALE, MALE",
+      "correct": true,
+      "latency": 0.4064960479736328,
+      "raw_response": "FEMALE, MALE"
+    },
+    {
+      "key": "391_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "100",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.34290456771850586,
+      "raw_response": "100"
+    },
+    {
+      "key": "411_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.3116757869720459,
+      "raw_response": "1"
+    },
+    {
+      "key": "411_1",
+      "qid": 7,
+      "category": "ocr",
+      "response": "8",
+      "gold": "1",
+      "correct": false,
+      "latency": 0.3097958564758301,
+      "raw_response": "8"
+    },
+    {
+      "key": "411_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.42837047576904297,
+      "raw_response": "1 by 1"
+    },
+    {
+      "key": "411_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.39273905754089355,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "433_0",
+      "qid": 5,
+      "category": "ocr",
+      "response": "150",
+      "gold": "150",
+      "correct": true,
+      "latency": 0.30051684379577637,
+      "raw_response": "150"
+    },
+    {
+      "key": "433_1",
+      "qid": 7,
+      "category": "ocr",
+      "response": "-80",
+      "gold": "80",
+      "correct": false,
+      "latency": 0.3145151138305664,
+      "raw_response": "-80"
+    },
+    {
+      "key": "433_2",
+      "qid": 15,
+      "category": "quant",
+      "response": "0.5",
+      "gold": "0.5",
+      "correct": true,
+      "latency": 0.3083667755126953,
+      "raw_response": "0.5"
+    },
+    {
+      "key": "433_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3034501075744629,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "446_0",
+      "qid": 15,
+      "category": "quant",
+      "response": "35",
+      "gold": "35",
+      "correct": true,
+      "latency": 0.2014169692993164,
+      "raw_response": "35"
+    },
+    {
+      "key": "446_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "DACE",
+      "gold": "DACE",
+      "correct": true,
+      "latency": 0.20369815826416016,
+      "raw_response": "DACE"
+    },
+    {
+      "key": "446_2",
+      "qid": 5,
+      "category": "ocr",
+      "response": "WIOR",
+      "gold": "WIOR",
+      "correct": true,
+      "latency": 0.20640015602111816,
+      "raw_response": "WIOR"
+    },
+    {
+      "key": "446_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "0,5,10,15,20,25,30,35",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.9499402046203613,
+      "raw_response": "0,5,10,15,20,25,30,35"
+    },
+    {
+      "key": "458_0",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "yes",
+      "correct": true,
+      "latency": 0.294910192489624,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "458_1",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Removing probability p",
+      "gold": "Removing probability p",
+      "correct": true,
+      "latency": 0.3868739604949951,
+      "raw_response": "Removing probability p"
+    },
+    {
+      "key": "458_2",
+      "qid": 9,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "500",
+      "correct": false,
+      "latency": 0.38659191131591797,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "458_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.37879347801208496,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "484_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "10^8",
+      "gold": "10^8",
+      "correct": true,
+      "latency": 0.3348567485809326,
+      "raw_response": "10^8"
+    },
+    {
+      "key": "484_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0.0",
+      "gold": "10^7",
+      "correct": false,
+      "latency": 0.2927873134613037,
+      "raw_response": "0.0"
+    },
+    {
+      "key": "484_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 1",
+      "gold": "1 by 2",
+      "correct": false,
+      "latency": 0.3328127861022949,
+      "raw_response": "2 by 1"
+    },
+    {
+      "key": "484_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2895829677581787,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "547_0",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "Yes",
+      "correct": true,
+      "latency": 0.32201075553894043,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "547_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.31828761100769043,
+      "raw_response": "1"
+    },
+    {
+      "key": "547_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Not Applicable",
+      "gold": "\u0394AAD_VW(%)",
+      "correct": false,
+      "latency": 0.38423943519592285,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "547_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.40424513816833496,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "559_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0",
+      "gold": "0",
+      "correct": true,
+      "latency": 0.2270643711090088,
+      "raw_response": "0"
+    },
+    {
+      "key": "559_1",
+      "qid": 9,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "0.05",
+      "correct": false,
+      "latency": 0.30369138717651367,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "559_2",
+      "qid": 16,
+      "category": "trend",
+      "response": "decreases then stabilizes",
+      "gold": "decreases then stablizes",
+      "correct": false,
+      "latency": 0.42055535316467285,
+      "raw_response": "decreases then stabilizes"
+    },
+    {
+      "key": "559_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "CPI, Equity Index, Ind. Prod.",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.5915498733520508,
+      "raw_response": "CPI, Equity Index, Ind. Prod."
+    },
+    {
+      "key": "565_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 2",
+      "gold": "2 by 2",
+      "correct": true,
+      "latency": 0.40929388999938965,
+      "raw_response": "2 by 2"
+    },
+    {
+      "key": "565_1",
+      "qid": 13,
+      "category": "enum",
+      "response": "Natural calcium phosphates, Phosphoric acid etc., Phosphates, Phosphatic fertilizers, Mixed fertilizers",
+      "gold": "Natural calcium phosphates, Phosphoric acid etc., Phosphates, Phosphatic fertilizers, Mixed fertilizers",
+      "correct": true,
+      "latency": 1.1780517101287842,
+      "raw_response": "Natural calcium phosphates, Phosphoric acid etc., Phosphates, Phosphatic fertilizers, Mixed fertilizers"
+    },
+    {
+      "key": "565_2",
+      "qid": 12,
+      "category": "quant",
+      "response": "4",
+      "gold": "5",
+      "correct": false,
+      "latency": 0.3016948699951172,
+      "raw_response": "4"
+    },
+    {
+      "key": "565_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3808104991912842,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "642_0",
+      "qid": 5,
+      "category": "ocr",
+      "response": "E3",
+      "gold": "E3",
+      "correct": true,
+      "latency": 0.30266356468200684,
+      "raw_response": "E3"
+    },
+    {
+      "key": "642_1",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "10",
+      "correct": true,
+      "latency": 0.306973934173584,
+      "raw_response": "10"
+    },
+    {
+      "key": "642_2",
+      "qid": 1,
+      "category": "title",
+      "response": "The comparison of energy",
+      "gold": "The comparison of energy",
+      "correct": true,
+      "latency": 0.38419437408447266,
+      "raw_response": "The comparison of energy"
+    },
+    {
+      "key": "642_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.35182976722717285,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "662_0",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0.55",
+      "gold": "0.55",
+      "correct": true,
+      "latency": 0.3300795555114746,
+      "raw_response": "0.55"
+    },
+    {
+      "key": "662_1",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "Yes",
+      "correct": true,
+      "latency": 0.21894311904907227,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "662_2",
+      "qid": 8,
+      "category": "quant",
+      "response": "0.02",
+      "gold": "0.02",
+      "correct": true,
+      "latency": 0.3431732654571533,
+      "raw_response": "0.02"
+    },
+    {
+      "key": "662_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "0.16",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.33078622817993164,
+      "raw_response": "0.16"
+    },
+    {
+      "key": "683_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "10^-4",
+      "gold": "10^-4",
+      "correct": true,
+      "latency": 0.42251133918762207,
+      "raw_response": "10\u207b\u2074"
+    },
+    {
+      "key": "683_1",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.38842248916625977,
+      "raw_response": "1 by 1"
+    },
+    {
+      "key": "683_2",
+      "qid": 6,
+      "category": "ocr",
+      "response": "10^-3",
+      "gold": "10^-4",
+      "correct": false,
+      "latency": 0.39684033393859863,
+      "raw_response": "10\u207b\u00b3"
+    },
+    {
+      "key": "683_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3458983898162842,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "697_0",
+      "qid": 9,
+      "category": "quant",
+      "response": "5",
+      "gold": "5",
+      "correct": true,
+      "latency": 0.3064451217651367,
+      "raw_response": "5"
+    },
+    {
+      "key": "697_1",
+      "qid": 15,
+      "category": "quant",
+      "response": "3",
+      "gold": "3",
+      "correct": true,
+      "latency": 0.29656362533569336,
+      "raw_response": "3"
+    },
+    {
+      "key": "697_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "$\\frac{\\mathbb{E}(\\xi)}{N}$",
+      "gold": "z (m)",
+      "correct": false,
+      "latency": 0.8184244632720947,
+      "raw_response": "$\\frac{\\mathbb{E}(\\xi)}{N}$"
+    },
+    {
+      "key": "697_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.37125468254089355,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "701_0",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Computation Time (s)",
+      "gold": "Computation Time (s)",
+      "correct": true,
+      "latency": 0.42899298667907715,
+      "raw_response": "Computation Time (s)"
+    },
+    {
+      "key": "701_1",
+      "qid": 13,
+      "category": "enum",
+      "response": "Baseline, Group 2, 4CPU, 8GB, Group 3, 4CPU, 8GB",
+      "gold": "Baseline, Group 2, 4CPU, 8GB, Group 3, 4CPU, 8GB",
+      "correct": true,
+      "latency": 1.1243927478790283,
+      "raw_response": "Baseline, Group 2, 4CPU, 8GB, Group 3, 4CPU, 8GB"
+    },
+    {
+      "key": "701_2",
+      "qid": 4,
+      "category": "ocr",
+      "response": "N=10, j=10000",
+      "gold": "N=10, j=10000",
+      "correct": true,
+      "latency": 0.649641752243042,
+      "raw_response": "N=10, j=10000"
+    },
+    {
+      "key": "701_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "20",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.251450777053833,
+      "raw_response": "20"
+    },
+    {
+      "key": "706_0",
+      "qid": 10,
+      "category": "quant",
+      "response": "4",
+      "gold": "4",
+      "correct": true,
+      "latency": 0.19482731819152832,
+      "raw_response": "4"
+    },
+    {
+      "key": "706_1",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "yes",
+      "correct": true,
+      "latency": 0.20264196395874023,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "706_2",
+      "qid": 6,
+      "category": "ocr",
+      "response": "-2.0",
+      "gold": "0.0",
+      "correct": false,
+      "latency": 0.3157157897949219,
+      "raw_response": "-2.0"
+    },
+    {
+      "key": "706_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2738158702850342,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "732_0",
+      "qid": 12,
+      "category": "quant",
+      "response": "4",
+      "gold": "4",
+      "correct": true,
+      "latency": 0.26814746856689453,
+      "raw_response": "4"
+    },
+    {
+      "key": "732_1",
+      "qid": 9,
+      "category": "quant",
+      "response": "2",
+      "gold": "2",
+      "correct": true,
+      "latency": 0.28729748725891113,
+      "raw_response": "2"
+    },
+    {
+      "key": "732_2",
+      "qid": 4,
+      "category": "ocr",
+      "response": "2",
+      "gold": "2",
+      "correct": true,
+      "latency": 0.2880129814147949,
+      "raw_response": "2"
+    },
+    {
+      "key": "732_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "150 satellites",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.40703845024108887,
+      "raw_response": "150 satellites"
+    },
+    {
+      "key": "812_0",
+      "qid": 5,
+      "category": "ocr",
+      "response": "2500",
+      "gold": "2500",
+      "correct": true,
+      "latency": 0.29731225967407227,
+      "raw_response": "2500"
+    },
+    {
+      "key": "812_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "500",
+      "gold": "1200",
+      "correct": false,
+      "latency": 0.23639965057373047,
+      "raw_response": "500"
+    },
+    {
+      "key": "812_2",
+      "qid": 15,
+      "category": "quant",
+      "response": "10.2",
+      "gold": "10.2",
+      "correct": true,
+      "latency": 0.2608978748321533,
+      "raw_response": "10.2"
+    },
+    {
+      "key": "812_3",
+      "qid": 10,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2300128936767578,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "846_0",
+      "qid": 2,
+      "category": "ocr",
+      "response": "time [s]",
+      "gold": "time [s]",
+      "correct": true,
+      "latency": 0.3165276050567627,
+      "raw_response": "time [s]"
+    },
+    {
+      "key": "846_1",
+      "qid": 10,
+      "category": "quant",
+      "response": "3",
+      "gold": "3",
+      "correct": true,
+      "latency": 0.19618558883666992,
+      "raw_response": "3"
+    },
+    {
+      "key": "846_2",
+      "qid": 13,
+      "category": "enum",
+      "response": "reference, unweighted, weighted",
+      "gold": "reference, unweighted, weighted",
+      "correct": true,
+      "latency": 0.38654446601867676,
+      "raw_response": "reference, unweighted, weighted"
+    },
+    {
+      "key": "846_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2695639133453369,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "872_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0",
+      "gold": "0",
+      "correct": true,
+      "latency": 0.2776970863342285,
+      "raw_response": "0"
+    },
+    {
+      "key": "872_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "5000",
+      "gold": "5000",
+      "correct": true,
+      "latency": 0.3916466236114502,
+      "raw_response": "5000"
+    },
+    {
+      "key": "872_2",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "yes",
+      "correct": true,
+      "latency": 0.2717015743255615,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "872_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "5000",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.38649988174438477,
+      "raw_response": "5000"
+    },
+    {
+      "key": "903_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "Optimal",
+      "gold": "Optimal",
+      "correct": true,
+      "latency": 0.21629691123962402,
+      "raw_response": "Optimal"
+    },
+    {
+      "key": "903_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "Minimum-Risk (Exact)",
+      "gold": "Minimum-Risk+Loss",
+      "correct": false,
+      "latency": 0.36594057083129883,
+      "raw_response": "Minimum-Risk (Exact)"
+    },
+    {
+      "key": "903_2",
+      "qid": 8,
+      "category": "quant",
+      "response": "0.025",
+      "gold": "0.025",
+      "correct": true,
+      "latency": 0.34209132194519043,
+      "raw_response": "0.025"
+    },
+    {
+      "key": "903_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "No",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.19047331809997559,
+      "raw_response": "No"
+    },
+    {
+      "key": "905_0",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Train Accuracy",
+      "gold": "Train Accuracy",
+      "correct": true,
+      "latency": 0.21631193161010742,
+      "raw_response": "Train Accuracy"
+    },
+    {
+      "key": "905_1",
+      "qid": 18,
+      "category": "layout",
+      "response": "3 by 3",
+      "gold": "2 by 4",
+      "correct": false,
+      "latency": 0.2887599468231201,
+      "raw_response": "3 by 3"
+    },
+    {
+      "key": "905_2",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0.5",
+      "gold": "0.5",
+      "correct": true,
+      "latency": 0.26921629905700684,
+      "raw_response": "0.5"
+    },
+    {
+      "key": "905_3",
+      "qid": 12,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2574117183685303,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "910_0",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Time Step",
+      "gold": "Time Step",
+      "correct": true,
+      "latency": 0.19232511520385742,
+      "raw_response": "Time Step"
+    },
+    {
+      "key": "910_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0.001",
+      "gold": "0",
+      "correct": false,
+      "latency": 0.30994462966918945,
+      "raw_response": "0.001"
+    },
+    {
+      "key": "910_2",
+      "qid": 5,
+      "category": "ocr",
+      "response": "1200",
+      "gold": "1200",
+      "correct": true,
+      "latency": 0.2708582878112793,
+      "raw_response": "1200"
+    },
+    {
+      "key": "910_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "1200",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.2695589065551758,
+      "raw_response": "1200"
+    },
+    {
+      "key": "924_0",
+      "qid": 19,
+      "category": "quant",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.23502349853515625,
+      "raw_response": "1"
+    },
+    {
+      "key": "924_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "10^-8",
+      "gold": "10^-8",
+      "correct": true,
+      "latency": 0.36333465576171875,
+      "raw_response": "10^-8"
+    },
+    {
+      "key": "924_2",
+      "qid": 10,
+      "category": "quant",
+      "response": "2",
+      "gold": "2",
+      "correct": true,
+      "latency": 0.25105857849121094,
+      "raw_response": "2"
+    },
+    {
+      "key": "924_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3134465217590332,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "936_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 2",
+      "gold": "2 by 2",
+      "correct": true,
+      "latency": 0.32119131088256836,
+      "raw_response": "2 by 2"
+    },
+    {
+      "key": "936_1",
+      "qid": 7,
+      "category": "ocr",
+      "response": "1000",
+      "gold": "0.035",
+      "correct": false,
+      "latency": 0.3093280792236328,
+      "raw_response": "1000"
+    },
+    {
+      "key": "936_2",
+      "qid": 10,
+      "category": "quant",
+      "response": "1",
+      "gold": "2",
+      "correct": false,
+      "latency": 0.19272875785827637,
+      "raw_response": "1"
+    },
+    {
+      "key": "936_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.269237756729126,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "937_0",
+      "qid": 12,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "0",
+      "correct": false,
+      "latency": 0.3511059284210205,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "937_1",
+      "qid": 16,
+      "category": "trend",
+      "response": "decreases",
+      "gold": "decreases",
+      "correct": true,
+      "latency": 0.3558533191680908,
+      "raw_response": "decreases"
+    },
+    {
+      "key": "937_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Execution Time (s)",
+      "gold": "Execution Time (s)",
+      "correct": true,
+      "latency": 0.44446587562561035,
+      "raw_response": "Execution Time (s)"
+    },
+    {
+      "key": "937_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "No",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.2719862461090088,
+      "raw_response": "No"
+    },
+    {
+      "key": "938_0",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Not Applicable",
+      "gold": "\u0394",
+      "correct": false,
+      "latency": 0.36298179626464844,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "938_1",
+      "qid": 8,
+      "category": "quant",
+      "response": "0.2",
+      "gold": "0.2",
+      "correct": true,
+      "latency": 0.3703038692474365,
+      "raw_response": "0.2"
+    },
+    {
+      "key": "938_2",
+      "qid": 10,
+      "category": "quant",
+      "response": "2",
+      "gold": "2",
+      "correct": true,
+      "latency": 0.2747936248779297,
+      "raw_response": "2"
+    },
+    {
+      "key": "938_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.35144948959350586,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "945_0",
+      "qid": 15,
+      "category": "quant",
+      "response": "0.0112",
+      "gold": "0.0112",
+      "correct": true,
+      "latency": 0.32326245307922363,
+      "raw_response": "0.0112"
+    },
+    {
+      "key": "945_1",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "0.0112",
+      "correct": false,
+      "latency": 0.2146129608154297,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "945_2",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "t=0.9",
+      "correct": false,
+      "latency": 0.20737051963806152,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "945_3",
+      "qid": 8,
+      "category": "quant",
+      "response": "0.0012",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.35376954078674316,
+      "raw_response": "0.0012"
+    },
+    {
+      "key": "987_0",
+      "qid": 6,
+      "category": "ocr",
+      "response": "s0",
+      "gold": "0",
+      "correct": false,
+      "latency": 0.20834922790527344,
+      "raw_response": "s0"
+    },
+    {
+      "key": "987_1",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.28990960121154785,
+      "raw_response": "1 by 1"
+    },
+    {
+      "key": "987_2",
+      "qid": 7,
+      "category": "ocr",
+      "response": "s2",
+      "gold": "t",
+      "correct": false,
+      "latency": 0.22119474411010742,
+      "raw_response": "s2"
+    },
+    {
+      "key": "987_3",
+      "qid": 9,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.25643110275268555,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "991_0",
+      "qid": 9,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "5",
+      "correct": false,
+      "latency": 0.39711618423461914,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "991_1",
+      "qid": 2,
+      "category": "ocr",
+      "response": "x",
+      "gold": "x",
+      "correct": true,
+      "latency": 0.3070805072784424,
+      "raw_response": "x"
+    },
+    {
+      "key": "991_2",
+      "qid": 14,
+      "category": "quant",
+      "response": "0.6",
+      "gold": "0.4",
+      "correct": false,
+      "latency": 0.3743557929992676,
+      "raw_response": "0.6"
+    },
+    {
+      "key": "991_3",
+      "qid": 10,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.40421175956726074,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "995_0",
+      "qid": 6,
+      "category": "ocr",
+      "response": "50",
+      "gold": "30",
+      "correct": false,
+      "latency": 0.36629390716552734,
+      "raw_response": "50"
+    },
+    {
+      "key": "995_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "order 0.9",
+      "gold": "order 0.9",
+      "correct": true,
+      "latency": 0.5141410827636719,
+      "raw_response": "order 0.9"
+    },
+    {
+      "key": "995_2",
+      "qid": 4,
+      "category": "ocr",
+      "response": "order 0.1",
+      "gold": "order 0.1",
+      "correct": true,
+      "latency": 0.48740482330322266,
+      "raw_response": "order 0.1"
+    },
+    {
+      "key": "995_3",
+      "qid": 10,
+      "category": "quant",
+      "response": "2",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.32547760009765625,
+      "raw_response": "2"
+    },
+    {
+      "key": "1034_0",
+      "qid": 19,
+      "category": "quant",
+      "response": "16",
+      "gold": "15",
+      "correct": false,
+      "latency": 0.2040097713470459,
+      "raw_response": "16"
+    },
+    {
+      "key": "1034_1",
+      "qid": 9,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "5",
+      "correct": false,
+      "latency": 0.2586853504180908,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1034_2",
+      "qid": 6,
+      "category": "ocr",
+      "response": "-5",
+      "gold": "-5",
+      "correct": true,
+      "latency": 0.20298171043395996,
+      "raw_response": "-5"
+    },
+    {
+      "key": "1034_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2502756118774414,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1175_0",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "yes",
+      "correct": true,
+      "latency": 0.27138781547546387,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "1175_1",
+      "qid": 12,
+      "category": "quant",
+      "response": "3",
+      "gold": "4",
+      "correct": false,
+      "latency": 0.2745022773742676,
+      "raw_response": "3"
+    },
+    {
+      "key": "1175_2",
+      "qid": 7,
+      "category": "ocr",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.2738926410675049,
+      "raw_response": "1"
+    },
+    {
+      "key": "1175_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.34905171394348145,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1177_0",
+      "qid": 19,
+      "category": "quant",
+      "response": "2",
+      "gold": "2",
+      "correct": true,
+      "latency": 0.16994357109069824,
+      "raw_response": "2"
+    },
+    {
+      "key": "1177_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "7.1",
+      "gold": "7.1",
+      "correct": true,
+      "latency": 0.259824275970459,
+      "raw_response": "7.1"
+    },
+    {
+      "key": "1177_2",
+      "qid": 12,
+      "category": "quant",
+      "response": "4",
+      "gold": "5",
+      "correct": false,
+      "latency": 0.19147849082946777,
+      "raw_response": "4"
+    },
+    {
+      "key": "1177_3",
+      "qid": 9,
+      "category": "quant",
+      "response": "0.01",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.3022933006286621,
+      "raw_response": "0.01"
+    },
+    {
+      "key": "1179_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.3881814479827881,
+      "raw_response": "1 by 1"
+    },
+    {
+      "key": "1179_1",
+      "qid": 10,
+      "category": "quant",
+      "response": "2",
+      "gold": "1",
+      "correct": false,
+      "latency": 0.26837706565856934,
+      "raw_response": "2"
+    },
+    {
+      "key": "1179_2",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "No",
+      "correct": false,
+      "latency": 0.26549243927001953,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "1179_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "10",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.31620311737060547,
+      "raw_response": "10"
+    },
+    {
+      "key": "1182_0",
+      "qid": 10,
+      "category": "quant",
+      "response": "3",
+      "gold": "2",
+      "correct": false,
+      "latency": 0.26160764694213867,
+      "raw_response": "3"
+    },
+    {
+      "key": "1182_1",
+      "qid": 8,
+      "category": "quant",
+      "response": "0.5",
+      "gold": "0.5",
+      "correct": true,
+      "latency": 0.3338658809661865,
+      "raw_response": "0.5"
+    },
+    {
+      "key": "1182_2",
+      "qid": 2,
+      "category": "ocr",
+      "response": "log(Time)",
+      "gold": "log(Time)",
+      "correct": true,
+      "latency": 0.34231042861938477,
+      "raw_response": "log(Time)"
+    },
+    {
+      "key": "1182_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.33072853088378906,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1188_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0",
+      "gold": "0",
+      "correct": true,
+      "latency": 0.17120933532714844,
+      "raw_response": "0"
+    },
+    {
+      "key": "1188_1",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 4",
+      "gold": "1 by 1",
+      "correct": false,
+      "latency": 0.2944374084472656,
+      "raw_response": "1 by 4"
+    },
+    {
+      "key": "1188_2",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "No",
+      "correct": false,
+      "latency": 0.15716910362243652,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "1188_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.24664855003356934,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1197_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "0",
+      "gold": "1",
+      "correct": false,
+      "latency": 0.2782166004180908,
+      "raw_response": "0"
+    },
+    {
+      "key": "1197_1",
+      "qid": 13,
+      "category": "enum",
+      "response": "Acceleration, Traffic",
+      "gold": "Acceleration, Traffic",
+      "correct": true,
+      "latency": 0.3870265483856201,
+      "raw_response": "Acceleration, Traffic"
+    },
+    {
+      "key": "1197_2",
+      "qid": 9,
+      "category": "quant",
+      "response": "0.1",
+      "gold": "1",
+      "correct": false,
+      "latency": 0.3735370635986328,
+      "raw_response": "0.1"
+    },
+    {
+      "key": "1197_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "0",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.2863614559173584,
+      "raw_response": "0"
+    },
+    {
+      "key": "1225_0",
+      "qid": 12,
+      "category": "quant",
+      "response": "11",
+      "gold": "10",
+      "correct": false,
+      "latency": 0.3748478889465332,
+      "raw_response": "11"
+    },
+    {
+      "key": "1225_1",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "yes",
+      "correct": true,
+      "latency": 0.32936525344848633,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "1225_2",
+      "qid": 8,
+      "category": "quant",
+      "response": "1",
+      "gold": "2",
+      "correct": false,
+      "latency": 0.3251535892486572,
+      "raw_response": "1"
+    },
+    {
+      "key": "1225_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.40269899368286133,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1259_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.3894765377044678,
+      "raw_response": "1 by 1"
+    },
+    {
+      "key": "1259_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.27695584297180176,
+      "raw_response": "1"
+    },
+    {
+      "key": "1259_2",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "6",
+      "correct": false,
+      "latency": 0.3314692974090576,
+      "raw_response": "10"
+    },
+    {
+      "key": "1259_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.36220645904541016,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1300_0",
+      "qid": 10,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "1",
+      "correct": false,
+      "latency": 0.2991933822631836,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1300_1",
+      "qid": 9,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "0.3",
+      "correct": false,
+      "latency": 0.30959439277648926,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1300_2",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "No",
+      "correct": false,
+      "latency": 0.22755718231201172,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "1300_3",
+      "qid": 12,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.29941463470458984,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1307_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "0.05",
+      "gold": "0.08",
+      "correct": false,
+      "latency": 0.42314887046813965,
+      "raw_response": "0.05"
+    },
+    {
+      "key": "1307_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0",
+      "gold": "0",
+      "correct": true,
+      "latency": 0.31017565727233887,
+      "raw_response": "0"
+    },
+    {
+      "key": "1307_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Not Applicable",
+      "gold": "initial orbital separation (au)",
+      "correct": false,
+      "latency": 0.3805816173553467,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1307_3",
+      "qid": 9,
+      "category": "quant",
+      "response": "0.05",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.4164867401123047,
+      "raw_response": "0.05"
+    },
+    {
+      "key": "1312_0",
+      "qid": 3,
+      "category": "ocr",
+      "response": "PA_AP(R) - PA_Pu(R) [deg]",
+      "gold": "PA_AP(R)-PA_PU(R)[deg]",
+      "correct": false,
+      "latency": 0.7540626525878906,
+      "raw_response": "PA_AP(R) - PA_Pu(R) [deg]"
+    },
+    {
+      "key": "1312_1",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Radius [R/R\u2082\u2083.\u2085,AP]",
+      "gold": "Radius [R/R_23.5,AP]",
+      "correct": false,
+      "latency": 0.744027853012085,
+      "raw_response": "Radius [R/R\u2082\u2083.\u2085,AP]"
+    },
+    {
+      "key": "1312_2",
+      "qid": 12,
+      "category": "quant",
+      "response": "3",
+      "gold": "4",
+      "correct": false,
+      "latency": 0.265216588973999,
+      "raw_response": "3"
+    },
+    {
+      "key": "1312_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3501091003417969,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1329_0",
+      "qid": 19,
+      "category": "quant",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.2534933090209961,
+      "raw_response": "1"
+    },
+    {
+      "key": "1329_1",
+      "qid": 13,
+      "category": "enum",
+      "response": "Derivative of N(t) using Eq. (6), Numerical derivative of N(t)",
+      "gold": "Derivative of N(t) using Eq. (6), Numerical derivative of N(t)",
+      "correct": true,
+      "latency": 0.9598343372344971,
+      "raw_response": "Derivative of N(t) using Eq. (6), Numerical derivative of N(t)"
+    },
+    {
+      "key": "1329_2",
+      "qid": 6,
+      "category": "ocr",
+      "response": "-1",
+      "gold": "10^-3",
+      "correct": false,
+      "latency": 0.3011510372161865,
+      "raw_response": "-1"
+    },
+    {
+      "key": "1329_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.34990906715393066,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1353_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "10",
+      "gold": "10^0",
+      "correct": false,
+      "latency": 0.36860132217407227,
+      "raw_response": "10"
+    },
+    {
+      "key": "1353_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "10^1",
+      "gold": "10^1",
+      "correct": true,
+      "latency": 0.43795275688171387,
+      "raw_response": "10^1"
+    },
+    {
+      "key": "1353_2",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Transmission plots for Atomic initial abundances with high ionization",
+      "correct": false,
+      "latency": 0.40772390365600586,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1353_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "14000",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.4740316867828369,
+      "raw_response": "14000"
+    },
+    {
+      "key": "1387_0",
+      "qid": 5,
+      "category": "ocr",
+      "response": "10",
+      "gold": "10",
+      "correct": true,
+      "latency": 0.2025589942932129,
+      "raw_response": "10"
+    },
+    {
+      "key": "1387_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0",
+      "gold": "0",
+      "correct": true,
+      "latency": 0.16791296005249023,
+      "raw_response": "0"
+    },
+    {
+      "key": "1387_2",
+      "qid": 10,
+      "category": "quant",
+      "response": "1",
+      "gold": "2",
+      "correct": false,
+      "latency": 0.16405677795410156,
+      "raw_response": "1"
+    },
+    {
+      "key": "1387_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "1400.00",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.38985300064086914,
+      "raw_response": "1400.00"
+    },
+    {
+      "key": "1401_0",
+      "qid": 5,
+      "category": "ocr",
+      "response": "25",
+      "gold": "25",
+      "correct": true,
+      "latency": 0.3199450969696045,
+      "raw_response": "25"
+    },
+    {
+      "key": "1401_1",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Radial energy density",
+      "gold": "Radial energy density",
+      "correct": true,
+      "latency": 0.40082645416259766,
+      "raw_response": "Radial energy density"
+    },
+    {
+      "key": "1401_2",
+      "qid": 12,
+      "category": "quant",
+      "response": "4",
+      "gold": "4",
+      "correct": true,
+      "latency": 0.28290772438049316,
+      "raw_response": "4"
+    },
+    {
+      "key": "1401_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3675374984741211,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1417_0",
+      "qid": 12,
+      "category": "quant",
+      "response": "2",
+      "gold": "4",
+      "correct": false,
+      "latency": 0.16971516609191895,
+      "raw_response": "2"
+    },
+    {
+      "key": "1417_1",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 2",
+      "gold": "1 by 1",
+      "correct": false,
+      "latency": 0.2833402156829834,
+      "raw_response": "1 by 2"
+    },
+    {
+      "key": "1417_2",
+      "qid": 13,
+      "category": "enum",
+      "response": "u, v, A, B",
+      "gold": "u, v, A, B",
+      "correct": true,
+      "latency": 0.3972773551940918,
+      "raw_response": "u, v, A, B"
+    },
+    {
+      "key": "1417_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2561028003692627,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1441_0",
+      "qid": 2,
+      "category": "ocr",
+      "response": "m_4 (eV/c^2)",
+      "gold": "m4 (eV/c^2)",
+      "correct": false,
+      "latency": 0.5998294353485107,
+      "raw_response": "m_4 (eV/c^2)"
+    },
+    {
+      "key": "1441_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "10^-10",
+      "gold": "10^-10",
+      "correct": true,
+      "latency": 0.40636205673217773,
+      "raw_response": "10\u207b\u00b90"
+    },
+    {
+      "key": "1441_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "$|U|^2 = \\sin^2\\theta$",
+      "gold": "|U_e4|^2 = sin^2\u03b8",
+      "correct": false,
+      "latency": 0.7384984493255615,
+      "raw_response": "$|U|^2 = \\sin^2\\theta$"
+    },
+    {
+      "key": "1441_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3400256633758545,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1455_0",
+      "qid": 8,
+      "category": "quant",
+      "response": "0.5",
+      "gold": "0.5",
+      "correct": true,
+      "latency": 0.3981475830078125,
+      "raw_response": "0.5"
+    },
+    {
+      "key": "1455_1",
+      "qid": 2,
+      "category": "ocr",
+      "response": "HJD-2450000",
+      "gold": "HJD-2450000",
+      "correct": true,
+      "latency": 0.6738641262054443,
+      "raw_response": "HJD-2450000"
+    },
+    {
+      "key": "1455_2",
+      "qid": 9,
+      "category": "quant",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.3229184150695801,
+      "raw_response": "1"
+    },
+    {
+      "key": "1455_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "15",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.3575742244720459,
+      "raw_response": "15"
+    },
+    {
+      "key": "1490_0",
+      "qid": 2,
+      "category": "ocr",
+      "response": "k_x",
+      "gold": "k_x",
+      "correct": true,
+      "latency": 0.3201878070831299,
+      "raw_response": "k_x"
+    },
+    {
+      "key": "1490_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0",
+      "gold": "-1",
+      "correct": false,
+      "latency": 0.27568721771240234,
+      "raw_response": "0"
+    },
+    {
+      "key": "1490_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 2",
+      "gold": "2 by 2",
+      "correct": true,
+      "latency": 0.3933742046356201,
+      "raw_response": "2 by 2"
+    },
+    {
+      "key": "1490_3",
+      "qid": 12,
+      "category": "quant",
+      "response": "1",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.27541542053222656,
+      "raw_response": "1"
+    },
+    {
+      "key": "1505_0",
+      "qid": 1,
+      "category": "title",
+      "response": "Receptors",
+      "gold": "Receptors",
+      "correct": true,
+      "latency": 0.24246716499328613,
+      "raw_response": "Receptors"
+    },
+    {
+      "key": "1505_1",
+      "qid": 8,
+      "category": "quant",
+      "response": "0.05",
+      "gold": "0.2",
+      "correct": false,
+      "latency": 0.30819272994995117,
+      "raw_response": "0.05"
+    },
+    {
+      "key": "1505_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 1",
+      "gold": "1 by 2",
+      "correct": false,
+      "latency": 0.3047206401824951,
+      "raw_response": "2 by 1"
+    },
+    {
+      "key": "1505_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "120",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.2809021472930908,
+      "raw_response": "120"
+    },
+    {
+      "key": "1520_0",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Sequence Length interval",
+      "gold": "Sequence Length interval",
+      "correct": true,
+      "latency": 0.3172929286956787,
+      "raw_response": "Sequence Length interval"
+    },
+    {
+      "key": "1520_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "(1, 50)",
+      "gold": "(1, 50)",
+      "correct": true,
+      "latency": 0.47019386291503906,
+      "raw_response": "(1, 50)"
+    },
+    {
+      "key": "1520_2",
+      "qid": 6,
+      "category": "ocr",
+      "response": "6",
+      "gold": "6",
+      "correct": true,
+      "latency": 0.2436072826385498,
+      "raw_response": "6"
+    },
+    {
+      "key": "1520_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3181343078613281,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1554_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "385",
+      "gold": "Unidirectional",
+      "correct": false,
+      "latency": 0.34061169624328613,
+      "raw_response": "385"
+    },
+    {
+      "key": "1554_1",
+      "qid": 7,
+      "category": "ocr",
+      "response": "180",
+      "gold": "200",
+      "correct": false,
+      "latency": 0.34407925605773926,
+      "raw_response": "180"
+    },
+    {
+      "key": "1554_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "# Pairs",
+      "gold": "# Pairs",
+      "correct": true,
+      "latency": 0.35132861137390137,
+      "raw_response": "# Pairs"
+    },
+    {
+      "key": "1554_3",
+      "qid": 8,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.35587358474731445,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1555_0",
+      "qid": 10,
+      "category": "quant",
+      "response": "3",
+      "gold": "1",
+      "correct": false,
+      "latency": 0.32450413703918457,
+      "raw_response": "3"
+    },
+    {
+      "key": "1555_1",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.45036768913269043,
+      "raw_response": "1 by 1"
+    },
+    {
+      "key": "1555_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Reference",
+      "gold": "Reference",
+      "correct": true,
+      "latency": 0.33043909072875977,
+      "raw_response": "Reference"
+    },
+    {
+      "key": "1555_3",
+      "qid": 9,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.4010202884674072,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1569_0",
+      "qid": 13,
+      "category": "enum",
+      "response": "I, II, III, IV",
+      "gold": "I Turing Pattern, II Turing-Hopf Pattern, III Hopf Pattern, IV No Pattern",
+      "correct": false,
+      "latency": 0.41684532165527344,
+      "raw_response": "I, II, III, IV"
+    },
+    {
+      "key": "1569_1",
+      "qid": 3,
+      "category": "ocr",
+      "response": "$d_a$",
+      "gold": "d_a",
+      "correct": false,
+      "latency": 0.2608659267425537,
+      "raw_response": "$d_a$"
+    },
+    {
+      "key": "1569_2",
+      "qid": 2,
+      "category": "ocr",
+      "response": "\u03b2",
+      "gold": "\u03b2",
+      "correct": true,
+      "latency": 0.18594574928283691,
+      "raw_response": "\u03b2"
+    },
+    {
+      "key": "1569_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.26731443405151367,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1585_0",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "No Previous Infection or Vaccination, Previously Infected, not Vaccinated, Vaccinated, WT, Alpha, Beta, Gamma, Delta, mRNA, vector",
+      "correct": false,
+      "latency": 0.3507528305053711,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1585_1",
+      "qid": 8,
+      "category": "quant",
+      "response": "0.25",
+      "gold": "0.25",
+      "correct": true,
+      "latency": 0.3829207420349121,
+      "raw_response": "0.25"
+    },
+    {
+      "key": "1585_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 2",
+      "gold": "2 by 1",
+      "correct": false,
+      "latency": 0.36700868606567383,
+      "raw_response": "2 by 2"
+    },
+    {
+      "key": "1585_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.2630577087402344,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "1600_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 3",
+      "gold": "2 by 3",
+      "correct": true,
+      "latency": 0.32170581817626953,
+      "raw_response": "2 by 3"
+    },
+    {
+      "key": "1600_1",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Not Applicable",
+      "gold": "ESTG",
+      "correct": false,
+      "latency": 0.2856142520904541,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1600_2",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Dimension One",
+      "correct": false,
+      "latency": 0.27962541580200195,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1600_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.19743633270263672,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "1614_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "0.6",
+      "gold": "1.0",
+      "correct": false,
+      "latency": 0.3481564521789551,
+      "raw_response": "0.6"
+    },
+    {
+      "key": "1614_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0.6",
+      "gold": "0.5",
+      "correct": false,
+      "latency": 0.343700647354126,
+      "raw_response": "0.6"
+    },
+    {
+      "key": "1614_2",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "11",
+      "correct": false,
+      "latency": 0.3039853572845459,
+      "raw_response": "10"
+    },
+    {
+      "key": "1614_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "1.0",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.3522787094116211,
+      "raw_response": "1.0"
+    },
+    {
+      "key": "1630_0",
+      "qid": 10,
+      "category": "quant",
+      "response": "4",
+      "gold": "4",
+      "correct": true,
+      "latency": 0.1850602626800537,
+      "raw_response": "4"
+    },
+    {
+      "key": "1630_1",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Payoff",
+      "gold": "Payoff",
+      "correct": true,
+      "latency": 0.2277519702911377,
+      "raw_response": "Payoff"
+    },
+    {
+      "key": "1630_2",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Number of learning steps",
+      "gold": "Number of learning steps",
+      "correct": true,
+      "latency": 0.30081677436828613,
+      "raw_response": "Number of learning steps"
+    },
+    {
+      "key": "1630_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "1",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.19166064262390137,
+      "raw_response": "1"
+    },
+    {
+      "key": "1651_0",
+      "qid": 1,
+      "category": "title",
+      "response": "F_2",
+      "gold": "F_2",
+      "correct": true,
+      "latency": 0.23989439010620117,
+      "raw_response": "F_2"
+    },
+    {
+      "key": "1651_1",
+      "qid": 18,
+      "category": "layout",
+      "response": "4 by 4",
+      "gold": "1 by 4",
+      "correct": false,
+      "latency": 0.29648923873901367,
+      "raw_response": "4 by 4"
+    },
+    {
+      "key": "1651_2",
+      "qid": 17,
+      "category": "quant",
+      "response": "4",
+      "gold": "9",
+      "correct": false,
+      "latency": 0.15682697296142578,
+      "raw_response": "4"
+    },
+    {
+      "key": "1651_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "0.3",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.23407316207885742,
+      "raw_response": "0.3"
+    },
+    {
+      "key": "1692_0",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Not Applicable",
+      "gold": "\u03b5 (kT)",
+      "correct": false,
+      "latency": 0.2930483818054199,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1692_1",
+      "qid": 9,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "5",
+      "correct": false,
+      "latency": 0.29794979095458984,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1692_2",
+      "qid": 2,
+      "category": "ocr",
+      "response": "K (kT/nm^2)",
+      "gold": "\u039a (kT/nm^2)",
+      "correct": false,
+      "latency": 0.4792301654815674,
+      "raw_response": "K (kT/nm\u00b2)"
+    },
+    {
+      "key": "1692_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.2109835147857666,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "1706_0",
+      "qid": 8,
+      "category": "quant",
+      "response": "7",
+      "gold": "1",
+      "correct": false,
+      "latency": 0.27774524688720703,
+      "raw_response": "7"
+    },
+    {
+      "key": "1706_1",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Outbreak Onset Number",
+      "gold": "Outbreak Onset Number",
+      "correct": true,
+      "latency": 0.4374678134918213,
+      "raw_response": "Outbreak Onset Number"
+    },
+    {
+      "key": "1706_2",
+      "qid": 5,
+      "category": "ocr",
+      "response": "7",
+      "gold": "7",
+      "correct": true,
+      "latency": 0.2723531723022461,
+      "raw_response": "7"
+    },
+    {
+      "key": "1706_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "7",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.268017053604126,
+      "raw_response": "7"
+    },
+    {
+      "key": "1720_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "100",
+      "gold": "5",
+      "correct": false,
+      "latency": 0.3067793846130371,
+      "raw_response": "100"
+    },
+    {
+      "key": "1720_1",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "A1, A2, A3, A4, A5, average, KSR",
+      "correct": false,
+      "latency": 0.3118860721588135,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1720_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 2",
+      "gold": "2 by 2",
+      "correct": true,
+      "latency": 0.35159969329833984,
+      "raw_response": "2 by 2"
+    },
+    {
+      "key": "1720_3",
+      "qid": 8,
+      "category": "quant",
+      "response": "10",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.2676548957824707,
+      "raw_response": "10"
+    },
+    {
+      "key": "1722_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 5",
+      "gold": "2 by 5",
+      "correct": true,
+      "latency": 0.35164737701416016,
+      "raw_response": "2 by 5"
+    },
+    {
+      "key": "1722_1",
+      "qid": 14,
+      "category": "quant",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.21527791023254395,
+      "raw_response": "1"
+    },
+    {
+      "key": "1722_2",
+      "qid": 15,
+      "category": "quant",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.21544933319091797,
+      "raw_response": "1"
+    },
+    {
+      "key": "1722_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.29961466789245605,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1769_0",
+      "qid": 12,
+      "category": "quant",
+      "response": "2",
+      "gold": "4",
+      "correct": false,
+      "latency": 0.17103981971740723,
+      "raw_response": "2"
+    },
+    {
+      "key": "1769_1",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "8",
+      "correct": false,
+      "latency": 0.2112133502960205,
+      "raw_response": "10"
+    },
+    {
+      "key": "1769_2",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0",
+      "gold": "0",
+      "correct": true,
+      "latency": 0.17116141319274902,
+      "raw_response": "0"
+    },
+    {
+      "key": "1769_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "2",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.17130613327026367,
+      "raw_response": "2"
+    },
+    {
+      "key": "1770_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "11.0",
+      "gold": "11.0",
+      "correct": true,
+      "latency": 0.41168856620788574,
+      "raw_response": "11.0"
+    },
+    {
+      "key": "1770_1",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "15",
+      "correct": false,
+      "latency": 0.3202524185180664,
+      "raw_response": "10"
+    },
+    {
+      "key": "1770_2",
+      "qid": 12,
+      "category": "quant",
+      "response": "2",
+      "gold": "3",
+      "correct": false,
+      "latency": 0.29338693618774414,
+      "raw_response": "2"
+    },
+    {
+      "key": "1770_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "28x",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.36957573890686035,
+      "raw_response": "28x"
+    },
+    {
+      "key": "1811_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "25",
+      "gold": "25",
+      "correct": true,
+      "latency": 0.2607746124267578,
+      "raw_response": "25"
+    },
+    {
+      "key": "1811_1",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "15",
+      "correct": false,
+      "latency": 0.2681245803833008,
+      "raw_response": "10"
+    },
+    {
+      "key": "1811_2",
+      "qid": 10,
+      "category": "quant",
+      "response": "12",
+      "gold": "4",
+      "correct": false,
+      "latency": 0.2674441337585449,
+      "raw_response": "12"
+    },
+    {
+      "key": "1811_3",
+      "qid": 12,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3217966556549072,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1827_0",
+      "qid": 1,
+      "category": "title",
+      "response": "(a)",
+      "gold": "start of market crash (June 19th)",
+      "correct": false,
+      "latency": 0.3080785274505615,
+      "raw_response": "(a)"
+    },
+    {
+      "key": "1827_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "100000",
+      "gold": "100000",
+      "correct": true,
+      "latency": 0.46002817153930664,
+      "raw_response": "100000"
+    },
+    {
+      "key": "1827_2",
+      "qid": 5,
+      "category": "ocr",
+      "response": "Dec.29th",
+      "gold": "Dec.29th",
+      "correct": true,
+      "latency": 0.4227924346923828,
+      "raw_response": "Dec.29th"
+    },
+    {
+      "key": "1827_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.33768129348754883,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1844_0",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "yes",
+      "correct": true,
+      "latency": 0.267240047454834,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "1844_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0",
+      "gold": "0",
+      "correct": true,
+      "latency": 0.2730064392089844,
+      "raw_response": "0"
+    },
+    {
+      "key": "1844_2",
+      "qid": 8,
+      "category": "quant",
+      "response": "10",
+      "gold": "10",
+      "correct": true,
+      "latency": 0.32183194160461426,
+      "raw_response": "10"
+    },
+    {
+      "key": "1844_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3532145023345947,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1853_0",
+      "qid": 1,
+      "category": "title",
+      "response": "1D",
+      "gold": "1D",
+      "correct": true,
+      "latency": 0.22199249267578125,
+      "raw_response": "1D"
+    },
+    {
+      "key": "1853_1",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Lags",
+      "gold": "Lags",
+      "correct": true,
+      "latency": 0.23107171058654785,
+      "raw_response": "Lags"
+    },
+    {
+      "key": "1853_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 2",
+      "gold": "2 by 2",
+      "correct": true,
+      "latency": 0.2921717166900635,
+      "raw_response": "2 by 2"
+    },
+    {
+      "key": "1853_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.260883092880249,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1884_0",
+      "qid": 9,
+      "category": "quant",
+      "response": "1",
+      "gold": "10",
+      "correct": false,
+      "latency": 0.1684277057647705,
+      "raw_response": "1"
+    },
+    {
+      "key": "1884_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "35",
+      "gold": "35",
+      "correct": true,
+      "latency": 0.20228862762451172,
+      "raw_response": "35"
+    },
+    {
+      "key": "1884_2",
+      "qid": 4,
+      "category": "ocr",
+      "response": "5",
+      "gold": "5",
+      "correct": true,
+      "latency": 0.15365314483642578,
+      "raw_response": "5"
+    },
+    {
+      "key": "1884_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "30",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.19034385681152344,
+      "raw_response": "30"
+    },
+    {
+      "key": "1916_0",
+      "qid": 2,
+      "category": "ocr",
+      "response": "minimal yield",
+      "gold": "minimal yield",
+      "correct": true,
+      "latency": 0.23269367218017578,
+      "raw_response": "minimal yield"
+    },
+    {
+      "key": "1916_1",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 3",
+      "gold": "1 by 3",
+      "correct": true,
+      "latency": 0.283693790435791,
+      "raw_response": "1 by 3"
+    },
+    {
+      "key": "1916_2",
+      "qid": 8,
+      "category": "quant",
+      "response": "0.5",
+      "gold": "0.2",
+      "correct": false,
+      "latency": 0.2544121742248535,
+      "raw_response": "0.5"
+    },
+    {
+      "key": "1916_3",
+      "qid": 3,
+      "category": "ocr",
+      "response": "mininal yield",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.25055480003356934,
+      "raw_response": "mininal yield"
+    },
+    {
+      "key": "1922_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 1",
+      "gold": "1 by 2",
+      "correct": false,
+      "latency": 0.32340192794799805,
+      "raw_response": "2 by 1"
+    },
+    {
+      "key": "1922_1",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Not Applicable",
+      "gold": "Prices",
+      "correct": false,
+      "latency": 0.2987227439880371,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1922_2",
+      "qid": 13,
+      "category": "enum",
+      "response": "Upper Bound (LP), Lower Bound (LP), Upper Bound (NN), Lower Bound (NN)",
+      "gold": "Upper Bound (LP), Lower Bound (LP), Upper Bound (NN), Lower Bound (NN)",
+      "correct": true,
+      "latency": 0.9473288059234619,
+      "raw_response": "Upper Bound (LP), Lower Bound (LP), Upper Bound (NN), Lower Bound (NN)"
+    },
+    {
+      "key": "1922_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "0.75",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.32477378845214844,
+      "raw_response": "0.75"
+    },
+    {
+      "key": "1968_0",
+      "qid": 14,
+      "category": "quant",
+      "response": "30",
+      "gold": "25",
+      "correct": false,
+      "latency": 0.372539758682251,
+      "raw_response": "30"
+    },
+    {
+      "key": "1968_1",
+      "qid": 15,
+      "category": "quant",
+      "response": "30",
+      "gold": "30",
+      "correct": true,
+      "latency": 0.3588237762451172,
+      "raw_response": "30"
+    },
+    {
+      "key": "1968_2",
+      "qid": 7,
+      "category": "ocr",
+      "response": "16",
+      "gold": "1",
+      "correct": false,
+      "latency": 0.36013007164001465,
+      "raw_response": "16"
+    },
+    {
+      "key": "1968_3",
+      "qid": 10,
+      "category": "quant",
+      "response": "16",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.36379384994506836,
+      "raw_response": "16"
+    },
+    {
+      "key": "1970_0",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "yes",
+      "correct": true,
+      "latency": 0.30806756019592285,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "1970_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "6",
+      "gold": "6",
+      "correct": true,
+      "latency": 0.3079371452331543,
+      "raw_response": "6"
+    },
+    {
+      "key": "1970_2",
+      "qid": 8,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "1",
+      "correct": false,
+      "latency": 0.39376258850097656,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "1970_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "1.8",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.3952457904815674,
+      "raw_response": "1.8"
+    },
+    {
+      "key": "1999_0",
+      "qid": 1,
+      "category": "title",
+      "response": "TSL",
+      "gold": "TSL",
+      "correct": true,
+      "latency": 0.3352053165435791,
+      "raw_response": "TSL"
+    },
+    {
+      "key": "1999_1",
+      "qid": 7,
+      "category": "ocr",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.305896520614624,
+      "raw_response": "1"
+    },
+    {
+      "key": "1999_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 2",
+      "gold": "1 by 2",
+      "correct": true,
+      "latency": 0.40975141525268555,
+      "raw_response": "1 by 2"
+    },
+    {
+      "key": "1999_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "1",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.29604601860046387,
+      "raw_response": "1"
+    },
+    {
+      "key": "2072_0",
+      "qid": 1,
+      "category": "title",
+      "response": "2021-07-26 - 2022-07-22",
+      "gold": "2021-07-26 - 2022-07-22",
+      "correct": true,
+      "latency": 1.0676922798156738,
+      "raw_response": "2021-07-26 - 2022-07-22"
+    },
+    {
+      "key": "2072_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "70000",
+      "gold": "70000",
+      "correct": true,
+      "latency": 0.39199042320251465,
+      "raw_response": "70000"
+    },
+    {
+      "key": "2072_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.3443915843963623,
+      "raw_response": "1 by 1"
+    },
+    {
+      "key": "2072_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3079802989959717,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "2075_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "2400",
+      "gold": "2400",
+      "correct": true,
+      "latency": 0.39090633392333984,
+      "raw_response": "2400"
+    },
+    {
+      "key": "2075_1",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Day of training data",
+      "gold": "Day of training data",
+      "correct": true,
+      "latency": 0.4000895023345947,
+      "raw_response": "Day of training data"
+    },
+    {
+      "key": "2075_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "8 by 8",
+      "gold": "9 by 4",
+      "correct": false,
+      "latency": 0.3806290626525879,
+      "raw_response": "8 by 8"
+    },
+    {
+      "key": "2075_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "2",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.27715182304382324,
+      "raw_response": "2"
+    },
+    {
+      "key": "2106_0",
+      "qid": 3,
+      "category": "ocr",
+      "response": "MCC on Omega",
+      "gold": "MCC on Omega",
+      "correct": true,
+      "latency": 0.41654467582702637,
+      "raw_response": "MCC on Omega"
+    },
+    {
+      "key": "2106_1",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 5",
+      "gold": "2 by 5",
+      "correct": true,
+      "latency": 0.4262983798980713,
+      "raw_response": "2 by 5"
+    },
+    {
+      "key": "2106_2",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "17",
+      "correct": false,
+      "latency": 0.3245680332183838,
+      "raw_response": "10"
+    },
+    {
+      "key": "2106_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3666527271270752,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "2145_0",
+      "qid": 6,
+      "category": "ocr",
+      "response": "is_weekend",
+      "gold": "self_reference_min_shares",
+      "correct": false,
+      "latency": 0.3078644275665283,
+      "raw_response": "is_weekend"
+    },
+    {
+      "key": "2145_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "location",
+      "gold": "location",
+      "correct": true,
+      "latency": 0.21950078010559082,
+      "raw_response": "location"
+    },
+    {
+      "key": "2145_2",
+      "qid": 7,
+      "category": "ocr",
+      "response": "is_weekend",
+      "gold": "kw_avg_avg",
+      "correct": false,
+      "latency": 0.2910268306732178,
+      "raw_response": "is_weekend"
+    },
+    {
+      "key": "2145_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2943289279937744,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "2148_0",
+      "qid": 3,
+      "category": "ocr",
+      "response": "density",
+      "gold": "density",
+      "correct": true,
+      "latency": 0.21233630180358887,
+      "raw_response": "density"
+    },
+    {
+      "key": "2148_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "0.3",
+      "gold": "0.3",
+      "correct": true,
+      "latency": 0.2844734191894531,
+      "raw_response": "0.3"
+    },
+    {
+      "key": "2148_2",
+      "qid": 13,
+      "category": "enum",
+      "response": "baseline, glmnet, s^2net, s4pm, agraph, JT",
+      "gold": "baseline, glmnet, s^2net, s4pm, agraph, JT",
+      "correct": true,
+      "latency": 0.823148250579834,
+      "raw_response": "baseline, glmnet, s\u00b2net, s4pm, agraph, JT"
+    },
+    {
+      "key": "2148_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.28693151473999023,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "2166_0",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "38",
+      "correct": false,
+      "latency": 0.29730701446533203,
+      "raw_response": "10"
+    },
+    {
+      "key": "2166_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "Arkansas",
+      "gold": "Arkansas",
+      "correct": true,
+      "latency": 0.32023072242736816,
+      "raw_response": "Arkansas"
+    },
+    {
+      "key": "2166_2",
+      "qid": 6,
+      "category": "ocr",
+      "response": "CHEDDAR",
+      "gold": "NON-FOLATE CEREAL",
+      "correct": false,
+      "latency": 0.3828248977661133,
+      "raw_response": "CHEDDAR"
+    },
+    {
+      "key": "2166_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.2643163204193115,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "2188_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "3 by 1",
+      "gold": "1 by 3",
+      "correct": false,
+      "latency": 0.3019108772277832,
+      "raw_response": "3 by 1"
+    },
+    {
+      "key": "2188_1",
+      "qid": 8,
+      "category": "quant",
+      "response": "0.25",
+      "gold": "0.25",
+      "correct": true,
+      "latency": 0.29283833503723145,
+      "raw_response": "0.25"
+    },
+    {
+      "key": "2188_2",
+      "qid": 7,
+      "category": "ocr",
+      "response": "8",
+      "gold": "8",
+      "correct": true,
+      "latency": 0.15165138244628906,
+      "raw_response": "8"
+    },
+    {
+      "key": "2188_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "8.0",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.23197531700134277,
+      "raw_response": "8.0"
+    },
+    {
+      "key": "2201_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.15974664688110352,
+      "raw_response": "1"
+    },
+    {
+      "key": "2201_1",
+      "qid": 7,
+      "category": "ocr",
+      "response": "0.100",
+      "gold": "0.6",
+      "correct": false,
+      "latency": 0.32246828079223633,
+      "raw_response": "0.100"
+    },
+    {
+      "key": "2201_2",
+      "qid": 8,
+      "category": "quant",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.1665964126586914,
+      "raw_response": "1"
+    },
+    {
+      "key": "2201_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2501199245452881,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "2271_0",
+      "qid": 12,
+      "category": "quant",
+      "response": "3",
+      "gold": "4",
+      "correct": false,
+      "latency": 0.2813436985015869,
+      "raw_response": "3"
+    },
+    {
+      "key": "2271_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "2020-03",
+      "gold": "2020-03",
+      "correct": true,
+      "latency": 0.5581793785095215,
+      "raw_response": "2020-03"
+    },
+    {
+      "key": "2271_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Deaths",
+      "gold": "Deaths",
+      "correct": true,
+      "latency": 0.28964710235595703,
+      "raw_response": "Deaths"
+    },
+    {
+      "key": "2271_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "200",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.3822665214538574,
+      "raw_response": "200"
+    },
+    {
+      "key": "2291_0",
+      "qid": 1,
+      "category": "title",
+      "response": "Regression coefficient for M=50",
+      "gold": "Regression coefficient for M=50",
+      "correct": true,
+      "latency": 0.46921682357788086,
+      "raw_response": "Regression coefficient for M=50"
+    },
+    {
+      "key": "2291_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "500",
+      "gold": "500",
+      "correct": true,
+      "latency": 0.2877194881439209,
+      "raw_response": "500"
+    },
+    {
+      "key": "2291_2",
+      "qid": 17,
+      "category": "quant",
+      "response": "100",
+      "gold": "9",
+      "correct": false,
+      "latency": 0.29312610626220703,
+      "raw_response": "100"
+    },
+    {
+      "key": "2291_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.30249452590942383,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "2307_0",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "No",
+      "correct": false,
+      "latency": 0.31908512115478516,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "2307_1",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 2",
+      "gold": "2 by 2",
+      "correct": true,
+      "latency": 0.4458799362182617,
+      "raw_response": "2 by 2"
+    },
+    {
+      "key": "2307_2",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "8",
+      "correct": false,
+      "latency": 0.35659074783325195,
+      "raw_response": "10"
+    },
+    {
+      "key": "2307_3",
+      "qid": 9,
+      "category": "quant",
+      "response": "1",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.31047677993774414,
+      "raw_response": "1"
+    },
+    {
+      "key": "2346_0",
+      "qid": 5,
+      "category": "ocr",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.20760536193847656,
+      "raw_response": "1"
+    },
+    {
+      "key": "2346_1",
+      "qid": 1,
+      "category": "title",
+      "response": "SBC w/o multiple test adj.",
+      "gold": "SBC w/o multiple test adj.",
+      "correct": true,
+      "latency": 0.4697103500366211,
+      "raw_response": "SBC w/o multiple test adj."
+    },
+    {
+      "key": "2346_2",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0",
+      "gold": "0",
+      "correct": true,
+      "latency": 0.20213842391967773,
+      "raw_response": "0"
+    },
+    {
+      "key": "2346_3",
+      "qid": 2,
+      "category": "ocr",
+      "response": "0.5",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.2814033031463623,
+      "raw_response": "0.5"
+    },
+    {
+      "key": "2347_0",
+      "qid": 17,
+      "category": "quant",
+      "response": "100",
+      "gold": "20",
+      "correct": false,
+      "latency": 0.3355851173400879,
+      "raw_response": "100"
+    },
+    {
+      "key": "2347_1",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "60k",
+      "correct": false,
+      "latency": 0.3441166877746582,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "2347_2",
+      "qid": 15,
+      "category": "quant",
+      "response": "60k",
+      "gold": "60k",
+      "correct": true,
+      "latency": 0.35024547576904297,
+      "raw_response": "60k"
+    },
+    {
+      "key": "2347_3",
+      "qid": 12,
+      "category": "quant",
+      "response": "1",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.2658710479736328,
+      "raw_response": "1"
+    },
+    {
+      "key": "2359_0",
+      "qid": 17,
+      "category": "quant",
+      "response": "6",
+      "gold": "9",
+      "correct": false,
+      "latency": 0.29219627380371094,
+      "raw_response": "6"
+    },
+    {
+      "key": "2359_1",
+      "qid": 8,
+      "category": "quant",
+      "response": "1.0",
+      "gold": "1",
+      "correct": false,
+      "latency": 0.38350701332092285,
+      "raw_response": "1.0"
+    },
+    {
+      "key": "2359_2",
+      "qid": 4,
+      "category": "ocr",
+      "response": "-1",
+      "gold": "-1",
+      "correct": true,
+      "latency": 0.3326449394226074,
+      "raw_response": "-1"
+    },
+    {
+      "key": "2359_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.37899065017700195,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "2360_0",
+      "qid": 12,
+      "category": "quant",
+      "response": "1",
+      "gold": "2",
+      "correct": false,
+      "latency": 0.32871007919311523,
+      "raw_response": "1"
+    },
+    {
+      "key": "2360_1",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Main Color Point Measure",
+      "gold": "Main Color Point Measure",
+      "correct": true,
+      "latency": 0.44304323196411133,
+      "raw_response": "Main Color Point Measure"
+    },
+    {
+      "key": "2360_2",
+      "qid": 9,
+      "category": "quant",
+      "response": "0.004",
+      "gold": "0.002",
+      "correct": false,
+      "latency": 0.4855198860168457,
+      "raw_response": "0.004"
+    },
+    {
+      "key": "2360_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "0.01",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.4370121955871582,
+      "raw_response": "0.01"
+    },
+    {
+      "key": "2372_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "CD4 \u2264 400",
+      "gold": "Unrestricted",
+      "correct": false,
+      "latency": 0.5077924728393555,
+      "raw_response": "CD4 \u2264 400"
+    },
+    {
+      "key": "2372_1",
+      "qid": 8,
+      "category": "quant",
+      "response": "30",
+      "gold": "30",
+      "correct": true,
+      "latency": 0.3294851779937744,
+      "raw_response": "30"
+    },
+    {
+      "key": "2372_2",
+      "qid": 4,
+      "category": "ocr",
+      "response": "-30",
+      "gold": "-30",
+      "correct": true,
+      "latency": 0.36057233810424805,
+      "raw_response": "-30"
+    },
+    {
+      "key": "2372_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.35275912284851074,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "2373_0",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Total Sample Size, n",
+      "gold": "Total Sample Size, n",
+      "correct": true,
+      "latency": 0.2933475971221924,
+      "raw_response": "Total Sample Size, n"
+    },
+    {
+      "key": "2373_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0.00",
+      "gold": "0.00",
+      "correct": true,
+      "latency": 0.25844860076904297,
+      "raw_response": "0.00"
+    },
+    {
+      "key": "2373_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Type I Error",
+      "gold": "Type I Error",
+      "correct": true,
+      "latency": 0.22590351104736328,
+      "raw_response": "Type I Error"
+    },
+    {
+      "key": "2373_3",
+      "qid": 8,
+      "category": "quant",
+      "response": "10",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.1887218952178955,
+      "raw_response": "10"
+    }
+  ],
+  "wall_time": 146.2319085597992,
+  "env": {
+    "python": "3.10.12",
+    "hostname": "evolve-vlm-vscode",
+    "torch": "2.14.1+cu130",
+    "transformers": "4.57.6",
+    "gpu": "NVIDIA GeForce RTX 3090"
+  },
+  "timestamp": "2026-10-15T12:49:22+00:00",
+  "error": null
+}

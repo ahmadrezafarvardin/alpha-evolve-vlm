@@ -1,0 +1,798 @@
+{
+  "schema_version": 1,
+  "candidate_id": "g006_c03",
+  "status": "ok",
+  "program": "/home/ubuntu/evolving-vlm-inference/population/instruct_20261015-1207/candidates/candidate_g006_c03.py",
+  "code_sha256": "ae2c2058bbe8b72146c024433ac2f39079659202725ac5e53471e1a5569a31a2",
+  "split": "evo",
+  "num_samples": 64,
+  "offset": 0,
+  "accuracy": 0.6875,
+  "num_evaluated": 64,
+  "num_errors": 0,
+  "total_time": 28.85018229484558,
+  "avg_time_per_query": 0.4507840983569622,
+  "num_correct": 44,
+  "first_query_time": 9.54373288154602,
+  "per_qid": {
+    "1": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "2": {
+      "correct": 3,
+      "total": 4,
+      "accuracy": 0.75
+    },
+    "3": {
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5
+    },
+    "4": {
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    "5": {
+      "correct": 4,
+      "total": 6,
+      "accuracy": 0.6666666666666666
+    },
+    "6": {
+      "correct": 2,
+      "total": 3,
+      "accuracy": 0.6666666666666666
+    },
+    "7": {
+      "correct": 3,
+      "total": 5,
+      "accuracy": 0.6
+    },
+    "8": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "9": {
+      "correct": 0,
+      "total": 4,
+      "accuracy": 0.0
+    },
+    "10": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "11": {
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0
+    },
+    "12": {
+      "correct": 2,
+      "total": 5,
+      "accuracy": 0.4
+    },
+    "13": {
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    "14": {
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0
+    },
+    "15": {
+      "correct": 6,
+      "total": 6,
+      "accuracy": 1.0
+    },
+    "16": {
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5
+    },
+    "17": {
+      "correct": 0,
+      "total": 2,
+      "accuracy": 0.0
+    },
+    "18": {
+      "correct": 3,
+      "total": 4,
+      "accuracy": 0.75
+    }
+  },
+  "per_category": {
+    "bool": {
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0
+    },
+    "enum": {
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    "layout": {
+      "correct": 3,
+      "total": 4,
+      "accuracy": 0.75
+    },
+    "ocr": {
+      "correct": 17,
+      "total": 25,
+      "accuracy": 0.68
+    },
+    "quant": {
+      "correct": 14,
+      "total": 23,
+      "accuracy": 0.6086956521739131
+    },
+    "title": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "trend": {
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5
+    }
+  },
+  "responses": [
+    {
+      "key": "144_0",
+      "qid": 9,
+      "category": "quant",
+      "response": "10",
+      "gold": "20",
+      "correct": false,
+      "latency": 9.54373288154602,
+      "raw_response": "10"
+    },
+    {
+      "key": "144_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "Update",
+      "gold": "ReLU",
+      "correct": false,
+      "latency": 0.20763182640075684,
+      "raw_response": "Update"
+    },
+    {
+      "key": "144_2",
+      "qid": 12,
+      "category": "quant",
+      "response": "3",
+      "gold": "5",
+      "correct": false,
+      "latency": 0.18819284439086914,
+      "raw_response": "3"
+    },
+    {
+      "key": "144_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.25588226318359375,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "183_0",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "14",
+      "correct": false,
+      "latency": 0.29015636444091797,
+      "raw_response": "10"
+    },
+    {
+      "key": "183_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0.000",
+      "gold": "0.000",
+      "correct": true,
+      "latency": 0.39081406593322754,
+      "raw_response": "0.000"
+    },
+    {
+      "key": "183_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Frequency",
+      "gold": "Frequency",
+      "correct": true,
+      "latency": 0.22934794425964355,
+      "raw_response": "Frequency"
+    },
+    {
+      "key": "183_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.30197906494140625,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "196_0",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0",
+      "gold": "0",
+      "correct": true,
+      "latency": 0.16967272758483887,
+      "raw_response": "0"
+    },
+    {
+      "key": "196_1",
+      "qid": 12,
+      "category": "quant",
+      "response": "2",
+      "gold": "2",
+      "correct": true,
+      "latency": 0.15751004219055176,
+      "raw_response": "2"
+    },
+    {
+      "key": "196_2",
+      "qid": 2,
+      "category": "ocr",
+      "response": "ratio in Twitter",
+      "gold": "ratio in Twitter",
+      "correct": true,
+      "latency": 0.2405238151550293,
+      "raw_response": "ratio in Twitter"
+    },
+    {
+      "key": "196_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.23924803733825684,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "228_0",
+      "qid": 10,
+      "category": "quant",
+      "response": "2",
+      "gold": "2",
+      "correct": true,
+      "latency": 0.3005795478820801,
+      "raw_response": "2"
+    },
+    {
+      "key": "228_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "0.5",
+      "gold": "0.5",
+      "correct": true,
+      "latency": 0.335141658782959,
+      "raw_response": "0.5"
+    },
+    {
+      "key": "228_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.38527894020080566,
+      "raw_response": "1 by 1"
+    },
+    {
+      "key": "228_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.33899903297424316,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "244_0",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0.3",
+      "gold": "0.3",
+      "correct": true,
+      "latency": 0.2365713119506836,
+      "raw_response": "0.3"
+    },
+    {
+      "key": "244_1",
+      "qid": 12,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "2",
+      "correct": false,
+      "latency": 0.2267446517944336,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "244_2",
+      "qid": 7,
+      "category": "ocr",
+      "response": "0.9",
+      "gold": "0.9",
+      "correct": true,
+      "latency": 0.22524785995483398,
+      "raw_response": "0.9"
+    },
+    {
+      "key": "244_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.22754406929016113,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "269_0",
+      "qid": 9,
+      "category": "quant",
+      "response": "Ensem. Efficiency (%)",
+      "gold": "0.5",
+      "correct": false,
+      "latency": 0.3721787929534912,
+      "raw_response": "Ensem. Efficiency (%)"
+    },
+    {
+      "key": "269_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "SSL_E+1_SSL",
+      "gold": "E+I_SSL",
+      "correct": false,
+      "latency": 0.35247254371643066,
+      "raw_response": "SSL_E+1_SSL"
+    },
+    {
+      "key": "269_2",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "11",
+      "correct": false,
+      "latency": 0.23369693756103516,
+      "raw_response": "10"
+    },
+    {
+      "key": "269_3",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Ensem. Efficiency (%)",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.3392305374145508,
+      "raw_response": "Ensem. Efficiency (%)"
+    },
+    {
+      "key": "334_0",
+      "qid": 8,
+      "category": "quant",
+      "response": "0.05",
+      "gold": "0.05",
+      "correct": true,
+      "latency": 0.40967679023742676,
+      "raw_response": "0.05"
+    },
+    {
+      "key": "334_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": ".2",
+      "gold": ".2",
+      "correct": true,
+      "latency": 0.29151272773742676,
+      "raw_response": ".2"
+    },
+    {
+      "key": "334_2",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Effect of Good/Bad News on P(True)",
+      "gold": "Effect of Good/Bad News on P(True)",
+      "correct": true,
+      "latency": 0.6106598377227783,
+      "raw_response": "Effect of Good/Bad News on P(True)"
+    },
+    {
+      "key": "334_3",
+      "qid": 12,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.32816457748413086,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "391_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "0.0100",
+      "gold": "0.0100",
+      "correct": true,
+      "latency": 0.4548330307006836,
+      "raw_response": "0.0100"
+    },
+    {
+      "key": "391_1",
+      "qid": 16,
+      "category": "trend",
+      "response": "increases",
+      "gold": "increases",
+      "correct": true,
+      "latency": 0.2746999263763428,
+      "raw_response": "increases"
+    },
+    {
+      "key": "391_2",
+      "qid": 13,
+      "category": "enum",
+      "response": "FEMALE, MALE",
+      "gold": "FEMALE, MALE",
+      "correct": true,
+      "latency": 0.40008115768432617,
+      "raw_response": "FEMALE, MALE"
+    },
+    {
+      "key": "391_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.31624293327331543,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "411_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.3132498264312744,
+      "raw_response": "1"
+    },
+    {
+      "key": "411_1",
+      "qid": 7,
+      "category": "ocr",
+      "response": "8",
+      "gold": "1",
+      "correct": false,
+      "latency": 0.28151440620422363,
+      "raw_response": "8"
+    },
+    {
+      "key": "411_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.38887858390808105,
+      "raw_response": "1 by 1"
+    },
+    {
+      "key": "411_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.36368775367736816,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "433_0",
+      "qid": 5,
+      "category": "ocr",
+      "response": "150",
+      "gold": "150",
+      "correct": true,
+      "latency": 0.29473400115966797,
+      "raw_response": "150"
+    },
+    {
+      "key": "433_1",
+      "qid": 7,
+      "category": "ocr",
+      "response": "-80",
+      "gold": "80",
+      "correct": false,
+      "latency": 0.27800607681274414,
+      "raw_response": "-80"
+    },
+    {
+      "key": "433_2",
+      "qid": 15,
+      "category": "quant",
+      "response": "0.5",
+      "gold": "0.5",
+      "correct": true,
+      "latency": 0.2818913459777832,
+      "raw_response": "0.5"
+    },
+    {
+      "key": "433_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.27710390090942383,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "446_0",
+      "qid": 15,
+      "category": "quant",
+      "response": "35",
+      "gold": "35",
+      "correct": true,
+      "latency": 0.2020118236541748,
+      "raw_response": "35"
+    },
+    {
+      "key": "446_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "DAE",
+      "gold": "DACE",
+      "correct": false,
+      "latency": 0.19069337844848633,
+      "raw_response": "DAE"
+    },
+    {
+      "key": "446_2",
+      "qid": 5,
+      "category": "ocr",
+      "response": "WIOR",
+      "gold": "WIOR",
+      "correct": true,
+      "latency": 0.19285035133361816,
+      "raw_response": "WIOR"
+    },
+    {
+      "key": "446_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.22876691818237305,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "458_0",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "yes",
+      "correct": true,
+      "latency": 0.2991158962249756,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "458_1",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Removing probability p",
+      "gold": "Removing probability p",
+      "correct": true,
+      "latency": 0.36002564430236816,
+      "raw_response": "Removing probability p"
+    },
+    {
+      "key": "458_2",
+      "qid": 9,
+      "category": "quant",
+      "response": "250",
+      "gold": "500",
+      "correct": false,
+      "latency": 0.3755025863647461,
+      "raw_response": "250"
+    },
+    {
+      "key": "458_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3555634021759033,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "484_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "10^8",
+      "gold": "10^8",
+      "correct": true,
+      "latency": 0.3279452323913574,
+      "raw_response": "10^8"
+    },
+    {
+      "key": "484_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "0.0",
+      "gold": "10^7",
+      "correct": false,
+      "latency": 0.28153204917907715,
+      "raw_response": "0.0"
+    },
+    {
+      "key": "484_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 1",
+      "gold": "1 by 2",
+      "correct": false,
+      "latency": 0.32701897621154785,
+      "raw_response": "2 by 1"
+    },
+    {
+      "key": "484_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2805783748626709,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "547_0",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "Yes",
+      "correct": true,
+      "latency": 0.32767772674560547,
+      "raw_response": "Yes"
+    },
+    {
+      "key": "547_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "1",
+      "gold": "1",
+      "correct": true,
+      "latency": 0.31336236000061035,
+      "raw_response": "1"
+    },
+    {
+      "key": "547_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Not Applicable",
+      "gold": "\u0394AAD_VW(%)",
+      "correct": false,
+      "latency": 0.3904092311859131,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "547_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3896012306213379,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "559_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0",
+      "gold": "0",
+      "correct": true,
+      "latency": 0.23729419708251953,
+      "raw_response": "0"
+    },
+    {
+      "key": "559_1",
+      "qid": 9,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "0.05",
+      "correct": false,
+      "latency": 0.2999148368835449,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "559_2",
+      "qid": 16,
+      "category": "trend",
+      "response": "decreases then stabilizes",
+      "gold": "decreases then stablizes",
+      "correct": false,
+      "latency": 0.4098703861236572,
+      "raw_response": "decreases then stabilizes"
+    },
+    {
+      "key": "559_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2987701892852783,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "565_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 2",
+      "gold": "2 by 2",
+      "correct": true,
+      "latency": 0.40660929679870605,
+      "raw_response": "2 by 2"
+    },
+    {
+      "key": "565_1",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "Natural calcium phosphates, Phosphoric acid etc., Phosphates, Phosphatic fertilizers, Mixed fertilizers",
+      "correct": false,
+      "latency": 0.35828185081481934,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "565_2",
+      "qid": 12,
+      "category": "quant",
+      "response": "4",
+      "gold": "5",
+      "correct": false,
+      "latency": 0.28393077850341797,
+      "raw_response": "4"
+    },
+    {
+      "key": "565_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.3584134578704834,
+      "raw_response": "Not Applicable"
+    }
+  ],
+  "wall_time": 33.473926067352295,
+  "env": {
+    "python": "3.10.12",
+    "hostname": "evolve-vlm-vscode",
+    "torch": "2.14.1+cu130",
+    "transformers": "4.57.6",
+    "gpu": "NVIDIA GeForce RTX 3090"
+  },
+  "timestamp": "2026-10-15T13:06:17+00:00",
+  "error": null
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "candidate_id": "g002_c05",
+  "status": "error",
+  "program": "/home/ubuntu/evolving-vlm-inference/population/instruct_20261015-1207/candidates/candidate_g002_c05.py",
+  "code_sha256": "1de96ad47a91da5d43a733f7cd4ec4db5145dc65449565739f24cc97af3a7a9f",
+  "split": "evo",
+  "num_samples": 8,
+  "accuracy": null,
+  "wall_time": 5.684833288192749,
+  "env": {
+    "python": "3.10.12",
+    "hostname": "evolve-vlm-vscode",
+    "torch": "2.14.1+cu130",
+    "transformers": "4.57.6",
+    "gpu": "NVIDIA GeForce RTX 3090"
+  },
+  "timestamp": "2026-10-15T12:32:32+00:00",
+  "error": {
+    "log_tail": "Traceback (most recent call last):\n  File \"/home/ubuntu/evolving-vlm-inference/evaluate.py\", line 234, in <module>\n    main()\n  File \"/home/ubuntu/evolving-vlm-inference/evaluate.py\", line 203, in main\n    module, path = load_program(args.program)\n  File \"/home/ubuntu/evolving-vlm-inference/evaluate.py\", line 171, in load_program\n    spec.loader.exec_module(module)\n  File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n  File \"/home/ubuntu/evolving-vlm-inference/population/instruct_20261015-1207/candidates/candidate_g002_c05.py\", line 118, in <module>\n    _SUBSCRIPTS = str.maketrans(\"\u2080\u2081\u2082\u208c\u2083\u2084\u2085\u2086\u2087\u2088\u2089\", \"0123456789\")\nValueError: the first two maketrans arguments must have equal length\n"
+  }
+}

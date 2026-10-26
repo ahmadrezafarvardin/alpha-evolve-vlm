@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "candidate_id": "g011_c04",
+  "status": "ok",
+  "program": "/home/ubuntu/evolving-vlm-inference/population/instruct_20261015-1207/candidates/candidate_g011_c04.py",
+  "code_sha256": "e67211e4d171a2e2243b6d28d91e62da727dee289ca6cbfbb715ec9f04654334",
+  "split": "evo",
+  "num_samples": 8,
+  "offset": 0,
+  "accuracy": 0.625,
+  "num_evaluated": 8,
+  "num_errors": 0,
+  "total_time": 11.828098058700562,
+  "avg_time_per_query": 1.4785122573375702,
+  "num_correct": 5,
+  "first_query_time": 9.903853178024292,
+  "per_qid": {
+    "1": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "3": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "4": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "5": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "9": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "11": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "12": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "17": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    }
+  },
+  "per_category": {
+    "bool": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "ocr": {
+      "correct": 2,
+      "total": 3,
+      "accuracy": 0.6666666666666666
+    },
+    "quant": {
+      "correct": 1,
+      "total": 3,
+      "accuracy": 0.3333333333333333
+    },
+    "title": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    }
+  },
+  "responses": [
+    {
+      "key": "144_0",
+      "qid": 9,
+      "category": "quant",
+      "response": "20",
+      "gold": "20",
+      "correct": true,
+      "latency": 9.903853178024292,
+      "raw_response": "20"
+    },
+    {
+      "key": "144_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "Update",
+      "gold": "ReLU",
+      "correct": false,
+      "latency": 0.23167753219604492,
+      "raw_response": "Update"
+    },
+    {
+      "key": "144_2",
+      "qid": 12,
+      "category": "quant",
+      "response": "3",
+      "gold": "5",
+      "correct": false,
+      "latency": 0.19154763221740723,
+      "raw_response": "3"
+    },
+    {
+      "key": "144_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.2744636535644531,
+      "raw_response": "Not Applicable"
+    },
+    {
+      "key": "183_0",
+      "qid": 17,
+      "category": "quant",
+      "response": "10",
+      "gold": "14",
+      "correct": false,
+      "latency": 0.2882099151611328,
+      "raw_response": "10"
+    },
+    {
+      "key": "183_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0.000",
+      "gold": "0.000",
+      "correct": true,
+      "latency": 0.3972032070159912,
+      "raw_response": "0.000"
+    },
+    {
+      "key": "183_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Frequency",
+      "gold": "Frequency",
+      "correct": true,
+      "latency": 0.22774696350097656,
+      "raw_response": "Frequency"
+    },
+    {
+      "key": "183_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.31320643424987793,
+      "raw_response": "Not Applicable"
+    }
+  ],
+  "wall_time": 16.7423152923584,
+  "env": {
+    "python": "3.10.12",
+    "hostname": "evolve-vlm-vscode",
+    "torch": "2.14.1+cu130",
+    "transformers": "4.57.6",
+    "gpu": "NVIDIA GeForce RTX 3090"
+  },
+  "timestamp": "2026-10-15T14:24:15+00:00",
+  "error": null
+}

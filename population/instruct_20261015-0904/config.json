@@ -1,0 +1,77 @@
+{
+ "model": "Instruct",
+ "seed": 0,
+ "generations": 12,
+ "children_per_generation": 1,
+ "num_inspirations": 2,
+ "llm_ensemble": [
+  {
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "weight": 1.0,
+   "price_in": 0.25,
+   "price_out": 1.5,
+   "max_tokens": 4096
+  }
+ ],
+ "llm_temperatures": [
+  0.4,
+  0.7,
+  1.0
+ ],
+ "cascade": {
+  "stages": [
+   {
+    "name": "smoke",
+    "n": 8,
+    "timeout": 600
+   },
+   {
+    "name": "subset",
+    "n": 64,
+    "timeout": 1200
+   },
+   {
+    "name": "full",
+    "n": 400,
+    "timeout": 3600
+   }
+  ],
+  "promotion": {
+   "margin": 0.03,
+   "speed_margin": 0.06,
+   "min_speedup": 0.1
+  }
+ },
+ "database": {
+  "num_islands": 3,
+  "migration_interval": 3,
+  "exploit_prob": 0.7,
+  "exploit_top_k": 3,
+  "speed_accuracy_tolerance": 0.02,
+  "overall_time_weight": 0.05,
+  "reference_time_per_query": 0.44,
+  "features": [
+   {
+    "name": "time",
+    "bins": [
+     0.3,
+     0.45,
+     0.7,
+     1.2
+    ]
+   },
+   {
+    "name": "acc_quant",
+    "bins": [
+     0.3,
+     0.4,
+     0.5
+    ]
+   }
+  ]
+ },
+ "run_id": "instruct_20261015-0904",
+ "git_commit": "b2a56329d4bd01eab69952ea0d08adc9e0a3da3d",
+ "seed_program": "manual_instruct.py",
+ "seed_sha256": "e5908127711606f03a725f51a58bfae6de9b543eca666c4648a49c621c3a752c"
+}

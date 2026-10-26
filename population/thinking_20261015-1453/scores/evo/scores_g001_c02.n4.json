@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "candidate_id": "g001_c02",
+  "status": "ok",
+  "program": "/home/ubuntu/evolving-vlm-inference/population/thinking_20261015-1453/candidates/candidate_g001_c02.py",
+  "code_sha256": "ce44c6ad7bc005ca1df6f7f3aaf5e1ce9180e6fdcc1fa71d5ad9f5ba5d684cae",
+  "split": "evo",
+  "num_samples": 4,
+  "offset": 0,
+  "accuracy": 0.5,
+  "num_evaluated": 4,
+  "num_errors": 0,
+  "total_time": 65.34202742576599,
+  "avg_time_per_query": 16.335506856441498,
+  "num_correct": 2,
+  "first_query_time": 26.156553030014038,
+  "per_qid": {
+    "1": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "5": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "9": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "12": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    }
+  },
+  "per_category": {
+    "ocr": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "quant": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0
+    },
+    "title": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    }
+  },
+  "responses": [
+    {
+      "key": "144_0",
+      "qid": 9,
+      "category": "quant",
+      "response": "20",
+      "gold": "20",
+      "correct": true,
+      "latency": 26.156553030014038,
+      "raw_response": "Got it, let's look at the problem. The question is about the left-most subplot's y-axis tick values. The y-axis is labeled \"Execution Time (\u03bcs)\", so the tick values are the numerical values on the y-axis. Let's check the y-axis ticks. The y-axis goes from 0 to 100, with marks at 0, 20, 40, 60, 80, 100. Wait, the ticks are 0, 20, 40, 60, 80, 100. So the differences between consecutive ticks: 20-0=20, 40-20=20, 60-40=20, 80-60=20, 100-80=20. So the difference is 20. Wait, but the question says \"consecutive numerical tick values on the y-axis\". Let's confirm the y-axis. The y-axis has ticks at 0, 20, 40, 60, 80, 100. So each step is 20. So the difference is 20. But wait, the problem says \"the left-most subplot\". The left-most subplot is \"CONV DenseBlock 1\". The y-axis for that subplot is the same as the entire plot, right? Because the y-axis is shared across all subplots. So the tick values on the y-axis are 0, 20, 40, 60, 80, 100. The difference between consecutive ticks is 20. So the answer should be 20.\n</think>\n\n20"
+    },
+    {
+      "key": "144_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "Update All",
+      "gold": "ReLU",
+      "correct": false,
+      "latency": 12.966767072677612,
+      "raw_response": "Got it, let's look at the left-most subplot. The x-axis labels are \"CONV DenseBlock 1\", \"CONV DenseBlock 2\", etc. Wait, the left-most subplot's x-axis labels\u2014let's check the bottom axis. The bottom axis (x-axis) has the labels: CONV DenseBlock 1, CONV DenseBlock 2, CONV DenseBlock 3, CONV DenseBlock 4, Update All. Wait, the left-most subplot is the first one, which is \"CONV DenseBlock 1\". The rightmost labeled tick on the x-axis for the left-most subplot. Wait, the x-axis labels are the categories. Let's check the bottom axis. The labels are \"CONV DenseBlock 1\", \"CONV DenseBlock 2\", \"CONV DenseBlock 3\", \"CONV DenseBlock 4\", \"Update All\". So the rightmost one is \"Update All\". Wait, but the question says \"rightmost labeled tick on the x-axis\". Let's confirm. The x-axis has these labels. The left-most subplot is the first one, so the x-axis labels for that subplot are the first set. The rightmost label in the x-axis is \"Update All\". Let me check the chart again. The bottom axis (x-axis) has the labels: CONV DenseBlock 1, CONV DenseBlock 2, CONV DenseBlock 3, CONV DenseBlock 4, Update All. So the rightmost is \"Update All\".\n</think>\n\nUpdate All"
+    },
+    {
+      "key": "144_2",
+      "qid": 12,
+      "category": "quant",
+      "response": "5",
+      "gold": "5",
+      "correct": true,
+      "latency": 7.864404201507568,
+      "raw_response": "Got it, let's look at the legend in the chart. The legend is on the top right. The labels in the legend are TensorFlow, XLA, MXNet, PyTorch, Kernal Exec. Time. Wait, let's count them. The legend has five entries: TensorFlow (green), XLA (light blue), MXNet (light green), PyTorch (blue with dots), Kernal Exec. Time (orange). So that's five discrete labels. The question asks for the number of discrete labels in the legend for the left-most subplot. The left-most subplot is CONV DenseBlock 1, but the legend is the same for all subplots. So the legend has five labels. Let me check again. The legend items are: TensorFlow, XLA, MXNet, PyTorch, Kernal Exec. Time. Yes, five. So the answer is 5.\n</think>\n\n5"
+    },
+    {
+      "key": "144_3",
+      "qid": 1,
+      "category": "title",
+      "response": "CONV DenseBlock 1",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 18.354167938232422,
+      "raw_response": "Got it, let's look at the problem. The question is asking for the title of the left-most subplot. First, I need to check the chart. The chart has subplots, and the left-most one is labeled \"CONV DenseBlock 1\". Wait, no, the x-axis labels are \"CONV DenseBlock 1\", \"ReLU DenseBlock 1\", etc. Wait, the left-most subplot's title\u2014wait, the x-axis has \"CONV DenseBlock 1\" as the first label. But the question is about the title of the subplot. Wait, the chart's x-axis has the labels for each subplot. Let me check the image description. The x-axis has \"CONV DenseBlock 1\", \"ReLU DenseBlock 1\", \"CONV DenseBlock 2\", etc. So the left-most subplot is \"CONV DenseBlock 1\". But the question is asking for the title of the subplot. Wait, the chart's title is not explicitly written, but the x-axis labels are the subplots. Wait, no, the problem says \"what is its title\". Wait, maybe the subplot's title is the label on the x-axis. Wait, no, the x-axis labels are the names of the subplots. Wait, the left-most subplot is \"CONV DenseBlock 1\", so the title of that subplot is \"CONV DenseBlock 1\". Wait, but the question says \"the title of the plot\"\u2014wait, no, the plot is the entire chart. Wait, no, the question says \"for left-most subplot, what is its title\". So the subplot's title is the label on the x-axis. Wait, the x-axis has \"CONV DenseBlock 1\" as the first label. So the title of the left-most subplot is \"CONV DenseBlock 1\". Wait, but let's check the image. The x-axis labels are \"CONV DenseBlock 1\", \"ReLU DenseBlock 1\", etc. So the left-most one is \"CONV DenseBlock 1\". Therefore, the answer is \"CONV DenseBlock 1\".\n</think>\n\nCONV DenseBlock 1"
+    }
+  ],
+  "wall_time": 70.04336810112,
+  "env": {
+    "python": "3.10.12",
+    "hostname": "evolve-vlm-vscode",
+    "torch": "2.14.1+cu130",
+    "transformers": "4.57.6",
+    "gpu": "NVIDIA GeForce RTX 3090"
+  },
+  "timestamp": "2026-10-15T16:33:12+00:00",
+  "error": null
+}

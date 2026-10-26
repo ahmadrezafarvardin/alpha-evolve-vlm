@@ -1,0 +1,1314 @@
+{
+  "schema_version": 1,
+  "candidate_id": "baseline_starting_scripts",
+  "status": "ok",
+  "program": "/content/evolving-vlm-inference/starting_scripts.py",
+  "code_sha256": "ae6a03c0d2b27eaa969fc6fa2ef356a49678f611f381ff9e6da5bded4745e39c",
+  "split": "dev",
+  "num_samples": 128,
+  "accuracy": 0.3828125,
+  "num_evaluated": 128,
+  "num_errors": 0,
+  "total_time": 328.6859254837036,
+  "avg_time_per_query": 2.5678587928414345,
+  "num_correct": 49,
+  "first_query_time": 18.48367166519165,
+  "per_qid": {
+    "1": {
+      "correct": 6,
+      "total": 9,
+      "accuracy": 0.6666666666666666
+    },
+    "2": {
+      "correct": 8,
+      "total": 9,
+      "accuracy": 0.8888888888888888
+    },
+    "3": {
+      "correct": 4,
+      "total": 6,
+      "accuracy": 0.6666666666666666
+    },
+    "4": {
+      "correct": 5,
+      "total": 7,
+      "accuracy": 0.7142857142857143
+    },
+    "5": {
+      "correct": 3,
+      "total": 7,
+      "accuracy": 0.42857142857142855
+    },
+    "6": {
+      "correct": 1,
+      "total": 6,
+      "accuracy": 0.16666666666666666
+    },
+    "7": {
+      "correct": 3,
+      "total": 8,
+      "accuracy": 0.375
+    },
+    "8": {
+      "correct": 0,
+      "total": 6,
+      "accuracy": 0.0
+    },
+    "9": {
+      "correct": 0,
+      "total": 7,
+      "accuracy": 0.0
+    },
+    "10": {
+      "correct": 0,
+      "total": 3,
+      "accuracy": 0.0
+    },
+    "11": {
+      "correct": 2,
+      "total": 5,
+      "accuracy": 0.4
+    },
+    "12": {
+      "correct": 0,
+      "total": 7,
+      "accuracy": 0.0
+    },
+    "13": {
+      "correct": 10,
+      "total": 11,
+      "accuracy": 0.9090909090909091
+    },
+    "14": {
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0
+    },
+    "15": {
+      "correct": 1,
+      "total": 11,
+      "accuracy": 0.09090909090909091
+    },
+    "16": {
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5
+    },
+    "17": {
+      "correct": 0,
+      "total": 7,
+      "accuracy": 0.0
+    },
+    "18": {
+      "correct": 5,
+      "total": 9,
+      "accuracy": 0.5555555555555556
+    },
+    "19": {
+      "correct": 0,
+      "total": 3,
+      "accuracy": 0.0
+    }
+  },
+  "per_category": {
+    "bool": {
+      "correct": 2,
+      "total": 5,
+      "accuracy": 0.4
+    },
+    "enum": {
+      "correct": 10,
+      "total": 11,
+      "accuracy": 0.9090909090909091
+    },
+    "layout": {
+      "correct": 5,
+      "total": 9,
+      "accuracy": 0.5555555555555556
+    },
+    "ocr": {
+      "correct": 24,
+      "total": 43,
+      "accuracy": 0.5581395348837209
+    },
+    "quant": {
+      "correct": 1,
+      "total": 49,
+      "accuracy": 0.02040816326530612
+    },
+    "title": {
+      "correct": 6,
+      "total": 9,
+      "accuracy": 0.6666666666666666
+    },
+    "trend": {
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5
+    }
+  },
+  "responses": [
+    {
+      "key": "0_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "The y-axis label is \"Overall Acc. (%)\" and the tick marks are labeled with values. The highest tick value on the y-axis is 60. This is the topmost tick on the y-axis in the subplot at row 1 and column 2.\n\nThe spatially highest labeled tick on the y-axis is 60.",
+      "gold": "60",
+      "correct": false,
+      "latency": 18.48367166519165
+    },
+    {
+      "key": "0_1",
+      "qid": 13,
+      "category": "enum",
+      "response": "Ft-CNN, iCaRL*, EEIL*, NCM*, Ours-AL, Ours-AL-MML, Joint-CNN",
+      "gold": "Ft-CNN, iCaRL*, EEIL*, NCM*, Ours-AL, Ours-AL-MML, Joint-CNN",
+      "correct": true,
+      "latency": 1.8547706604003906
+    },
+    {
+      "key": "0_2",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "Yes",
+      "correct": true,
+      "latency": 0.40533018112182617
+    },
+    {
+      "key": "0_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "60",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.441875696182251
+    },
+    {
+      "key": "2_0",
+      "qid": 2,
+      "category": "ocr",
+      "response": "W_H",
+      "gold": "W_H",
+      "correct": true,
+      "latency": 0.6979570388793945
+    },
+    {
+      "key": "2_1",
+      "qid": 8,
+      "category": "quant",
+      "response": "The x-axis has tick values at -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, and 0.4. The difference between consecutive numerical tick values is:\n\n- From -0.2 to -0.1: difference = 0.1\n- From -0.1 to 0.0: difference = 0.1\n- From 0.0 to 0.1: difference = 0.1\n- From 0.1 to 0.2: difference = 0.1\n",
+      "gold": "0.1",
+      "correct": false,
+      "latency": 6.6724348068237305
+    },
+    {
+      "key": "2_2",
+      "qid": 7,
+      "category": "ocr",
+      "response": "0.12",
+      "gold": "0.12",
+      "correct": true,
+      "latency": 0.7561802864074707
+    },
+    {
+      "key": "2_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "0.30",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.7547111511230469
+    },
+    {
+      "key": "3_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "2 by 1",
+      "gold": "1 by 2",
+      "correct": false,
+      "latency": 0.5398311614990234
+    },
+    {
+      "key": "3_1",
+      "qid": 1,
+      "category": "title",
+      "response": "(b) OPT",
+      "gold": "(b) OPT",
+      "correct": true,
+      "latency": 0.49877095222473145
+    },
+    {
+      "key": "3_2",
+      "qid": 19,
+      "category": "quant",
+      "response": "The image contains two separate 3D plots, each with its own title and labels. These are labeled as (a) Standard training and (b) OPT. Each of these is a distinct subplot.\n\nTherefore, the total number of subplots is 2.\n\n2",
+      "gold": "2",
+      "correct": false,
+      "latency": 2.9159319400787354
+    },
+    {
+      "key": "3_3",
+      "qid": 12,
+      "category": "quant",
+      "response": "The subplot at row 1 and column 2 is labeled (b) OPT. This subplot shows a 3D surface plot with a color gradient, and the legend is located on the right side of the plot. The legend contains the following labels:\n\n- Red: 0.8\n- Orange: 0.7\n- Yellow: 0.6\n- Light blue: 0.5\n- Dark blue: 0.4\n- Purple: 0.3\n- Green: 0.2\n- Light green: 0.1\n\nThere are 8 discrete labels in the legend.\n\n",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 6.448037385940552
+    },
+    {
+      "key": "5_0",
+      "qid": 8,
+      "category": "quant",
+      "response": "The x-axis in subplot (b) has tick values at 0.2, 0.4, 0.6, 0.8, 1.0, and 1.2. The difference between consecutive numerical tick values is 0.2.\n\nTherefore, the difference between consecutive numerical tick values on the x-axis is 0.2.\n\n0.2",
+      "gold": "0.2",
+      "correct": false,
+      "latency": 4.4922568798065186
+    },
+    {
+      "key": "5_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "The rightmost labeled tick on the x-axis in subplot (b) is 1.2.",
+      "gold": "1.2",
+      "correct": false,
+      "latency": 1.6374270915985107
+    },
+    {
+      "key": "5_2",
+      "qid": 6,
+      "category": "ocr",
+      "response": "The y-axis in subplot (b) is labeled with tick marks at powers of 10, specifically $10^{-1}$, $10^{-2}$, $10^{-3}$, $10^{-4}$, and $10^{-5}$. The tick values are explicitly written as $10^{-1}$, $10^{-2}$, $10^{-3}$, $10^{-4}$, and $10^{-5}$. The lowest tick value on the y-axis is $10^{-5}$.\n\nTherefore, the spatially lowest labeled tick on the y-axis",
+      "gold": "10^-6",
+      "correct": false,
+      "latency": 6.8260743618011475
+    },
+    {
+      "key": "5_3",
+      "qid": 1,
+      "category": "title",
+      "response": "(b)",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.80242919921875
+    },
+    {
+      "key": "7_0",
+      "qid": 17,
+      "category": "quant",
+      "response": "To determine the total number of explicitly labeled ticks across all axes in the subplot at row 2 and column 2 (which is the Chicago subplot), we need to count the labeled ticks on both the x-axis and y-axis.\n\nThe subplot at row 2 and column 2 is labeled \"Chicago\" and has the following axes:\n\n- **X-axis (Daily New Confirmed COVID-19 Case Number (Weekly Moving Average))**: This axis has labeled ticks at intervals of 1000, starting from 0 to 2000. The labeled ticks are:\n  - 0\n  - 10",
+      "gold": "14",
+      "correct": false,
+      "latency": 6.829596281051636
+    },
+    {
+      "key": "7_1",
+      "qid": 10,
+      "category": "quant",
+      "response": "The subplot at row 2 and column 2 is labeled \"Chicago\" and shows a single line graph. This line represents the \"Stay-at-Home Rate (Weekly Moving Average, %)\" over time, with data points marked at various dates. The line is continuous and connects the data points, forming a single line.\n\nTherefore, there is **1** line in the plot.\n\nAnswer: 1",
+      "gold": "1",
+      "correct": false,
+      "latency": 4.571108102798462
+    },
+    {
+      "key": "7_2",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Daily New Confirmed COVID-19 Case Number (Weekly Moving Average)",
+      "gold": "Daily New Confirmed COVID-19 Case Number (Weekly Moving Average)",
+      "correct": true,
+      "latency": 1.4820234775543213
+    },
+    {
+      "key": "7_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "20",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.8398652076721191
+    },
+    {
+      "key": "8_0",
+      "qid": 6,
+      "category": "ocr",
+      "response": "The y-axis is labeled \"Throughput [fps]\" and has tick marks at powers of 10, starting from $10^0 = 1$ and going up to $10^3 = 1000$. The tick values are:\n\n- $10^0 = 1$\n- $10^1 = 10$\n- $10^2 = 100$\n- $10^3 = 1000$\n\nThe lowest labeled tick on the y-axis is $1$.\n\nThe spatially lowest labeled tick on the y-axis is **1**.",
+      "gold": "10^1",
+      "correct": false,
+      "latency": 6.553145885467529
+    },
+    {
+      "key": "8_1",
+      "qid": 8,
+      "category": "quant",
+      "response": "The x-axis represents the \"Number of parameters\" and the tick values are: 0, 200000, 400000, 600000, 800000. The difference between consecutive tick values is:\n\n- 200000 - 0 = 200000\n- 400000 - 200000 = 200000\n- 600000 - 400000 = 200000",
+      "gold": "200000",
+      "correct": false,
+      "latency": 6.548463821411133
+    },
+    {
+      "key": "8_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.6364901065826416
+    },
+    {
+      "key": "8_3",
+      "qid": 10,
+      "category": "quant",
+      "response": "To determine the number of lines in the plot, we need to analyze the legend provided in the image.\n\nThe legend in the top-right corner of the plot indicates the following:\n- Blue plus signs (+) represent \"Sipeed\"\n- Green triangles (\u25b3) represent \"JeVois (1344MHz)\"\n- Red circles (\u25cb) represent \"JeVois (408MHz)\"\n\nEach of these symbols corresponds to a distinct data series in the plot. Therefore, there are three different data series represented by different colored markers.\n\nThus, there are **3** lines in the plot.\n\n**Answer:** 3",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 6.445937871932983
+    },
+    {
+      "key": "12_0",
+      "qid": 1,
+      "category": "title",
+      "response": "Adversarial accuracy",
+      "gold": "Adversarial accuracy",
+      "correct": true,
+      "latency": 0.5029125213623047
+    },
+    {
+      "key": "12_1",
+      "qid": 7,
+      "category": "ocr",
+      "response": "55",
+      "gold": "55",
+      "correct": true,
+      "latency": 0.41515183448791504
+    },
+    {
+      "key": "12_2",
+      "qid": 11,
+      "category": "bool",
+      "response": "Yes",
+      "gold": "Yes",
+      "correct": true,
+      "latency": 0.33867931365966797
+    },
+    {
+      "key": "12_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "55",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.41789793968200684
+    },
+    {
+      "key": "13_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.8650994300842285
+    },
+    {
+      "key": "13_1",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Attribution IoU",
+      "gold": "Attribution IoU",
+      "correct": true,
+      "latency": 0.8414731025695801
+    },
+    {
+      "key": "13_2",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0.4",
+      "gold": "0.4",
+      "correct": true,
+      "latency": 0.7957732677459717
+    },
+    {
+      "key": "13_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "0.8",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.7858073711395264
+    },
+    {
+      "key": "14_0",
+      "qid": 12,
+      "category": "quant",
+      "response": "The legend in the plot contains the following labels:\n\n- 2 M\n- 6 M\n- 20 M\n- 60 M\n\nThere are 4 discrete labels in the legend.\n\nAnswer: 4",
+      "gold": "4",
+      "correct": false,
+      "latency": 2.7927660942077637
+    },
+    {
+      "key": "14_1",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Accuracy (%)",
+      "gold": "Accuracy (%)",
+      "correct": true,
+      "latency": 0.70322585105896
+    },
+    {
+      "key": "14_2",
+      "qid": 8,
+      "category": "quant",
+      "response": "The x-axis represents time in seconds, and the tick values are labeled at 1, 2, 3, 4, 5, and 6. The difference between consecutive numerical tick values is:\n\n- From 1 to 2: 2 - 1 = 1\n- From 2 to 3: 3 - 2 = 1\n- From 3 to 4: 4 - 3 = 1\n- From 4 to 5: 5 - 4 = 1\n- From 5 to 6: 6 - 5 = 1\n\n",
+      "gold": "1",
+      "correct": false,
+      "latency": 6.73612642288208
+    },
+    {
+      "key": "14_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.7682089805603027
+    },
+    {
+      "key": "17_0",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Number of pixel-level annotations (log-scale)",
+      "gold": "Number of pixel-level annotations (log-scale)",
+      "correct": true,
+      "latency": 1.0517101287841797
+    },
+    {
+      "key": "17_1",
+      "qid": 9,
+      "category": "quant",
+      "response": "The y-axis in the plot has tick values at 30, 40, 50, 60, 70, 80, and 90. These are evenly spaced, with each step representing an increase of 10. The difference between consecutive numerical tick values is 10.\n\nTherefore, the difference between consecutive numerical tick values on the y-axis is 10.\n\n10",
+      "gold": "10",
+      "correct": false,
+      "latency": 4.750795125961304
+    },
+    {
+      "key": "17_2",
+      "qid": 7,
+      "category": "ocr",
+      "response": "The y-axis is labeled \"DAVIS-2017 J & F (Mean)\" and has tick marks at 30, 40, 50, 60, 70, 80, and 90. The highest explicitly written tick value on the y-axis is 90.",
+      "gold": "90",
+      "correct": false,
+      "latency": 3.8492677211761475
+    },
+    {
+      "key": "17_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "No",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.6027147769927979
+    },
+    {
+      "key": "20_0",
+      "qid": 9,
+      "category": "quant",
+      "response": "The y-axis in the plot has tick values: 0.00, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40. The difference between consecutive tick values is:\n\n- 0.05 - 0.00 = 0.05\n- 0.10 - 0.05 = 0.05\n- 0.15 - 0.10 = 0.05",
+      "gold": "0.05",
+      "correct": false,
+      "latency": 6.764364242553711
+    },
+    {
+      "key": "20_1",
+      "qid": 17,
+      "category": "quant",
+      "response": "To determine the total number of explicitly labeled ticks across all axes in the given plot, we need to examine each axis and count the number of labels.\n\nThe plot has two axes:\n- The **x-axis** (horizontal axis): \"Degree\"\n- The **y-axis** (vertical axis): \"Proportion of papers\"\n\nWe will count the number of explicitly labeled ticks on each axis.\n\n---\n\n### 1. X-axis (Degree)\nThe x-axis is labeled \"Degree\" and has the following explicitly labeled ticks:\n- 0\n- 50\n- 100\n- 150\n- 2",
+      "gold": "16",
+      "correct": false,
+      "latency": 6.592891454696655
+    },
+    {
+      "key": "20_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.7253248691558838
+    },
+    {
+      "key": "20_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.6917715072631836
+    },
+    {
+      "key": "21_0",
+      "qid": 12,
+      "category": "quant",
+      "response": "The legend in the plot contains the following discrete labels:\n\n- advmod\n- amod\n- case\n- cc\n- conj\n- det\n- mark\n- nmod\n- nsubj\n- obj\n- obl\n\nCounting these, there are 11 discrete labels in the legend.\n\nAnswer: 11",
+      "gold": "11",
+      "correct": false,
+      "latency": 4.155430316925049
+    },
+    {
+      "key": "21_1",
+      "qid": 13,
+      "category": "enum",
+      "response": "advmod, amod, case, cc, conj, det, mark, nmod, nsubj, obj, obl",
+      "gold": "advmod, amod, case, cc, conj, det, mark, nmod, nsubj, obj, obl",
+      "correct": true,
+      "latency": 2.003197193145752
+    },
+    {
+      "key": "21_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 1.0372045040130615
+    },
+    {
+      "key": "21_3",
+      "qid": 9,
+      "category": "quant",
+      "response": "The provided image is a scatter plot with a legend indicating different categories (e.g., advmod, amod, case, etc.). However, the y-axis is not visible in the image, nor is there any indication of a numerical scale or tick values on the y-axis.\n\nSince the y-axis is not shown in the plot, we cannot determine the difference between consecutive numerical tick values on the y-axis.\n\nTherefore, the answer is: Not Applicable.",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 5.312345266342163
+    },
+    {
+      "key": "26_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "The subplot at row 2 and column 1 is the bottom-left one, which is labeled \"Downstream vs. Concept: Toy\". The y-axis is labeled \"Downstream Accuracy\" and has tick marks at 0.85, 0.90, 0.95, and 1.00. The highest labeled tick on the y-axis is 1.00.",
+      "gold": "1.00",
+      "correct": false,
+      "latency": 4.574269771575928
+    },
+    {
+      "key": "26_1",
+      "qid": 17,
+      "category": "quant",
+      "response": "To determine the total number of explicitly labeled ticks across all axes in the provided image, we need to analyze each subplot and count the labeled ticks on each axis.\n\nThe image contains four subplots arranged in a 2x2 grid:\n\n- **Top-left subplot**: \"Downstream vs. Concept: Toy\"\n- **Top-right subplot**: \"N. Accepted - Toy\"\n- **Bottom-left subplot**: \"Downstream vs. Concept: Toy\"\n- **Bottom-right subplot**: \"N. Accepted - Toy\"\n\nWe will examine each subplot individually.\n\n---\n\n### **Top-left subplot: \"Downstream vs. Concept: Toy\"**\n\n-",
+      "gold": "7",
+      "correct": false,
+      "latency": 6.724285125732422
+    },
+    {
+      "key": "26_2",
+      "qid": 5,
+      "category": "ocr",
+      "response": "1.00",
+      "gold": "1.00",
+      "correct": true,
+      "latency": 0.8317770957946777
+    },
+    {
+      "key": "26_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.7708845138549805
+    },
+    {
+      "key": "27_0",
+      "qid": 19,
+      "category": "quant",
+      "response": "The image contains two separate graphs, labeled (a) and (b). Each graph is a subplot. Therefore, the total number of subplots is 2.\n\n2",
+      "gold": "2",
+      "correct": false,
+      "latency": 1.8782408237457275
+    },
+    {
+      "key": "27_1",
+      "qid": 17,
+      "category": "quant",
+      "response": "To determine the total number of explicitly labeled ticks across all axes in the subplot at row 1 and column 2, we need to analyze the provided image.\n\nThe image contains two subplots:\n- Subplot (a) is in row 1, column 1.\n- Subplot (b) is in row 1, column 2.\n\nWe are interested in subplot (b), which is the one on the right.\n\n### Step 1: Analyze the x-axis of subplot (b)\nThe x-axis is labeled \"Meta-training time steps\". The tick marks are:\n- 0\n- 100k",
+      "gold": "8",
+      "correct": false,
+      "latency": 6.341801166534424
+    },
+    {
+      "key": "27_2",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Meta-training time steps",
+      "gold": "Meta-training time steps",
+      "correct": true,
+      "latency": 0.4695403575897217
+    },
+    {
+      "key": "27_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "200k",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.4597795009613037
+    },
+    {
+      "key": "29_0",
+      "qid": 1,
+      "category": "title",
+      "response": "easy point_mass:easy",
+      "gold": "easy swimmer:swimmer6",
+      "correct": false,
+      "latency": 1.0526807308197021
+    },
+    {
+      "key": "29_1",
+      "qid": 12,
+      "category": "quant",
+      "response": "The subplot at row 7 and column 2 is the one labeled \"easy point_mass:easy\". The legend is located on the right side of the plot and contains the following labels:\n\n- Single process\n- Distributed: 2 actors\n- Distributed: 8 actors\n- Distributed: 16 actors\n\nThe question asks for the number of discrete labels in the legend that are relevant to the plot. Since the plot is for \"easy point_mass:easy\", the relevant labels are those that describe the different configurations of the experiment. The legend has four distinct entries, each corresponding to a different number of actors.\n\nTherefore, the",
+      "gold": "4",
+      "correct": false,
+      "latency": 6.913351774215698
+    },
+    {
+      "key": "29_2",
+      "qid": 4,
+      "category": "ocr",
+      "response": "The subplot at row 7 and column 2 is labeled \"easy point_mass:easy\". The x-axis is labeled \"Learner walltime\" and the leftmost tick on the x-axis is \"0\".",
+      "gold": "0",
+      "correct": false,
+      "latency": 2.9251585006713867
+    },
+    {
+      "key": "29_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "15h",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.9633347988128662
+    },
+    {
+      "key": "30_0",
+      "qid": 10,
+      "category": "quant",
+      "response": "To determine the number of lines in the plot, we need to count the distinct lines represented by different colored and styled markers in the graph.\n\nLooking at the legend in the plot:\n- RegDG (orange, square markers)\n- CHMAM (purple, circle markers)\n- ReCoSa (pink, circle markers)\n- Transformer (light blue, line markers)\n- NEXUS (cyan, diamond markers)\n- VHRD+BOW (dark red, diamond markers)\n- Seq2Seq+Att (green, cross markers)\n\nEach of these corresponds to a unique line in the graph. Counting them:\n1.",
+      "gold": "7",
+      "correct": false,
+      "latency": 6.61077356338501
+    },
+    {
+      "key": "30_1",
+      "qid": 9,
+      "category": "quant",
+      "response": "The y-axis in the plot is labeled \"PPL (10\u00b2)\" and the tick values are: 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5. The difference between consecutive numerical tick values is 0.5. Therefore, the difference between consecutive numerical tick values on the y-axis is 0.5.\n\n0.5",
+      "gold": "1",
+      "correct": false,
+      "latency": 4.911134719848633
+    },
+    {
+      "key": "30_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "PPL (10\u00b2)",
+      "gold": "PPL (10^2)",
+      "correct": false,
+      "latency": 0.8225386142730713
+    },
+    {
+      "key": "30_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "0.10",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.6524569988250732
+    },
+    {
+      "key": "36_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "The y-axis is labeled with tick marks at values: -1, 0, 0.5, 1, and 1.5. The highest explicitly written tick value on the y-axis is 1.5.",
+      "gold": "1",
+      "correct": false,
+      "latency": 2.8317551612854004
+    },
+    {
+      "key": "36_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "The rightmost labeled tick on the x-axis is 1.",
+      "gold": "1",
+      "correct": false,
+      "latency": 1.1367199420928955
+    },
+    {
+      "key": "36_2",
+      "qid": 8,
+      "category": "quant",
+      "response": "The x-axis in the plot ranges from -1 to 1, with tick marks at -1, 0, and 1. The difference between consecutive numerical tick values is:\n\n- From -1 to 0: difference = 0 - (-1) = 1\n- From 0 to 1: difference = 1 - 0 = 1\n\nThus, the difference between consecutive numerical tick values on the x-axis is 1.\n\n1",
+      "gold": "1",
+      "correct": false,
+      "latency": 5.0903778076171875
+    },
+    {
+      "key": "36_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "1.5",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.6581511497497559
+    },
+    {
+      "key": "39_0",
+      "qid": 9,
+      "category": "quant",
+      "response": "The y-axis in the plot has tick values at -1.00, -0.75, -0.50, -0.25, 0.00, 0.25, 0.50, 0.75, 1.00. The difference between consecutive numerical tick values is:\n\n- From -1.00 to -0.75: difference = 0.25\n- From -0.75 to -0.50: difference = 0.25\n- From -0.50 to -0.",
+      "gold": "0.25",
+      "correct": false,
+      "latency": 6.966868877410889
+    },
+    {
+      "key": "39_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "- The y-axis is labeled with tick marks at various values.\n- The tick marks are: -1.00, -0.75, -0.50, -0.25, 0.00, 0.25, 0.50, 0.75, 1.00.\n- The question asks for the \"spatially lowest labeled tick\" on the y-axis.\n- The lowest labeled tick is the one with the smallest value, which is -1.00.\n- This is the bottommost tick on the y-axis.\n\nThe spatially",
+      "gold": "-1.00",
+      "correct": false,
+      "latency": 6.9805943965911865
+    },
+    {
+      "key": "39_2",
+      "qid": 17,
+      "category": "quant",
+      "response": "To determine the total number of explicitly labeled ticks across all axes in the given plot, we need to examine each axis and count the number of ticks that are explicitly labeled (i.e., not just the grid lines or the tick marks that are part of the axis definition).\n\nLet's analyze the plot:\n\n- The plot has two axes: the horizontal (x-axis) and the vertical (y-axis).\n- The x-axis is labeled from -1.00 to 1.00 with tick marks at intervals of 0.25.\n- The y-axis is labeled from -1.00 to 1.00",
+      "gold": "18",
+      "correct": false,
+      "latency": 6.896893262863159
+    },
+    {
+      "key": "39_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.9526660442352295
+    },
+    {
+      "key": "40_0",
+      "qid": 17,
+      "category": "quant",
+      "response": "To determine the total number of explicitly labeled ticks across all axes in the given plot, we need to count the ticks on both the **x-axis** and the **y-axis**.\n\n---\n\n### Step 1: Analyze the y-axis (Validation Score)\n\nThe y-axis is labeled \"Validation Score\" and has tick marks at the following values:\n- 0.0\n- 0.2\n- 0.4\n- 0.6\n- 0.8\n- 1.0\n\nThis is a total of **6** explicitly labeled ticks.\n\n---\n\n### Step 2: Analyze the x",
+      "gold": "13",
+      "correct": false,
+      "latency": 6.529846906661987
+    },
+    {
+      "key": "40_1",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Validation Score",
+      "gold": "Validation Score",
+      "correct": true,
+      "latency": 0.4990544319152832
+    },
+    {
+      "key": "40_2",
+      "qid": 13,
+      "category": "enum",
+      "response": "macro, micro",
+      "gold": "macro, micro",
+      "correct": true,
+      "latency": 0.5293328762054443
+    },
+    {
+      "key": "40_3",
+      "qid": 2,
+      "category": "ocr",
+      "response": "The label of the x-axis is \"Validation Score\".",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.9207210540771484
+    },
+    {
+      "key": "41_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "The subplot at row 4 and column 3 is labeled (3) Clean accuracy vs. LAGA (e = 1) (CelebA and LSUN; r = 0.32, \u03c1 = 0.36). The y-axis is labeled \"LAGA (e = 1)\" and the tick marks are shown as 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45,",
+      "gold": "0.40",
+      "correct": false,
+      "latency": 6.962526798248291
+    },
+    {
+      "key": "41_1",
+      "qid": 3,
+      "category": "ocr",
+      "response": "LARA (e = 1)",
+      "gold": "LARA (\u03b5 = 1)",
+      "correct": false,
+      "latency": 1.2076289653778076
+    },
+    {
+      "key": "41_2",
+      "qid": 9,
+      "category": "quant",
+      "response": "The subplot at row 4 and column 3 is labeled (4) Clean accuracy vs. LRA (CelebA and LSUN; r = 0.90, \u03c1 = 0.78). The y-axis is labeled \"LRA\" and the tick values are from 0.92 to 0.98 in increments of 0.02. The tick values are 0.92, 0.94, 0.96, 0.98. The difference between consecutive numerical tick values is 0.02.\n\nTherefore, the difference between",
+      "gold": "0.05",
+      "correct": false,
+      "latency": 6.994357585906982
+    },
+    {
+      "key": "41_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "0.25",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 1.0205731391906738
+    },
+    {
+      "key": "42_0",
+      "qid": 6,
+      "category": "ocr",
+      "response": "-0.8",
+      "gold": "-0.8",
+      "correct": true,
+      "latency": 0.81597900390625
+    },
+    {
+      "key": "42_1",
+      "qid": 13,
+      "category": "enum",
+      "response": "PD-HDDPG, proposed, PD-DDPG, plain, LO-CU, RCU",
+      "gold": "PD-HDDPG, proposed, PD-DDPG, plain, LO-CU, RCU",
+      "correct": true,
+      "latency": 1.5763235092163086
+    },
+    {
+      "key": "42_2",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Epoch",
+      "gold": "Epoch",
+      "correct": true,
+      "latency": 0.6843428611755371
+    },
+    {
+      "key": "42_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "The continuous legend in the plot is the one that shows the different lines and their corresponding colors. The legend is not a colorbar but rather a list of the different methods being compared. The tick labels on the continuous legend are the values on the y-axis of the plot, which are the average caching reward.\n\nThe tick labels on the y-axis are: -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2. The maximum value is -0.2 and the minimum value is -0.8.\n\nThe difference between the",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 6.833568334579468
+    },
+    {
+      "key": "48_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "3 by 1",
+      "gold": "1 by 3",
+      "correct": false,
+      "latency": 0.49544739723205566
+    },
+    {
+      "key": "48_1",
+      "qid": 12,
+      "category": "quant",
+      "response": "The subplot at row 1 and column 3 is subplot C. The legend in subplot C is located on the right side of the plot. The legend contains the following labels:\n\n- t, lab\n- nt, lab\n- t, car\n- nt, car\n- stim.onset\n\nThere are 5 discrete labels in the legend.\n\nAnswer: 5",
+      "gold": "5",
+      "correct": false,
+      "latency": 3.9362363815307617
+    },
+    {
+      "key": "48_2",
+      "qid": 19,
+      "category": "quant",
+      "response": "The image contains three distinct plots, labeled A, B, and C. Each of these is a separate subplot. Therefore, the total number of subplots is 3.\n\n3",
+      "gold": "3",
+      "correct": false,
+      "latency": 2.0170555114746094
+    },
+    {
+      "key": "48_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "500",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.4503462314605713
+    },
+    {
+      "key": "49_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "2000",
+      "gold": "2000",
+      "correct": true,
+      "latency": 0.7042331695556641
+    },
+    {
+      "key": "49_1",
+      "qid": 5,
+      "category": "ocr",
+      "response": "10000",
+      "gold": "10000",
+      "correct": true,
+      "latency": 0.7316808700561523
+    },
+    {
+      "key": "49_2",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 1",
+      "gold": "1 by 1",
+      "correct": true,
+      "latency": 0.6846694946289062
+    },
+    {
+      "key": "49_3",
+      "qid": 14,
+      "category": "quant",
+      "response": "The continuous legend in the plot refers to the labels on the y-axis, which are the tick labels on the vertical axis. The y-axis is labeled \"Pearson Correlation\" and the tick labels range from 20 to 45. The difference between the maximum and minimum values of these tick labels is calculated as:\n\n45 - 20 = 25\n\nTherefore, the difference between the maximum and minimum values of the tick labels on the continuous legend is 25.\n\n25",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 5.371969938278198
+    },
+    {
+      "key": "51_0",
+      "qid": 7,
+      "category": "ocr",
+      "response": "0.3",
+      "gold": "0.3",
+      "correct": true,
+      "latency": 0.7994203567504883
+    },
+    {
+      "key": "51_1",
+      "qid": 13,
+      "category": "enum",
+      "response": "Default, Best, FixRes",
+      "gold": "Default, Best, FixRes",
+      "correct": true,
+      "latency": 0.9255199432373047
+    },
+    {
+      "key": "51_2",
+      "qid": 5,
+      "category": "ocr",
+      "response": "The rightmost labeled tick on the x-axis for the subplot at row 1 and column 1 is \"BiT-R101x3\".",
+      "gold": "BiT-R101x3",
+      "correct": false,
+      "latency": 2.1911356449127197
+    },
+    {
+      "key": "51_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "0.3",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.7791171073913574
+    },
+    {
+      "key": "53_0",
+      "qid": 5,
+      "category": "ocr",
+      "response": "The rightmost labeled tick on the x-axis for the subplot at row 1 and column 1 is \"Heter-aware\".",
+      "gold": "Heter-aware",
+      "correct": false,
+      "latency": 1.6560165882110596
+    },
+    {
+      "key": "53_1",
+      "qid": 4,
+      "category": "ocr",
+      "response": "0.0",
+      "gold": "Heter-unaware",
+      "correct": false,
+      "latency": 0.5311498641967773
+    },
+    {
+      "key": "53_2",
+      "qid": 9,
+      "category": "quant",
+      "response": "The y-axis on the left side of the plot (for the \"M-Type\" subplot) has tick values at 0.0, 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, and 17.5. The difference between consecutive numerical tick values is 2.5.\n\nTherefore, the difference between consecutive numerical tick values on the y-axis is 2.5.\n\n2.5",
+      "gold": "2.5",
+      "correct": false,
+      "latency": 5.362068176269531
+    },
+    {
+      "key": "53_3",
+      "qid": 8,
+      "category": "quant",
+      "response": "The x-axis of the subplot at row 1 and column 1 (the \"M-Type\" subplot) has tick values: 0.0, 14.3, 2.4, 15.8. The numerical tick values are 0.0, 14.3, 2.4, 15.8. The difference between consecutive tick values is:\n\n- 14.3 - 0.0 = 14.3\n- 2.4 - 14.3 = -11.9\n- 15.8 - 2",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 6.552051782608032
+    },
+    {
+      "key": "56_0",
+      "qid": 6,
+      "category": "ocr",
+      "response": "The subplot at row 1 and column 2 is labeled 'b'. The y-axis of this subplot is labeled with tick marks from 0 to 5. The tick marks are explicitly written as 0, 1, 2, 3, 4, and 5. The lowest tick value on the y-axis is 0.\n\nTherefore, the spatially lowest labeled tick on the y-axis is 0.",
+      "gold": "0",
+      "correct": false,
+      "latency": 5.014711618423462
+    },
+    {
+      "key": "56_1",
+      "qid": 15,
+      "category": "quant",
+      "response": "1.0",
+      "gold": "1.0",
+      "correct": true,
+      "latency": 0.9612445831298828
+    },
+    {
+      "key": "56_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "q",
+      "gold": "q",
+      "correct": true,
+      "latency": 0.8656611442565918
+    },
+    {
+      "key": "56_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "No",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.865363597869873
+    },
+    {
+      "key": "57_0",
+      "qid": 13,
+      "category": "enum",
+      "response": "Score = 0, Score = 1, Score = 2, Score = 3, Score = 4, Score = 5",
+      "gold": "Score = 0, Score = 1, Score = 2, Score = 3, Score = 4, Score = 5",
+      "correct": true,
+      "latency": 1.7944426536560059
+    },
+    {
+      "key": "57_1",
+      "qid": 1,
+      "category": "title",
+      "response": "MRI",
+      "gold": "MRI",
+      "correct": true,
+      "latency": 0.4405958652496338
+    },
+    {
+      "key": "57_2",
+      "qid": 4,
+      "category": "ocr",
+      "response": "SSM",
+      "gold": "SSM",
+      "correct": true,
+      "latency": 0.49647068977355957
+    },
+    {
+      "key": "57_3",
+      "qid": 11,
+      "category": "bool",
+      "response": "No",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.4329400062561035
+    },
+    {
+      "key": "60_0",
+      "qid": 18,
+      "category": "layout",
+      "response": "1 by 5",
+      "gold": "1 by 1",
+      "correct": false,
+      "latency": 0.46223878860473633
+    },
+    {
+      "key": "60_1",
+      "qid": 16,
+      "category": "trend",
+      "response": "increases then stabilizes",
+      "gold": "increases",
+      "correct": false,
+      "latency": 0.49444580078125
+    },
+    {
+      "key": "60_2",
+      "qid": 4,
+      "category": "ocr",
+      "response": "Make/Model ResNet-1",
+      "gold": "Make/Model ResNet-1",
+      "correct": true,
+      "latency": 0.5959737300872803
+    },
+    {
+      "key": "60_3",
+      "qid": 13,
+      "category": "enum",
+      "response": "Rank5, Rank2, Rank1",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.6399626731872559
+    },
+    {
+      "key": "61_0",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Noise Level",
+      "gold": "Noise Level",
+      "correct": true,
+      "latency": 0.7051894664764404
+    },
+    {
+      "key": "61_1",
+      "qid": 16,
+      "category": "trend",
+      "response": "decreases",
+      "gold": "decreases",
+      "correct": true,
+      "latency": 0.7630519866943359
+    },
+    {
+      "key": "61_2",
+      "qid": 13,
+      "category": "enum",
+      "response": "Class pair: 3 and 8, Class pair: 1 and 9",
+      "gold": "Class pair: 3 and 8, Class pair: 1 and 9",
+      "correct": true,
+      "latency": 1.4195616245269775
+    },
+    {
+      "key": "61_3",
+      "qid": 1,
+      "category": "title",
+      "response": "Not Applicable",
+      "gold": "Not Applicable",
+      "correct": true,
+      "latency": 0.7513439655303955
+    },
+    {
+      "key": "62_0",
+      "qid": 4,
+      "category": "ocr",
+      "response": "10",
+      "gold": "10",
+      "correct": true,
+      "latency": 0.9020133018493652
+    },
+    {
+      "key": "62_1",
+      "qid": 6,
+      "category": "ocr",
+      "response": "The spatially lowest labeled tick on the y-axis in the bottom subplot is 0.",
+      "gold": "0",
+      "correct": false,
+      "latency": 1.688157081604004
+    },
+    {
+      "key": "62_2",
+      "qid": 5,
+      "category": "ocr",
+      "response": "50",
+      "gold": "50",
+      "correct": true,
+      "latency": 0.8949966430664062
+    },
+    {
+      "key": "62_3",
+      "qid": 15,
+      "category": "quant",
+      "response": "3",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.818169355392456
+    },
+    {
+      "key": "65_0",
+      "qid": 2,
+      "category": "ocr",
+      "response": "Source Port",
+      "gold": "Source Port",
+      "correct": true,
+      "latency": 0.7329447269439697
+    },
+    {
+      "key": "65_1",
+      "qid": 17,
+      "category": "quant",
+      "response": "To determine the total number of explicitly labeled ticks across all axes in the given plot, we need to count the ticks on both the x-axis and the y-axis.\n\n---\n\n### Step 1: Analyze the y-axis (Volume in Mbps (logscale))\n\nThe y-axis is labeled \"Volume in Mbps (logscale)\" and has a logarithmic scale. The tick marks are labeled at powers of 10, starting from $10^0 = 1$ to $10^4 = 10,000$.\n\nThe explicitly labeled ticks on the y-axis are:\n- $10^0 =",
+      "gold": "11",
+      "correct": false,
+      "latency": 6.7584755420684814
+    },
+    {
+      "key": "65_2",
+      "qid": 3,
+      "category": "ocr",
+      "response": "Volume in Mbps (logscale)",
+      "gold": "Volume in Mbps (logscale)",
+      "correct": true,
+      "latency": 0.9705338478088379
+    },
+    {
+      "key": "65_3",
+      "qid": 12,
+      "category": "quant",
+      "response": "The plot has a legend that is located outside the plot area. The legend contains the following labels:\n\n- \"Source Port\"\n- \"Volume in Mbps (logscale)\"\n\nThese are the only two labels relevant to the plot. Therefore, there are 2 discrete labels in the legend.\n\nAnswer: 2",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 3.568807363510132
+    },
+    {
+      "key": "68_0",
+      "qid": 13,
+      "category": "enum",
+      "response": "Source outlier, Source shared, Target",
+      "gold": "Source outlier, Source shared, Target",
+      "correct": true,
+      "latency": 0.5582892894744873
+    },
+    {
+      "key": "68_1",
+      "qid": 18,
+      "category": "layout",
+      "response": "The image contains four subplots arranged in a 2 by 2 grid. \n\n- Subplot (a) is in the top-left.\n- Subplot (b) is in the top-right.\n- Subplot (c) is in the bottom-left.\n- Subplot (d) is in the bottom-right.\n\nThus, the layout is 2 by 2.\n\n2 by 2",
+      "gold": "1 by 4",
+      "correct": false,
+      "latency": 4.150735139846802
+    },
+    {
+      "key": "68_2",
+      "qid": 12,
+      "category": "quant",
+      "response": "The legend is located at the bottom of the plot, and it contains three distinct labels: \"Source outlier\", \"Source shared\", and \"Target\". These are the only labels relevant to the plot.\n\nTherefore, the number of discrete labels in the legend is 3.\n\n3",
+      "gold": "3",
+      "correct": false,
+      "latency": 2.8371810913085938
+    },
+    {
+      "key": "68_3",
+      "qid": 1,
+      "category": "title",
+      "response": "(d)",
+      "gold": "Not Applicable",
+      "correct": false,
+      "latency": 0.28926849365234375
+    }
+  ],
+  "wall_time": 338.69868421554565,
+  "env": {
+    "python": "3.13.15",
+    "hostname": "dccf60741ac9",
+    "torch": "2.11.0+cu130",
+    "transformers": "4.57.6",
+    "gpu": "Tesla T4"
+  },
+  "timestamp": "2026-10-14T08:38:26+00:00",
+  "error": null
+}

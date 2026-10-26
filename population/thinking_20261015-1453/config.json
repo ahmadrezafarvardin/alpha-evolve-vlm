@@ -1,0 +1,86 @@
+{
+ "model": "Thinking",
+ "seed": 0,
+ "generations": 6,
+ "children_per_generation": 3,
+ "num_inspirations": 2,
+ "near_duplicate_similarity": 0.8,
+ "llm_ensemble": [
+  {
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "weight": 0.85,
+   "price_in": 0.25,
+   "price_out": 1.5,
+   "max_tokens": 4096
+  },
+  {
+   "model": "Gemini-3-Flash-Preview",
+   "weight": 0.15,
+   "price_in": 0.5,
+   "price_out": 3.0,
+   "max_tokens": 8192,
+   "reasoning_effort": "low"
+  }
+ ],
+ "llm_temperatures": [
+  0.4,
+  0.7,
+  1.0
+ ],
+ "cascade": {
+  "stages": [
+   {
+    "name": "smoke",
+    "n": 4,
+    "timeout": 900
+   },
+   {
+    "name": "subset",
+    "n": 32,
+    "timeout": 3600
+   },
+   {
+    "name": "full",
+    "n": 128,
+    "timeout": 10800
+   }
+  ],
+  "promotion": {
+   "margin": 0.0,
+   "speed_margin": 0.06,
+   "min_speedup": 0.1
+  }
+ },
+ "database": {
+  "num_islands": 2,
+  "migration_interval": 2,
+  "exploit_prob": 0.7,
+  "exploit_top_k": 2,
+  "speed_accuracy_tolerance": 0.02,
+  "overall_time_weight": 0.05,
+  "reference_time_per_query": 26.0,
+  "features": [
+   {
+    "name": "time",
+    "bins": [
+     8,
+     15,
+     25,
+     40
+    ]
+   },
+   {
+    "name": "acc_quant",
+    "bins": [
+     0.3,
+     0.4,
+     0.5
+    ]
+   }
+  ]
+ },
+ "run_id": "thinking_20261015-1453",
+ "git_commit": "11611f726a98dcef45d0ea1af1b47785504431d8",
+ "seed_program": "manual_thinking.py",
+ "seed_sha256": "7fada69068bcbd2c19225beecb7fe680c72bc10c88a62ff7de5cffd811f767fd"
+}

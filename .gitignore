@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Environments
+.conda/
+.venv/
+venv/
+env/
+
+# Secrets (Gemini / GitHub keys)
+.env
+.env.*
+*.key
+*credentials*.json
+*service_account*.json
+
+# Data and large files (images are re-downloaded by scripts/download_images.py)
+charxiv/images/*
+!charxiv/images/README.md
+*.zip
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+
+# Outputs
+results/
+logs/
+*.json.tmp
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+reproduce_out/
+
+# LaTeX build files and figure previews
+report/*.aux
+report/*.log
+report/*.out
+report/figures/*.png
+presentation/*.aux
+presentation/*.log
+presentation/*.out
+presentation/*.nav
+presentation/*.snm
+presentation/*.toc
+presentation/*.vrb
+presentation/build.out

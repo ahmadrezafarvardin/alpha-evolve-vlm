@@ -1,0 +1,7474 @@
+{
+ "schema_version": 1,
+ "run_id": "instruct_20261015-1207",
+ "generation": 12,
+ "programs": {
+  "seed": {
+   "parent_id": null,
+   "generation": 0,
+   "code_sha256": "e5908127711606f03a725f51a58bfae6de9b543eca666c4648a49c621c3a752c",
+   "status": "ok",
+   "stage_reached": "full",
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 13.530598402023315,
+     "avg_time_per_query": 1.6913248002529144,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.53125,
+     "total_time": 33.679248094558716,
+     "avg_time_per_query": 0.5262382514774799,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 3,
+       "total": 5,
+       "accuracy": 0.6
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 15,
+       "total": 25,
+       "accuracy": 0.6
+      },
+      "quant": {
+       "correct": 8,
+       "total": 23,
+       "accuracy": 0.34782608695652173
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.5475,
+     "total_time": 151.5610327720642,
+     "avg_time_per_query": 0.3789025819301605,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 18,
+       "total": 29,
+       "accuracy": 0.6206896551724138
+      },
+      "ocr": {
+       "correct": 93,
+       "total": 142,
+       "accuracy": 0.6549295774647887
+      },
+      "quant": {
+       "correct": 60,
+       "total": 160,
+       "accuracy": 0.375
+      },
+      "title": {
+       "correct": 21,
+       "total": 25,
+       "accuracy": 0.84
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "island": 0,
+   "islands": [
+    0,
+    1,
+    2
+   ],
+   "features": {
+    "time": 0.3789025819301605,
+    "acc_quant": 0.375
+   }
+  },
+  "g001_c00": {
+   "parent_id": "seed",
+   "inspirations": [],
+   "generation": 1,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 12.887184143066406,
+     "avg_time_per_query": 1.6108980178833008,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.53125,
+     "total_time": 31.077632665634155,
+     "avg_time_per_query": 0.4855880104005337,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 3,
+       "total": 5,
+       "accuracy": 0.6
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 15,
+       "total": 25,
+       "accuracy": 0.6
+      },
+      "quant": {
+       "correct": 8,
+       "total": 23,
+       "accuracy": 0.34782608695652173
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.5475,
+     "total_time": 146.3881390094757,
+     "avg_time_per_query": 0.3659703475236893,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 18,
+       "total": 29,
+       "accuracy": 0.6206896551724138
+      },
+      "ocr": {
+       "correct": 93,
+       "total": 142,
+       "accuracy": 0.6549295774647887
+      },
+      "quant": {
+       "correct": 60,
+       "total": 160,
+       "accuracy": 0.375
+      },
+      "title": {
+       "correct": 21,
+       "total": 25,
+       "accuracy": 0.84
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "b25ba97398a2e5a1eb0103c10461edc4044567bddb86ef16fefb7af77b1e1749",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 0,
+   "islands": [
+    0
+   ],
+   "features": {
+    "time": 0.3659703475236893,
+    "acc_quant": 0.375
+   }
+  },
+  "g001_c01": {
+   "parent_id": "seed",
+   "inspirations": [],
+   "generation": 1,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.25,
+     "total_time": 12.429845571517944,
+     "avg_time_per_query": 1.553730696439743,
+     "per_category": {
+      "bool": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.53125,
+     "total_time": 32.7978675365448,
+     "avg_time_per_query": 0.5124666802585125,
+     "per_category": {
+      "bool": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "enum": {
+       "correct": 3,
+       "total": 5,
+       "accuracy": 0.6
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 15,
+       "total": 25,
+       "accuracy": 0.6
+      },
+      "quant": {
+       "correct": 9,
+       "total": 23,
+       "accuracy": 0.391304347826087
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.5575,
+     "total_time": 146.1549196243286,
+     "avg_time_per_query": 0.3653872990608215,
+     "per_category": {
+      "bool": {
+       "correct": 10,
+       "total": 21,
+       "accuracy": 0.47619047619047616
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 18,
+       "total": 29,
+       "accuracy": 0.6206896551724138
+      },
+      "ocr": {
+       "correct": 93,
+       "total": 142,
+       "accuracy": 0.6549295774647887
+      },
+      "quant": {
+       "correct": 65,
+       "total": 160,
+       "accuracy": 0.40625
+      },
+      "title": {
+       "correct": 21,
+       "total": 25,
+       "accuracy": 0.84
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "36aa930e77f6edee26afd5218aade0580b599f4b72ffa3e1312c2ff9163ea592",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1
+   ],
+   "features": {
+    "time": 0.3653872990608215,
+    "acc_quant": 0.40625
+   }
+  },
+  "g001_c02": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g001_c01"
+   ],
+   "generation": 1,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 18.66752600669861,
+     "avg_time_per_query": 2.333440750837326,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.625,
+     "total_time": 32.87560272216797,
+     "avg_time_per_query": 0.5136812925338745,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 3,
+       "total": 5,
+       "accuracy": 0.6
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 11,
+       "total": 23,
+       "accuracy": 0.4782608695652174
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.5725,
+     "total_time": 142.22426009178162,
+     "avg_time_per_query": 0.35556065022945404,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 15,
+       "total": 20,
+       "accuracy": 0.75
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 95,
+       "total": 142,
+       "accuracy": 0.6690140845070423
+      },
+      "quant": {
+       "correct": 66,
+       "total": 160,
+       "accuracy": 0.4125
+      },
+      "title": {
+       "correct": 21,
+       "total": 25,
+       "accuracy": 0.84
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3-Flash-Preview",
+   "code_sha256": "d4a046cf4f9b355c0561c33d5a0c10c074f70811282f5d673426f62563ccace5",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2,
+    0
+   ],
+   "features": {
+    "time": 0.35556065022945404,
+    "acc_quant": 0.4125
+   }
+  },
+  "g001_c03": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g001_c00",
+    "g001_c02"
+   ],
+   "generation": 1,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "e8c2b17f91996757ff9d53a41661d990200dfd962433f59b01e994848f383399",
+   "change": "diff",
+   "status": "near_duplicate",
+   "stage_reached": "static",
+   "reason": "same edit as sibling g001_c02 (similarity 0.87)",
+   "island": 0,
+   "islands": []
+  },
+  "g001_c04": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g001_c01",
+    "g001_c02"
+   ],
+   "generation": 1,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "36aa930e77f6edee26afd5218aade0580b599f4b72ffa3e1312c2ff9163ea592",
+   "change": "diff",
+   "status": "duplicate",
+   "stage_reached": "static",
+   "island": 1,
+   "islands": []
+  },
+  "g001_c05": {
+   "parent_id": "g001_c02",
+   "inspirations": [
+    "seed"
+   ],
+   "generation": 1,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "105c4cba9a800cfc9c4fc7f4558be9ec18c6afe529accc0def43cf0efa312161",
+   "change": "rewrite",
+   "status": "rejected",
+   "stage_reached": "static",
+   "reason": [
+    "no top-level function vlm_inference"
+   ],
+   "island": 2,
+   "islands": []
+  },
+  "g002_c00": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g001_c00",
+    "g001_c02"
+   ],
+   "generation": 2,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "e8c2b17f91996757ff9d53a41661d990200dfd962433f59b01e994848f383399",
+   "change": "diff",
+   "status": "duplicate",
+   "stage_reached": "static",
+   "island": 0,
+   "islands": []
+  },
+  "g002_c01": {
+   "parent_id": "g001_c01",
+   "inspirations": [
+    "seed",
+    "g001_c02"
+   ],
+   "generation": 2,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 13.050044059753418,
+     "avg_time_per_query": 1.6312555074691772,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.625,
+     "total_time": 33.128854513168335,
+     "avg_time_per_query": 0.5176383517682552,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 3,
+       "total": 5,
+       "accuracy": 0.6
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 11,
+       "total": 23,
+       "accuracy": 0.4782608695652174
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.5725,
+     "total_time": 150.364887714386,
+     "avg_time_per_query": 0.37591221928596497,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 15,
+       "total": 20,
+       "accuracy": 0.75
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 95,
+       "total": 142,
+       "accuracy": 0.6690140845070423
+      },
+      "quant": {
+       "correct": 66,
+       "total": 160,
+       "accuracy": 0.4125
+      },
+      "title": {
+       "correct": 21,
+       "total": 25,
+       "accuracy": 0.84
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "6e7cae438cfa75b90a203b6e0c980070f9583ae74e2ceb3f14ce28decb08825f",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1
+   ],
+   "features": {
+    "time": 0.37591221928596497,
+    "acc_quant": 0.4125
+   }
+  },
+  "g002_c02": {
+   "parent_id": "g001_c02",
+   "inspirations": [
+    "seed"
+   ],
+   "generation": 2,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.25,
+     "total_time": 12.540080308914185,
+     "avg_time_per_query": 1.567510038614273,
+     "per_category": {
+      "bool": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.5,
+     "total_time": 33.00199913978577,
+     "avg_time_per_query": 0.5156562365591526,
+     "per_category": {
+      "bool": {
+       "correct": 2,
+       "total": 4,
+       "accuracy": 0.5
+      },
+      "enum": {
+       "correct": 2,
+       "total": 5,
+       "accuracy": 0.4
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 18,
+       "total": 25,
+       "accuracy": 0.72
+      },
+      "quant": {
+       "correct": 6,
+       "total": 23,
+       "accuracy": 0.2608695652173913
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "f2aedf45ac9af9878561f14ac0506d962f2b96458214878463fa21f3c268d405",
+   "change": "diff",
+   "status": "stopped",
+   "stage_reached": "subset",
+   "reason": "subset: subset accuracy 0.500 vs parent 0.625, time 33s vs 33s",
+   "island": 2,
+   "islands": []
+  },
+  "g002_c03": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g001_c00",
+    "g001_c02"
+   ],
+   "generation": 2,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "e8c2b17f91996757ff9d53a41661d990200dfd962433f59b01e994848f383399",
+   "change": "diff",
+   "status": "duplicate",
+   "stage_reached": "static",
+   "island": 0,
+   "islands": []
+  },
+  "g002_c04": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g001_c01",
+    "g002_c01",
+    "g001_c02"
+   ],
+   "generation": 2,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 13.492220878601074,
+     "avg_time_per_query": 1.6865276098251343,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.609375,
+     "total_time": 30.935311317443848,
+     "avg_time_per_query": 0.4833642393350601,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 10,
+       "total": 23,
+       "accuracy": 0.43478260869565216
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.575,
+     "total_time": 146.7130880355835,
+     "avg_time_per_query": 0.36678272008895874,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 95,
+       "total": 142,
+       "accuracy": 0.6690140845070423
+      },
+      "quant": {
+       "correct": 69,
+       "total": 160,
+       "accuracy": 0.43125
+      },
+      "title": {
+       "correct": 20,
+       "total": 25,
+       "accuracy": 0.8
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "f149afb82b7532e5416eaf61419b4b1a6bce1f291ce41d25c1f989453cb0b8e9",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1,
+    2,
+    0
+   ],
+   "features": {
+    "time": 0.36678272008895874,
+    "acc_quant": 0.43125
+   }
+  },
+  "g002_c05": {
+   "parent_id": "g001_c02",
+   "inspirations": [
+    "seed",
+    "g002_c04"
+   ],
+   "generation": 2,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "1de96ad47a91da5d43a733f7cd4ec4db5145dc65449565739f24cc97af3a7a9f",
+   "change": "diff",
+   "status": "error",
+   "stage_reached": null,
+   "reason": "smoke: error",
+   "island": 2,
+   "islands": []
+  },
+  "g003_c00": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g001_c00",
+    "g002_c04"
+   ],
+   "generation": 3,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "f149afb82b7532e5416eaf61419b4b1a6bce1f291ce41d25c1f989453cb0b8e9",
+   "change": "diff",
+   "status": "duplicate",
+   "stage_reached": "static",
+   "island": 0,
+   "islands": []
+  },
+  "g003_c01": {
+   "parent_id": "g002_c01",
+   "inspirations": [
+    "g002_c04",
+    "g001_c01"
+   ],
+   "generation": 3,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "f149afb82b7532e5416eaf61419b4b1a6bce1f291ce41d25c1f989453cb0b8e9",
+   "change": "diff",
+   "status": "duplicate",
+   "stage_reached": "static",
+   "island": 1,
+   "islands": []
+  },
+  "g003_c02": {
+   "parent_id": "g001_c02",
+   "inspirations": [
+    "seed",
+    "g002_c04"
+   ],
+   "generation": 3,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "status": "invalid_diff",
+   "stage_reached": null,
+   "reason": "response contains no SEARCH/REPLACE block and no full program with EVOLVE markers",
+   "island": 2,
+   "islands": []
+  },
+  "g003_c03": {
+   "parent_id": "g001_c00",
+   "inspirations": [
+    "seed",
+    "g002_c04"
+   ],
+   "generation": 3,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 12.441922664642334,
+     "avg_time_per_query": 1.5552403330802917,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.609375,
+     "total_time": 31.827037572860718,
+     "avg_time_per_query": 0.4972974620759487,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 10,
+       "total": 23,
+       "accuracy": 0.43478260869565216
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.575,
+     "total_time": 156.13171219825745,
+     "avg_time_per_query": 0.39032928049564364,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 95,
+       "total": 142,
+       "accuracy": 0.6690140845070423
+      },
+      "quant": {
+       "correct": 69,
+       "total": 160,
+       "accuracy": 0.43125
+      },
+      "title": {
+       "correct": 20,
+       "total": 25,
+       "accuracy": 0.8
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "aa96166143f48b688ec6221083879ff6ac8d008ff9c581f2cd37934d9836a225",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 0,
+   "islands": [
+    0,
+    1
+   ],
+   "features": {
+    "time": 0.39032928049564364,
+    "acc_quant": 0.43125
+   }
+  },
+  "g003_c04": {
+   "parent_id": "g002_c01",
+   "inspirations": [
+    "g001_c01",
+    "seed",
+    "g002_c04"
+   ],
+   "generation": 3,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "status": "invalid_diff",
+   "stage_reached": null,
+   "reason": "diff 1: SEARCH text found 0 times in the EVOLVE block (must be exactly once)",
+   "island": 1,
+   "islands": []
+  },
+  "g003_c05": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g001_c02",
+    "g002_c04"
+   ],
+   "generation": 3,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "ba3bf1f678cfe027babfdb08453ee58b14353480f3eefe2deec34407dfdda846",
+   "change": "diff",
+   "status": "near_duplicate",
+   "stage_reached": "static",
+   "reason": "same edit as sibling g001_c02 (similarity 0.81)",
+   "island": 2,
+   "islands": []
+  },
+  "g004_c00": {
+   "parent_id": "g003_c03",
+   "inspirations": [
+    "g001_c02",
+    "seed",
+    "g002_c04"
+   ],
+   "generation": 4,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 14.470626592636108,
+     "avg_time_per_query": 1.8088283240795135,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.609375,
+     "total_time": 32.59409761428833,
+     "avg_time_per_query": 0.5092827752232552,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 10,
+       "total": 23,
+       "accuracy": 0.43478260869565216
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.575,
+     "total_time": 151.56182384490967,
+     "avg_time_per_query": 0.37890455961227415,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 96,
+       "total": 142,
+       "accuracy": 0.676056338028169
+      },
+      "quant": {
+       "correct": 69,
+       "total": 160,
+       "accuracy": 0.43125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "f31f360c65c7eaba105ca54e4eff57f1e49e9a45a0ac2984731611fd373c37ba",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 0,
+   "islands": [
+    0
+   ],
+   "features": {
+    "time": 0.37890455961227415,
+    "acc_quant": 0.43125
+   }
+  },
+  "g004_c01": {
+   "parent_id": "g003_c03",
+   "inspirations": [
+    "g002_c01",
+    "g002_c04"
+   ],
+   "generation": 4,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "status": "invalid_diff",
+   "stage_reached": null,
+   "reason": "diff 1: SEARCH text found 0 times in the EVOLVE block (must be exactly once)",
+   "island": 1,
+   "islands": []
+  },
+  "g004_c02": {
+   "parent_id": "g001_c02",
+   "inspirations": [
+    "g002_c04",
+    "seed"
+   ],
+   "generation": 4,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 12.859022617340088,
+     "avg_time_per_query": 1.607377827167511,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.609375,
+     "total_time": 30.68571448326111,
+     "avg_time_per_query": 0.4794642888009548,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 10,
+       "total": 23,
+       "accuracy": 0.43478260869565216
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.575,
+     "total_time": 145.38163495063782,
+     "avg_time_per_query": 0.36345408737659457,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 95,
+       "total": 142,
+       "accuracy": 0.6690140845070423
+      },
+      "quant": {
+       "correct": 69,
+       "total": 160,
+       "accuracy": 0.43125
+      },
+      "title": {
+       "correct": 20,
+       "total": 25,
+       "accuracy": 0.8
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "576b29644222d7755cfef20278808815d7b03eb5b5d746512c5f8cee187170a4",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2
+   ],
+   "features": {
+    "time": 0.36345408737659457,
+    "acc_quant": 0.43125
+   }
+  },
+  "g004_c03": {
+   "parent_id": "g003_c03",
+   "inspirations": [
+    "g004_c00",
+    "g001_c02",
+    "g002_c04"
+   ],
+   "generation": 4,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 12.88878321647644,
+     "avg_time_per_query": 1.611097902059555,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.578125,
+     "total_time": 31.68888807296753,
+     "avg_time_per_query": 0.49513887614011765,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 2,
+       "total": 4,
+       "accuracy": 0.5
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 9,
+       "total": 23,
+       "accuracy": 0.391304347826087
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "01dfe6a567a26f98b3ef36aa438768efc28dc7908ee1e69b69b4a75e6532ce6e",
+   "change": "diff",
+   "status": "stopped",
+   "stage_reached": "subset",
+   "reason": "subset: subset accuracy 0.578 vs parent 0.609, time 32s vs 32s",
+   "island": 0,
+   "islands": []
+  },
+  "g004_c04": {
+   "parent_id": "g002_c01",
+   "inspirations": [
+    "seed",
+    "g002_c04"
+   ],
+   "generation": 4,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 11.601635694503784,
+     "avg_time_per_query": 1.450204461812973,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.625,
+     "total_time": 31.082547903060913,
+     "avg_time_per_query": 0.48566481098532677,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 3,
+       "total": 5,
+       "accuracy": 0.6
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 11,
+       "total": 23,
+       "accuracy": 0.4782608695652174
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.5725,
+     "total_time": 141.71378827095032,
+     "avg_time_per_query": 0.3542844706773758,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 15,
+       "total": 20,
+       "accuracy": 0.75
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 95,
+       "total": 142,
+       "accuracy": 0.6690140845070423
+      },
+      "quant": {
+       "correct": 66,
+       "total": 160,
+       "accuracy": 0.4125
+      },
+      "title": {
+       "correct": 21,
+       "total": 25,
+       "accuracy": 0.84
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "79eb28591e2543d18fd71312c1abb3943c5cbd655854e622c32d9816ab41c6ab",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1
+   ],
+   "features": {
+    "time": 0.3542844706773758,
+    "acc_quant": 0.4125
+   }
+  },
+  "g004_c05": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g001_c02",
+    "g004_c02",
+    "g002_c04"
+   ],
+   "generation": 4,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "595d3090c0408f74879fbcaa244755c183319e00951e07e594fc66029f2466e8",
+   "change": "diff",
+   "status": "near_duplicate",
+   "stage_reached": "static",
+   "reason": "same edit as sibling g002_c04 (similarity 0.89)",
+   "island": 2,
+   "islands": []
+  },
+  "g005_c00": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g004_c00",
+    "g001_c02",
+    "g002_c04"
+   ],
+   "generation": 5,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "f4e4ae35f41f67c1435d5600adef2a4fdacc4c035524fbe8e95ea1c24cbe8103",
+   "change": "diff",
+   "status": "near_duplicate",
+   "stage_reached": "static",
+   "reason": "same edit as sibling g002_c04 (similarity 1.00)",
+   "island": 0,
+   "islands": []
+  },
+  "g005_c01": {
+   "parent_id": "g003_c03",
+   "inspirations": [
+    "seed",
+    "g002_c04"
+   ],
+   "generation": 5,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "status": "invalid_diff",
+   "stage_reached": null,
+   "reason": "diff 1: SEARCH text found 0 times in the EVOLVE block (must be exactly once)",
+   "island": 1,
+   "islands": []
+  },
+  "g005_c02": {
+   "parent_id": "g001_c02",
+   "inspirations": [
+    "g004_c02",
+    "g002_c04"
+   ],
+   "generation": 5,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "f149afb82b7532e5416eaf61419b4b1a6bce1f291ce41d25c1f989453cb0b8e9",
+   "change": "diff",
+   "status": "duplicate",
+   "stage_reached": "static",
+   "island": 2,
+   "islands": []
+  },
+  "g005_c03": {
+   "parent_id": "g001_c02",
+   "inspirations": [
+    "g003_c03",
+    "seed",
+    "g002_c04"
+   ],
+   "generation": 5,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "status": "invalid_diff",
+   "stage_reached": null,
+   "reason": "diff 1: SEARCH text found 0 times in the EVOLVE block (must be exactly once)",
+   "island": 0,
+   "islands": []
+  },
+  "g005_c04": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g003_c03",
+    "g002_c04"
+   ],
+   "generation": 5,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 12.206632375717163,
+     "avg_time_per_query": 1.5258290469646454,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.53125,
+     "total_time": 31.55927872657776,
+     "avg_time_per_query": 0.4931137301027775,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 3,
+       "total": 5,
+       "accuracy": 0.6
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 15,
+       "total": 25,
+       "accuracy": 0.6
+      },
+      "quant": {
+       "correct": 8,
+       "total": 23,
+       "accuracy": 0.34782608695652173
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.5475,
+     "total_time": 144.04459166526794,
+     "avg_time_per_query": 0.3601114791631699,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 18,
+       "total": 29,
+       "accuracy": 0.6206896551724138
+      },
+      "ocr": {
+       "correct": 93,
+       "total": 142,
+       "accuracy": 0.6549295774647887
+      },
+      "quant": {
+       "correct": 60,
+       "total": 160,
+       "accuracy": 0.375
+      },
+      "title": {
+       "correct": 21,
+       "total": 25,
+       "accuracy": 0.84
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "f4d7f82f4924b5ee137ff0326397d625d3b4f9513fd92bc8d8874340c73f40fc",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1
+   ],
+   "features": {
+    "time": 0.3601114791631699,
+    "acc_quant": 0.375
+   }
+  },
+  "g005_c05": {
+   "parent_id": "g002_c04",
+   "inspirations": [
+    "seed",
+    "g004_c02"
+   ],
+   "generation": 5,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 11.84597635269165,
+     "avg_time_per_query": 1.4807470440864563,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.5625,
+     "total_time": 31.032256841659546,
+     "avg_time_per_query": 0.4848790131509304,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 2,
+       "total": 4,
+       "accuracy": 0.5
+      },
+      "ocr": {
+       "correct": 15,
+       "total": 25,
+       "accuracy": 0.6
+      },
+      "quant": {
+       "correct": 10,
+       "total": 23,
+       "accuracy": 0.43478260869565216
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "eec226154a240c32212695724741ab0b013d95fea8fb27067358225f0f4a3901",
+   "change": "rewrite",
+   "status": "stopped",
+   "stage_reached": "subset",
+   "reason": "subset: subset accuracy 0.562 vs parent 0.609, time 31s vs 31s",
+   "island": 2,
+   "islands": []
+  },
+  "g006_c00": {
+   "parent_id": "g003_c03",
+   "inspirations": [
+    "g004_c00",
+    "seed",
+    "g002_c04"
+   ],
+   "generation": 6,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.0,
+     "total_time": 8.63991379737854,
+     "avg_time_per_query": 1.0799892246723175,
+     "per_category": {
+      "bool": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "ocr": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 8
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "4a99b8715658a258edafa28d346ae6e86ec159a8dd97dee33c65d12eeb454f4e",
+   "change": "diff",
+   "status": "rejected",
+   "stage_reached": "smoke",
+   "reason": "smoke: 8 queries raised",
+   "island": 0,
+   "islands": []
+  },
+  "g006_c01": {
+   "parent_id": "g002_c04",
+   "inspirations": [
+    "seed",
+    "g003_c03"
+   ],
+   "generation": 6,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 13.231321334838867,
+     "avg_time_per_query": 1.6539151668548584,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.609375,
+     "total_time": 31.93947124481201,
+     "avg_time_per_query": 0.4990542382001877,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 10,
+       "total": 23,
+       "accuracy": 0.43478260869565216
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.575,
+     "total_time": 144.14430403709412,
+     "avg_time_per_query": 0.36036076009273527,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 95,
+       "total": 142,
+       "accuracy": 0.6690140845070423
+      },
+      "quant": {
+       "correct": 69,
+       "total": 160,
+       "accuracy": 0.43125
+      },
+      "title": {
+       "correct": 20,
+       "total": 25,
+       "accuracy": 0.8
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "fdb94f28d0aec075ffdab9238d3a3c663ccdb5306987d7619528d34b646fbe8e",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1
+   ],
+   "features": {
+    "time": 0.36036076009273527,
+    "acc_quant": 0.43125
+   }
+  },
+  "g006_c02": {
+   "parent_id": "g002_c04",
+   "inspirations": [
+    "seed",
+    "g001_c02"
+   ],
+   "generation": 6,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 13.443766832351685,
+     "avg_time_per_query": 1.6804708540439606,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.609375,
+     "total_time": 33.12332010269165,
+     "avg_time_per_query": 0.517551876604557,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 10,
+       "total": 23,
+       "accuracy": 0.43478260869565216
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.575,
+     "total_time": 154.9518482685089,
+     "avg_time_per_query": 0.3873796206712723,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 95,
+       "total": 142,
+       "accuracy": 0.6690140845070423
+      },
+      "quant": {
+       "correct": 69,
+       "total": 160,
+       "accuracy": 0.43125
+      },
+      "title": {
+       "correct": 20,
+       "total": 25,
+       "accuracy": 0.8
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3-Flash-Preview",
+   "code_sha256": "1e1764b5d4e283f228e5ee5f5e7265690f034937d117438fa495d2de182d4082",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2
+   ],
+   "features": {
+    "time": 0.3873796206712723,
+    "acc_quant": 0.43125
+   }
+  },
+  "g006_c03": {
+   "parent_id": "g004_c00",
+   "inspirations": [
+    "g001_c02",
+    "g003_c03",
+    "g002_c04"
+   ],
+   "generation": 6,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 17.294909477233887,
+     "avg_time_per_query": 2.161863684654236,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.6875,
+     "total_time": 28.85018229484558,
+     "avg_time_per_query": 0.4507840983569622,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 14,
+       "total": 23,
+       "accuracy": 0.6086956521739131
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.6025,
+     "total_time": 148.20880365371704,
+     "avg_time_per_query": 0.3705220091342926,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 15,
+       "total": 20,
+       "accuracy": 0.75
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 93,
+       "total": 142,
+       "accuracy": 0.6549295774647887
+      },
+      "quant": {
+       "correct": 82,
+       "total": 160,
+       "accuracy": 0.5125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "ae2c2058bbe8b72146c024433ac2f39079659202725ac5e53471e1a5569a31a2",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 0,
+   "islands": [
+    0,
+    1
+   ],
+   "features": {
+    "time": 0.3705220091342926,
+    "acc_quant": 0.5125
+   }
+  },
+  "g006_c04": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g006_c01",
+    "g002_c04",
+    "g006_c03"
+   ],
+   "generation": 6,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.506595373153687,
+     "avg_time_per_query": 1.5633244216442108,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.6875,
+     "total_time": 30.324843168258667,
+     "avg_time_per_query": 0.47382567450404167,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 14,
+       "total": 23,
+       "accuracy": 0.6086956521739131
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.605,
+     "total_time": 147.62086272239685,
+     "avg_time_per_query": 0.3690521568059921,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 13,
+       "total": 20,
+       "accuracy": 0.65
+      },
+      "layout": {
+       "correct": 18,
+       "total": 29,
+       "accuracy": 0.6206896551724138
+      },
+      "ocr": {
+       "correct": 92,
+       "total": 142,
+       "accuracy": 0.647887323943662
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 20,
+       "total": 25,
+       "accuracy": 0.8
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "177349b8e7c98fbe37b1758ff8e4cde07b5bd897c09f4f3a0c5a4d40115385ba",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1,
+    2
+   ],
+   "features": {
+    "time": 0.3690521568059921,
+    "acc_quant": 0.53125
+   }
+  },
+  "g006_c05": {
+   "parent_id": "g002_c04",
+   "inspirations": [
+    "g004_c02",
+    "g006_c02",
+    "g006_c04"
+   ],
+   "generation": 6,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "status": "invalid_diff",
+   "stage_reached": null,
+   "reason": "diff 1: SEARCH text found 0 times in the EVOLVE block (must be exactly once)",
+   "island": 2,
+   "islands": []
+  },
+  "g007_c00": {
+   "parent_id": "g006_c03",
+   "inspirations": [
+    "seed",
+    "g004_c00",
+    "g006_c04"
+   ],
+   "generation": 7,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 13.32760214805603,
+     "avg_time_per_query": 1.6659502685070038,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.6875,
+     "total_time": 29.619259357452393,
+     "avg_time_per_query": 0.46280092746019363,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 14,
+       "total": 23,
+       "accuracy": 0.6086956521739131
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.6025,
+     "total_time": 147.9744679927826,
+     "avg_time_per_query": 0.3699361699819565,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 15,
+       "total": 20,
+       "accuracy": 0.75
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 93,
+       "total": 142,
+       "accuracy": 0.6549295774647887
+      },
+      "quant": {
+       "correct": 82,
+       "total": 160,
+       "accuracy": 0.5125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "529cd3561aef8d89a19d2e854b64b8b9f207e67f7f4204e599e0be7d86d65649",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 0,
+   "islands": [
+    0
+   ],
+   "features": {
+    "time": 0.3699361699819565,
+    "acc_quant": 0.5125
+   }
+  },
+  "g007_c01": {
+   "parent_id": "g006_c04",
+   "inspirations": [
+    "g002_c04",
+    "g006_c03"
+   ],
+   "generation": 7,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.473748207092285,
+     "avg_time_per_query": 1.5592185258865356,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.6875,
+     "total_time": 29.314927577972412,
+     "avg_time_per_query": 0.45804574340581894,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 14,
+       "total": 23,
+       "accuracy": 0.6086956521739131
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.605,
+     "total_time": 140.34933519363403,
+     "avg_time_per_query": 0.3508733379840851,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 13,
+       "total": 20,
+       "accuracy": 0.65
+      },
+      "layout": {
+       "correct": 18,
+       "total": 29,
+       "accuracy": 0.6206896551724138
+      },
+      "ocr": {
+       "correct": 92,
+       "total": 142,
+       "accuracy": 0.647887323943662
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 20,
+       "total": 25,
+       "accuracy": 0.8
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "6603cd76a14783fefe2d8dd0b718c28fb1d572d2204cc3e3b26d76abae88b97a",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1
+   ],
+   "features": {
+    "time": 0.3508733379840851,
+    "acc_quant": 0.53125
+   }
+  },
+  "g007_c02": {
+   "parent_id": "g002_c04",
+   "inspirations": [
+    "g006_c04",
+    "seed"
+   ],
+   "generation": 7,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "status": "invalid_diff",
+   "stage_reached": null,
+   "reason": "diff 1: SEARCH text found 0 times in the EVOLVE block (must be exactly once)",
+   "island": 2,
+   "islands": []
+  },
+  "g007_c03": {
+   "parent_id": "g006_c03",
+   "inspirations": [
+    "g002_c04",
+    "g003_c03",
+    "g006_c04"
+   ],
+   "generation": 7,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.763806581497192,
+     "avg_time_per_query": 1.595475822687149,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.65625,
+     "total_time": 34.79182243347168,
+     "avg_time_per_query": 0.543622225522995,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 16,
+       "total": 25,
+       "accuracy": 0.64
+      },
+      "quant": {
+       "correct": 13,
+       "total": 23,
+       "accuracy": 0.5652173913043478
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "d8bbdf6d705d288de7a0287c31eab0e4a04a05061bbd60bef3282c455b866e1a",
+   "change": "rewrite",
+   "status": "stopped",
+   "stage_reached": "subset",
+   "reason": "subset: subset accuracy 0.656 vs parent 0.688, time 35s vs 29s",
+   "island": 0,
+   "islands": []
+  },
+  "g007_c04": {
+   "parent_id": "g002_c04",
+   "inspirations": [
+    "g006_c04",
+    "g007_c01"
+   ],
+   "generation": 7,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.317968368530273,
+     "avg_time_per_query": 1.5397460460662842,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.6875,
+     "total_time": 30.07285237312317,
+     "avg_time_per_query": 0.4698883183300495,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 14,
+       "total": 23,
+       "accuracy": 0.6086956521739131
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.595,
+     "total_time": 139.18088173866272,
+     "avg_time_per_query": 0.3479522043466568,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 13,
+       "total": 20,
+       "accuracy": 0.65
+      },
+      "layout": {
+       "correct": 15,
+       "total": 29,
+       "accuracy": 0.5172413793103449
+      },
+      "ocr": {
+       "correct": 92,
+       "total": 142,
+       "accuracy": 0.647887323943662
+      },
+      "quant": {
+       "correct": 84,
+       "total": 160,
+       "accuracy": 0.525
+      },
+      "title": {
+       "correct": 20,
+       "total": 25,
+       "accuracy": 0.8
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "b48f50ad00ce7b43449f18efa738b1ffbc9bd6644cca028be6c4c369c04a0654",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1
+   ],
+   "features": {
+    "time": 0.3479522043466568,
+    "acc_quant": 0.525
+   }
+  },
+  "g007_c05": {
+   "parent_id": "g004_c02",
+   "inspirations": [
+    "g006_c04",
+    "seed"
+   ],
+   "generation": 7,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.2333505153656,
+     "avg_time_per_query": 1.5291688144207,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.6875,
+     "total_time": 29.241525173187256,
+     "avg_time_per_query": 0.4568988308310509,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 14,
+       "total": 23,
+       "accuracy": 0.6086956521739131
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.605,
+     "total_time": 142.61906099319458,
+     "avg_time_per_query": 0.3565476524829865,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 13,
+       "total": 20,
+       "accuracy": 0.65
+      },
+      "layout": {
+       "correct": 18,
+       "total": 29,
+       "accuracy": 0.6206896551724138
+      },
+      "ocr": {
+       "correct": 92,
+       "total": 142,
+       "accuracy": 0.647887323943662
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 20,
+       "total": 25,
+       "accuracy": 0.8
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "1f8f4c1daf5e1f97fcdd9ab7f1bdcb13ea36a8baa7bd774d38843f628afe1ab1",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2
+   ],
+   "features": {
+    "time": 0.3565476524829865,
+    "acc_quant": 0.53125
+   }
+  },
+  "g008_c00": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g003_c03",
+    "g006_c03",
+    "g006_c04"
+   ],
+   "generation": 8,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 12.30411148071289,
+     "avg_time_per_query": 1.5380139350891113,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.53125,
+     "total_time": 32.26482319831848,
+     "avg_time_per_query": 0.5041378624737263,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 3,
+       "total": 5,
+       "accuracy": 0.6
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 15,
+       "total": 25,
+       "accuracy": 0.6
+      },
+      "quant": {
+       "correct": 8,
+       "total": 23,
+       "accuracy": 0.34782608695652173
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.5475,
+     "total_time": 150.89084553718567,
+     "avg_time_per_query": 0.37722711384296415,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 18,
+       "total": 29,
+       "accuracy": 0.6206896551724138
+      },
+      "ocr": {
+       "correct": 93,
+       "total": 142,
+       "accuracy": 0.6549295774647887
+      },
+      "quant": {
+       "correct": 60,
+       "total": 160,
+       "accuracy": 0.375
+      },
+      "title": {
+       "correct": 21,
+       "total": 25,
+       "accuracy": 0.84
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "657e7cfd7a2d882b8a2bb11c0445da9c91794757f53369de307244e482bacc18",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 0,
+   "islands": [
+    0
+   ],
+   "features": {
+    "time": 0.37722711384296415,
+    "acc_quant": 0.375
+   }
+  },
+  "g008_c01": {
+   "parent_id": "g006_c03",
+   "inspirations": [
+    "seed",
+    "g006_c04"
+   ],
+   "generation": 8,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 13.515762567520142,
+     "avg_time_per_query": 1.6894703209400177,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.640625,
+     "total_time": 32.61695885658264,
+     "avg_time_per_query": 0.5096399821341038,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 15,
+       "total": 25,
+       "accuracy": 0.6
+      },
+      "quant": {
+       "correct": 13,
+       "total": 23,
+       "accuracy": 0.5652173913043478
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "d0055b535c3c2e77c47fbcaf8368ef2062747626d27dded4e5ba234bca72bbce",
+   "change": "rewrite",
+   "status": "stopped",
+   "stage_reached": "subset",
+   "reason": "subset: subset accuracy 0.641 vs parent 0.688, time 33s vs 29s",
+   "island": 1,
+   "islands": []
+  },
+  "g008_c02": {
+   "parent_id": "g007_c05",
+   "inspirations": [
+    "g002_c04",
+    "g006_c04"
+   ],
+   "generation": 8,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 13.064380884170532,
+     "avg_time_per_query": 1.6330476105213165,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.671875,
+     "total_time": 31.381418228149414,
+     "avg_time_per_query": 0.4903346598148346,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 13,
+       "total": 23,
+       "accuracy": 0.5652173913043478
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.6225,
+     "total_time": 156.67548060417175,
+     "avg_time_per_query": 0.3916887015104294,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 21,
+       "total": 29,
+       "accuracy": 0.7241379310344828
+      },
+      "ocr": {
+       "correct": 96,
+       "total": 142,
+       "accuracy": 0.676056338028169
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "f168bbd3a36df462f5502f23a88f0a6cbd65ba44cccc6c6ea8234e7afd4b55c5",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2,
+    0,
+    1
+   ],
+   "features": {
+    "time": 0.3916887015104294,
+    "acc_quant": 0.53125
+   }
+  },
+  "g008_c03": {
+   "parent_id": "g006_c03",
+   "inspirations": [
+    "g003_c03",
+    "g007_c00",
+    "g008_c02"
+   ],
+   "generation": 8,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.221099615097046,
+     "avg_time_per_query": 1.5276374518871307,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.703125,
+     "total_time": 29.73850727081299,
+     "avg_time_per_query": 0.46466417610645294,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 18,
+       "total": 25,
+       "accuracy": 0.72
+      },
+      "quant": {
+       "correct": 14,
+       "total": 23,
+       "accuracy": 0.6086956521739131
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.6025,
+     "total_time": 147.59006071090698,
+     "avg_time_per_query": 0.3689751517772675,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 20,
+       "total": 29,
+       "accuracy": 0.6896551724137931
+      },
+      "ocr": {
+       "correct": 94,
+       "total": 142,
+       "accuracy": 0.6619718309859155
+      },
+      "quant": {
+       "correct": 81,
+       "total": 160,
+       "accuracy": 0.50625
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "f9451b8a27d0ba6f25b58b130cf7fa97d529bd6b61ae7702b22259428f6f89f6",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 0,
+   "islands": [
+    0
+   ],
+   "features": {
+    "time": 0.3689751517772675,
+    "acc_quant": 0.50625
+   }
+  },
+  "g008_c04": {
+   "parent_id": "g006_c04",
+   "inspirations": [
+    "seed",
+    "g002_c04",
+    "g008_c02"
+   ],
+   "generation": 8,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.5899076461792,
+     "avg_time_per_query": 1.5737384557724,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.65625,
+     "total_time": 31.843976974487305,
+     "avg_time_per_query": 0.49756214022636414,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 12,
+       "total": 23,
+       "accuracy": 0.5217391304347826
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "f1d9d17256eb6f3c1e0af004ef14664318349850e9af822bcdeb32d91130c9f9",
+   "change": "rewrite",
+   "status": "stopped",
+   "stage_reached": "subset",
+   "reason": "subset: subset accuracy 0.656 vs parent 0.688, time 32s vs 30s",
+   "island": 1,
+   "islands": []
+  },
+  "g008_c05": {
+   "parent_id": "g008_c02",
+   "inspirations": [
+    "g006_c04",
+    "g007_c05"
+   ],
+   "generation": 8,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.650931119918823,
+     "avg_time_per_query": 1.581366389989853,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.671875,
+     "total_time": 31.105408191680908,
+     "avg_time_per_query": 0.4860220029950142,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 13,
+       "total": 23,
+       "accuracy": 0.5652173913043478
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.615,
+     "total_time": 146.09038257598877,
+     "avg_time_per_query": 0.3652259564399719,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 13,
+       "total": 20,
+       "accuracy": 0.65
+      },
+      "layout": {
+       "correct": 21,
+       "total": 29,
+       "accuracy": 0.7241379310344828
+      },
+      "ocr": {
+       "correct": 94,
+       "total": 142,
+       "accuracy": 0.6619718309859155
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "67f82c26afd381f73ad1253a91f626c8c038218d2e98568b7a9ea5d74374ea91",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2
+   ],
+   "features": {
+    "time": 0.3652259564399719,
+    "acc_quant": 0.53125
+   }
+  },
+  "g009_c00": {
+   "parent_id": "g008_c03",
+   "inspirations": [
+    "seed",
+    "g006_c03",
+    "g008_c02"
+   ],
+   "generation": 9,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.664150476455688,
+     "avg_time_per_query": 1.583018809556961,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.671875,
+     "total_time": 30.50139284133911,
+     "avg_time_per_query": 0.4765842631459236,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 13,
+       "total": 23,
+       "accuracy": 0.5652173913043478
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "07827ff7d8248b9bb4985e527449f3334948c21ca473f4c84042a41ea49015ef",
+   "change": "diff",
+   "status": "stopped",
+   "stage_reached": "subset",
+   "reason": "subset: subset accuracy 0.672 vs parent 0.703, time 31s vs 30s",
+   "island": 0,
+   "islands": []
+  },
+  "g009_c01": {
+   "parent_id": "g007_c01",
+   "inspirations": [
+    "g002_c04",
+    "g006_c04",
+    "g008_c02"
+   ],
+   "generation": 9,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 13.56659483909607,
+     "avg_time_per_query": 1.6958243548870087,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.671875,
+     "total_time": 30.053054332733154,
+     "avg_time_per_query": 0.46957897394895554,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 13,
+       "total": 23,
+       "accuracy": 0.5652173913043478
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.6225,
+     "total_time": 150.46194744110107,
+     "avg_time_per_query": 0.3761548686027527,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 21,
+       "total": 29,
+       "accuracy": 0.7241379310344828
+      },
+      "ocr": {
+       "correct": 96,
+       "total": 142,
+       "accuracy": 0.676056338028169
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "b86983650fb8ba018e4026e0c0d22fa2caf07e15247f01d39516c52f34085f90",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1,
+    2
+   ],
+   "features": {
+    "time": 0.3761548686027527,
+    "acc_quant": 0.53125
+   }
+  },
+  "g009_c02": {
+   "parent_id": "g008_c02",
+   "inspirations": [
+    "g002_c04",
+    "g008_c05"
+   ],
+   "generation": 9,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "status": "invalid_diff",
+   "stage_reached": null,
+   "reason": "diff 1: SEARCH text found 0 times in the EVOLVE block (must be exactly once)",
+   "island": 2,
+   "islands": []
+  },
+  "g009_c03": {
+   "parent_id": "g006_c03",
+   "inspirations": [
+    "seed",
+    "g003_c03",
+    "g008_c02"
+   ],
+   "generation": 9,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.645502805709839,
+     "avg_time_per_query": 1.5806878507137299,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.65625,
+     "total_time": 29.392271518707275,
+     "avg_time_per_query": 0.4592542424798012,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 12,
+       "total": 23,
+       "accuracy": 0.5217391304347826
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "343166f16001b124a3d8a74778c1a496be6e9285bbe4502bebf30ff1441f7878",
+   "change": "diff",
+   "status": "stopped",
+   "stage_reached": "subset",
+   "reason": "subset: subset accuracy 0.656 vs parent 0.688, time 29s vs 29s",
+   "island": 0,
+   "islands": []
+  },
+  "g009_c04": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g009_c01",
+    "g007_c01",
+    "g008_c02"
+   ],
+   "generation": 9,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 12.610544681549072,
+     "avg_time_per_query": 1.576318085193634,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.53125,
+     "total_time": 30.487473964691162,
+     "avg_time_per_query": 0.4763667806982994,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 3,
+       "total": 5,
+       "accuracy": 0.6
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 15,
+       "total": 25,
+       "accuracy": 0.6
+      },
+      "quant": {
+       "correct": 8,
+       "total": 23,
+       "accuracy": 0.34782608695652173
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.5475,
+     "total_time": 140.48822474479675,
+     "avg_time_per_query": 0.3512205618619919,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 18,
+       "total": 29,
+       "accuracy": 0.6206896551724138
+      },
+      "ocr": {
+       "correct": 93,
+       "total": 142,
+       "accuracy": 0.6549295774647887
+      },
+      "quant": {
+       "correct": 60,
+       "total": 160,
+       "accuracy": 0.375
+      },
+      "title": {
+       "correct": 21,
+       "total": 25,
+       "accuracy": 0.84
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "a922514aceb33507a45fe2ce08550a07d5681c2438db0c72ec3c2abf3d2fcd3c",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1
+   ],
+   "features": {
+    "time": 0.3512205618619919,
+    "acc_quant": 0.375
+   }
+  },
+  "g009_c05": {
+   "parent_id": "g007_c05",
+   "inspirations": [
+    "g008_c02",
+    "g008_c05"
+   ],
+   "generation": 9,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.65282392501831,
+     "avg_time_per_query": 1.5816029906272888,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.6875,
+     "total_time": 32.666988372802734,
+     "avg_time_per_query": 0.5104216933250427,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 18,
+       "total": 25,
+       "accuracy": 0.72
+      },
+      "quant": {
+       "correct": 13,
+       "total": 23,
+       "accuracy": 0.5652173913043478
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.61,
+     "total_time": 155.2282316684723,
+     "avg_time_per_query": 0.3880705791711807,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 13,
+       "total": 20,
+       "accuracy": 0.65
+      },
+      "layout": {
+       "correct": 20,
+       "total": 29,
+       "accuracy": 0.6896551724137931
+      },
+      "ocr": {
+       "correct": 93,
+       "total": 142,
+       "accuracy": 0.6549295774647887
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "44ae9c56a1702306766f7c2d9d75faa7e4dbd5b45e4b89f2198076bc9919924c",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2
+   ],
+   "features": {
+    "time": 0.3880705791711807,
+    "acc_quant": 0.53125
+   }
+  },
+  "g010_c00": {
+   "parent_id": "g008_c02",
+   "inspirations": [
+    "g008_c03",
+    "g007_c00"
+   ],
+   "generation": 10,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.983063220977783,
+     "avg_time_per_query": 1.622882902622223,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.6875,
+     "total_time": 31.325923681259155,
+     "avg_time_per_query": 0.4894675575196743,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 18,
+       "total": 25,
+       "accuracy": 0.72
+      },
+      "quant": {
+       "correct": 13,
+       "total": 23,
+       "accuracy": 0.5652173913043478
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.5975,
+     "total_time": 161.8719789981842,
+     "avg_time_per_query": 0.4046799474954605,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 15,
+       "total": 20,
+       "accuracy": 0.75
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 94,
+       "total": 142,
+       "accuracy": 0.6619718309859155
+      },
+      "quant": {
+       "correct": 78,
+       "total": 160,
+       "accuracy": 0.4875
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "c8264d0261f0fe465ca037095bb9728c372b9b1ceaf8f0fad1552606073932db",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 0,
+   "islands": [
+    0
+   ],
+   "features": {
+    "time": 0.4046799474954605,
+    "acc_quant": 0.4875
+   }
+  },
+  "g010_c01": {
+   "parent_id": "g009_c01",
+   "inspirations": [
+    "g006_c04",
+    "g002_c04",
+    "g008_c02"
+   ],
+   "generation": 10,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.755671262741089,
+     "avg_time_per_query": 1.594458907842636,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.65625,
+     "total_time": 32.866644859313965,
+     "avg_time_per_query": 0.5135413259267807,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 12,
+       "total": 23,
+       "accuracy": 0.5217391304347826
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.625,
+     "total_time": 153.8349483013153,
+     "avg_time_per_query": 0.38458737075328825,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 15,
+       "total": 20,
+       "accuracy": 0.75
+      },
+      "layout": {
+       "correct": 21,
+       "total": 29,
+       "accuracy": 0.7241379310344828
+      },
+      "ocr": {
+       "correct": 96,
+       "total": 142,
+       "accuracy": 0.676056338028169
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "b04bf59e0087e30db4a13f488fd39ae3a1b7d5fd4eab442f49609853b9291ebe",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1,
+    2
+   ],
+   "features": {
+    "time": 0.38458737075328825,
+    "acc_quant": 0.53125
+   }
+  },
+  "g010_c02": {
+   "parent_id": "g002_c04",
+   "inspirations": [
+    "g008_c02",
+    "seed",
+    "g010_c01"
+   ],
+   "generation": 10,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 12.818841218948364,
+     "avg_time_per_query": 1.6023551523685455,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.609375,
+     "total_time": 31.874210834503174,
+     "avg_time_per_query": 0.4980345442891121,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 10,
+       "total": 23,
+       "accuracy": 0.43478260869565216
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.575,
+     "total_time": 159.25953364372253,
+     "avg_time_per_query": 0.39814883410930635,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 96,
+       "total": 142,
+       "accuracy": 0.676056338028169
+      },
+      "quant": {
+       "correct": 69,
+       "total": 160,
+       "accuracy": 0.43125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "0c3d189a03d1b0603f15578318fb471ce0bf75ef6b31918d805072fd1871632b",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2
+   ],
+   "features": {
+    "time": 0.39814883410930635,
+    "acc_quant": 0.43125
+   }
+  },
+  "g010_c03": {
+   "parent_id": "seed",
+   "inspirations": [
+    "g008_c03",
+    "g007_c00",
+    "g010_c01"
+   ],
+   "generation": 10,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.0,
+     "total_time": 12.530064582824707,
+     "avg_time_per_query": 1.5662580728530884,
+     "per_category": {
+      "bool": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "ocr": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 8
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "014b2fada8081a301168c330abc7a61fff3953829fd51164618cb4ca8a15ef5e",
+   "change": "rewrite",
+   "status": "rejected",
+   "stage_reached": "smoke",
+   "reason": "smoke: 8 queries raised",
+   "island": 0,
+   "islands": []
+  },
+  "g010_c04": {
+   "parent_id": "g009_c01",
+   "inspirations": [
+    "g010_c01",
+    "g002_c04"
+   ],
+   "generation": 10,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 11.990403413772583,
+     "avg_time_per_query": 1.4988004267215729,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.65625,
+     "total_time": 32.79905843734741,
+     "avg_time_per_query": 0.5124852880835533,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 12,
+       "total": 23,
+       "accuracy": 0.5217391304347826
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.625,
+     "total_time": 154.00872540473938,
+     "avg_time_per_query": 0.38502181351184844,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 15,
+       "total": 20,
+       "accuracy": 0.75
+      },
+      "layout": {
+       "correct": 21,
+       "total": 29,
+       "accuracy": 0.7241379310344828
+      },
+      "ocr": {
+       "correct": 96,
+       "total": 142,
+       "accuracy": 0.676056338028169
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "aa09d2ff48781f597aed273589103b5065c7a9680884c663ff9413581fac0b47",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1
+   ],
+   "features": {
+    "time": 0.38502181351184844,
+    "acc_quant": 0.53125
+   }
+  },
+  "g010_c05": {
+   "parent_id": "g009_c01",
+   "inspirations": [
+    "g002_c04",
+    "g008_c05",
+    "g010_c01"
+   ],
+   "generation": 10,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.229438543319702,
+     "avg_time_per_query": 1.5286798179149628,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.671875,
+     "total_time": 31.372148990631104,
+     "avg_time_per_query": 0.490189827978611,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 13,
+       "total": 23,
+       "accuracy": 0.5652173913043478
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.615,
+     "total_time": 153.80961847305298,
+     "avg_time_per_query": 0.3845240461826325,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 17,
+       "total": 29,
+       "accuracy": 0.5862068965517241
+      },
+      "ocr": {
+       "correct": 96,
+       "total": 142,
+       "accuracy": 0.676056338028169
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 20,
+       "total": 25,
+       "accuracy": 0.8
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "a33933cd0048830a9d236bf20f1149d08da3d53e2be0b489d089c91ea3d4fb18",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2
+   ],
+   "features": {
+    "time": 0.3845240461826325,
+    "acc_quant": 0.53125
+   }
+  },
+  "g011_c00": {
+   "parent_id": "g008_c02",
+   "inspirations": [
+    "seed",
+    "g008_c03",
+    "g010_c01"
+   ],
+   "generation": 11,
+   "scores": {},
+   "model": "Gemini-3-Flash-Preview",
+   "status": "invalid_diff",
+   "stage_reached": null,
+   "reason": "response contains no SEARCH/REPLACE block and no full program with EVOLVE markers",
+   "island": 0,
+   "islands": []
+  },
+  "g011_c01": {
+   "parent_id": "g010_c01",
+   "inspirations": [
+    "seed",
+    "g002_c04"
+   ],
+   "generation": 11,
+   "scores": {},
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "status": "invalid_diff",
+   "stage_reached": null,
+   "reason": "response contains no SEARCH/REPLACE block and no full program with EVOLVE markers",
+   "island": 1,
+   "islands": []
+  },
+  "g011_c02": {
+   "parent_id": "g002_c04",
+   "inspirations": [
+    "seed",
+    "g009_c01",
+    "g010_c01"
+   ],
+   "generation": 11,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.375,
+     "total_time": 12.134438514709473,
+     "avg_time_per_query": 1.516804814338684,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.59375,
+     "total_time": 32.99349594116211,
+     "avg_time_per_query": 0.515523374080658,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 2,
+       "total": 4,
+       "accuracy": 0.5
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 10,
+       "total": 23,
+       "accuracy": 0.43478260869565216
+      },
+      "title": {
+       "correct": 0,
+       "total": 1,
+       "accuracy": 0.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.5675,
+     "total_time": 154.01142501831055,
+     "avg_time_per_query": 0.3850285625457764,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 16,
+       "total": 29,
+       "accuracy": 0.5517241379310345
+      },
+      "ocr": {
+       "correct": 95,
+       "total": 142,
+       "accuracy": 0.6690140845070423
+      },
+      "quant": {
+       "correct": 69,
+       "total": 160,
+       "accuracy": 0.43125
+      },
+      "title": {
+       "correct": 20,
+       "total": 25,
+       "accuracy": 0.8
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3-Flash-Preview",
+   "code_sha256": "0183f79c16542b5b1a0f734fbfc020bb0cf3ac90c89e734a53d3048bb70eb34a",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2
+   ],
+   "features": {
+    "time": 0.3850285625457764,
+    "acc_quant": 0.43125
+   }
+  },
+  "g011_c03": {
+   "parent_id": "g008_c03",
+   "inspirations": [
+    "seed",
+    "g010_c00",
+    "g010_c01"
+   ],
+   "generation": 11,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.13003158569336,
+     "avg_time_per_query": 1.51625394821167,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.65625,
+     "total_time": 32.654465675354004,
+     "avg_time_per_query": 0.5102260261774063,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 5,
+       "total": 5,
+       "accuracy": 1.0
+      },
+      "layout": {
+       "correct": 2,
+       "total": 4,
+       "accuracy": 0.5
+      },
+      "ocr": {
+       "correct": 18,
+       "total": 25,
+       "accuracy": 0.72
+      },
+      "quant": {
+       "correct": 11,
+       "total": 23,
+       "accuracy": 0.4782608695652174
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "c51b2abc7d57e002cd98b1d3b10d7ec34199092ba2b971863232144e5b3c324a",
+   "change": "diff",
+   "status": "stopped",
+   "stage_reached": "subset",
+   "reason": "subset: subset accuracy 0.656 vs parent 0.703, time 33s vs 30s",
+   "island": 0,
+   "islands": []
+  },
+  "g011_c04": {
+   "parent_id": "g009_c01",
+   "inspirations": [
+    "g002_c04",
+    "seed",
+    "g010_c01"
+   ],
+   "generation": 11,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.625,
+     "total_time": 11.828098058700562,
+     "avg_time_per_query": 1.4785122573375702,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 1,
+       "total": 3,
+       "accuracy": 0.3333333333333333
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.640625,
+     "total_time": 31.924078702926636,
+     "avg_time_per_query": 0.4988137297332287,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 3,
+       "total": 5,
+       "accuracy": 0.6
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 12,
+       "total": 23,
+       "accuracy": 0.5217391304347826
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "e67211e4d171a2e2243b6d28d91e62da727dee289ca6cbfbb715ec9f04654334",
+   "change": "diff",
+   "status": "stopped",
+   "stage_reached": "subset",
+   "reason": "subset: subset accuracy 0.641 vs parent 0.672, time 32s vs 30s",
+   "island": 1,
+   "islands": []
+  },
+  "g011_c05": {
+   "parent_id": "g008_c02",
+   "inspirations": [
+    "g009_c01",
+    "g002_c04",
+    "g010_c01"
+   ],
+   "generation": 11,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.308051824569702,
+     "avg_time_per_query": 1.5385064780712128,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.671875,
+     "total_time": 31.484424114227295,
+     "avg_time_per_query": 0.4919441267848015,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 13,
+       "total": 23,
+       "accuracy": 0.5652173913043478
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.6225,
+     "total_time": 146.89361333847046,
+     "avg_time_per_query": 0.36723403334617616,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 21,
+       "total": 29,
+       "accuracy": 0.7241379310344828
+      },
+      "ocr": {
+       "correct": 96,
+       "total": 142,
+       "accuracy": 0.676056338028169
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3-Flash-Preview",
+   "code_sha256": "6ccd2d8fb96f581a621863691fa50a143fe57a67cf51b4c582ee104c178704a9",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2
+   ],
+   "features": {
+    "time": 0.36723403334617616,
+    "acc_quant": 0.53125
+   }
+  },
+  "g012_c00": {
+   "parent_id": "g007_c00",
+   "inspirations": [
+    "g010_c00",
+    "seed",
+    "g010_c01"
+   ],
+   "generation": 12,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.54964017868042,
+     "avg_time_per_query": 1.5687050223350525,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.6875,
+     "total_time": 33.65253043174744,
+     "avg_time_per_query": 0.5258207879960537,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 5,
+       "total": 5,
+       "accuracy": 1.0
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 18,
+       "total": 25,
+       "accuracy": 0.72
+      },
+      "quant": {
+       "correct": 12,
+       "total": 23,
+       "accuracy": 0.5217391304347826
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.6075,
+     "total_time": 168.05095624923706,
+     "avg_time_per_query": 0.4201273906230927,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 16,
+       "total": 20,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 93,
+       "total": 142,
+       "accuracy": 0.6549295774647887
+      },
+      "quant": {
+       "correct": 82,
+       "total": 160,
+       "accuracy": 0.5125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "2952529b12b5b55344ee729f0f974b420c6a1a2d6beb20b3b564470884309360",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 0,
+   "islands": [
+    0
+   ],
+   "features": {
+    "time": 0.4201273906230927,
+    "acc_quant": 0.5125
+   }
+  },
+  "g012_c01": {
+   "parent_id": "g002_c04",
+   "inspirations": [
+    "seed",
+    "g009_c01",
+    "g010_c01"
+   ],
+   "generation": 12,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 12.111635208129883,
+     "avg_time_per_query": 1.5139544010162354,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.640625,
+     "total_time": 32.80475664138794,
+     "avg_time_per_query": 0.5125743225216866,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 3,
+       "total": 5,
+       "accuracy": 0.6
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 18,
+       "total": 25,
+       "accuracy": 0.72
+      },
+      "quant": {
+       "correct": 11,
+       "total": 23,
+       "accuracy": 0.4782608695652174
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.6075,
+     "total_time": 155.2646415233612,
+     "avg_time_per_query": 0.38816160380840303,
+     "per_category": {
+      "bool": {
+       "correct": 11,
+       "total": 21,
+       "accuracy": 0.5238095238095238
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 21,
+       "total": 29,
+       "accuracy": 0.7241379310344828
+      },
+      "ocr": {
+       "correct": 98,
+       "total": 142,
+       "accuracy": 0.6901408450704225
+      },
+      "quant": {
+       "correct": 77,
+       "total": 160,
+       "accuracy": 0.48125
+      },
+      "title": {
+       "correct": 20,
+       "total": 25,
+       "accuracy": 0.8
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3-Flash-Preview",
+   "code_sha256": "68fb684ddcb50bd52730ab4582dc3e9cae85661e6e097b75d853e778a7ab9a85",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1
+   ],
+   "features": {
+    "time": 0.38816160380840303,
+    "acc_quant": 0.48125
+   }
+  },
+  "g012_c02": {
+   "parent_id": "g002_c04",
+   "inspirations": [
+    "seed",
+    "g011_c05",
+    "g010_c01"
+   ],
+   "generation": 12,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 11.973865509033203,
+     "avg_time_per_query": 1.4967331886291504,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.671875,
+     "total_time": 30.134860038757324,
+     "avg_time_per_query": 0.4708571881055832,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 13,
+       "total": 23,
+       "accuracy": 0.5652173913043478
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.6225,
+     "total_time": 147.2700753211975,
+     "avg_time_per_query": 0.3681751883029938,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 21,
+       "total": 29,
+       "accuracy": 0.7241379310344828
+      },
+      "ocr": {
+       "correct": 96,
+       "total": 142,
+       "accuracy": 0.676056338028169
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "8eb94a53b2baf11d21e158594fe5749025df32bf0a09565cde47f715aecd323e",
+   "change": "rewrite",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2
+   ],
+   "features": {
+    "time": 0.3681751883029938,
+    "acc_quant": 0.53125
+   }
+  },
+  "g012_c03": {
+   "parent_id": "g012_c00",
+   "inspirations": [
+    "seed",
+    "g008_c03",
+    "g010_c01"
+   ],
+   "generation": 12,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 14.153397560119629,
+     "avg_time_per_query": 1.7691746950149536,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.671875,
+     "total_time": 33.28281021118164,
+     "avg_time_per_query": 0.5200439095497131,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 5,
+       "total": 5,
+       "accuracy": 1.0
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 18,
+       "total": 25,
+       "accuracy": 0.72
+      },
+      "quant": {
+       "correct": 11,
+       "total": 23,
+       "accuracy": 0.4782608695652174
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.6175,
+     "total_time": 156.15380573272705,
+     "avg_time_per_query": 0.39038451433181764,
+     "per_category": {
+      "bool": {
+       "correct": 13,
+       "total": 21,
+       "accuracy": 0.6190476190476191
+      },
+      "enum": {
+       "correct": 17,
+       "total": 20,
+       "accuracy": 0.85
+      },
+      "layout": {
+       "correct": 19,
+       "total": 29,
+       "accuracy": 0.6551724137931034
+      },
+      "ocr": {
+       "correct": 94,
+       "total": 142,
+       "accuracy": 0.6619718309859155
+      },
+      "quant": {
+       "correct": 83,
+       "total": 160,
+       "accuracy": 0.51875
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "8072c6ccb79567583d356020ed30b81f91c6577fe31495f9bffdb8536bc3440d",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 0,
+   "islands": [
+    0
+   ],
+   "features": {
+    "time": 0.39038451433181764,
+    "acc_quant": 0.51875
+   }
+  },
+  "g012_c04": {
+   "parent_id": "g010_c04",
+   "inspirations": [
+    "g010_c01",
+    "seed"
+   ],
+   "generation": 12,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 17.73198390007019,
+     "avg_time_per_query": 2.216497987508774,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.65625,
+     "total_time": 33.16331338882446,
+     "avg_time_per_query": 0.5181767717003822,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 12,
+       "total": 23,
+       "accuracy": 0.5217391304347826
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.625,
+     "total_time": 154.04319787025452,
+     "avg_time_per_query": 0.3851079946756363,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 15,
+       "total": 20,
+       "accuracy": 0.75
+      },
+      "layout": {
+       "correct": 21,
+       "total": 29,
+       "accuracy": 0.7241379310344828
+      },
+      "ocr": {
+       "correct": 96,
+       "total": 142,
+       "accuracy": 0.676056338028169
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "46188283b7c1444dbde63e8689c6f1a9af6a16c5f32be8331cb647ea012f72da",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 1,
+   "islands": [
+    1
+   ],
+   "features": {
+    "time": 0.3851079946756363,
+    "acc_quant": 0.53125
+   }
+  },
+  "g012_c05": {
+   "parent_id": "g002_c04",
+   "inspirations": [
+    "g012_c02",
+    "g008_c02",
+    "g010_c01"
+   ],
+   "generation": 12,
+   "scores": {
+    "smoke": {
+     "accuracy": 0.5,
+     "total_time": 123.26145124435425,
+     "avg_time_per_query": 15.407681405544281,
+     "per_category": {
+      "bool": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "ocr": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      },
+      "quant": {
+       "correct": 0,
+       "total": 3,
+       "accuracy": 0.0
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      }
+     },
+     "num_errors": 0
+    },
+    "subset": {
+     "accuracy": 0.671875,
+     "total_time": 31.646201848983765,
+     "avg_time_per_query": 0.4944719038903713,
+     "per_category": {
+      "bool": {
+       "correct": 4,
+       "total": 4,
+       "accuracy": 1.0
+      },
+      "enum": {
+       "correct": 4,
+       "total": 5,
+       "accuracy": 0.8
+      },
+      "layout": {
+       "correct": 3,
+       "total": 4,
+       "accuracy": 0.75
+      },
+      "ocr": {
+       "correct": 17,
+       "total": 25,
+       "accuracy": 0.68
+      },
+      "quant": {
+       "correct": 13,
+       "total": 23,
+       "accuracy": 0.5652173913043478
+      },
+      "title": {
+       "correct": 1,
+       "total": 1,
+       "accuracy": 1.0
+      },
+      "trend": {
+       "correct": 1,
+       "total": 2,
+       "accuracy": 0.5
+      }
+     },
+     "num_errors": 0
+    },
+    "full": {
+     "accuracy": 0.6225,
+     "total_time": 151.89649415016174,
+     "avg_time_per_query": 0.3797412353754044,
+     "per_category": {
+      "bool": {
+       "correct": 12,
+       "total": 21,
+       "accuracy": 0.5714285714285714
+      },
+      "enum": {
+       "correct": 14,
+       "total": 20,
+       "accuracy": 0.7
+      },
+      "layout": {
+       "correct": 21,
+       "total": 29,
+       "accuracy": 0.7241379310344828
+      },
+      "ocr": {
+       "correct": 96,
+       "total": 142,
+       "accuracy": 0.676056338028169
+      },
+      "quant": {
+       "correct": 85,
+       "total": 160,
+       "accuracy": 0.53125
+      },
+      "title": {
+       "correct": 19,
+       "total": 25,
+       "accuracy": 0.76
+      },
+      "trend": {
+       "correct": 2,
+       "total": 3,
+       "accuracy": 0.6666666666666666
+      }
+     },
+     "num_errors": 0
+    }
+   },
+   "model": "Gemini-3.1-Flash-Lite-Preview",
+   "code_sha256": "1dbd5657c89762c9dc966f67f3587e354c387a3f30e3db5e5cd37e0f2dd3d928",
+   "change": "diff",
+   "status": "ok",
+   "stage_reached": "full",
+   "reason": "full evaluation",
+   "island": 2,
+   "islands": [
+    2
+   ],
+   "features": {
+    "time": 0.3797412353754044,
+    "acc_quant": 0.53125
+   }
+  }
+ },
+ "islands": [
+  [
+   "seed",
+   "g001_c00",
+   "g003_c03",
+   "g001_c02",
+   "g004_c00",
+   "g006_c03",
+   "g002_c04",
+   "g007_c00",
+   "g008_c00",
+   "g008_c03",
+   "g008_c02",
+   "g010_c00",
+   "g012_c00",
+   "g012_c03"
+  ],
+  [
+   "seed",
+   "g001_c01",
+   "g002_c01",
+   "g002_c04",
+   "g003_c03",
+   "g004_c04",
+   "g005_c04",
+   "g006_c01",
+   "g006_c04",
+   "g006_c03",
+   "g007_c01",
+   "g007_c04",
+   "g009_c01",
+   "g009_c04",
+   "g010_c01",
+   "g010_c04",
+   "g012_c01",
+   "g012_c04",
+   "g008_c02"
+  ],
+  [
+   "seed",
+   "g001_c02",
+   "g002_c04",
+   "g004_c02",
+   "g006_c02",
+   "g006_c04",
+   "g007_c05",
+   "g008_c02",
+   "g008_c05",
+   "g009_c05",
+   "g009_c01",
+   "g010_c02",
+   "g010_c05",
+   "g011_c02",
+   "g011_c05",
+   "g012_c02",
+   "g012_c05",
+   "g010_c01"
+  ]
+ ],
+ "map_elites": {
+  "0": {
+   "1,1": "seed",
+   "1,2": "g010_c00",
+   "1,3": "g008_c02"
+  },
+  "1": {
+   "1,1": "seed",
+   "1,2": "g012_c01",
+   "1,3": "g010_c01"
+  },
+  "2": {
+   "1,1": "seed",
+   "1,2": "g002_c04",
+   "1,3": "g010_c01"
+  }
+ },
+ "best": {
+  "accuracy": "g010_c01",
+  "speed": "g006_c04",
+  "overall": "g008_c02"
+ },
+ "rng_state": [
+  3,
+  [
+   486222631,
+   3639050801,
+   2557374160,
+   1839254421,
+   578175692,
+   2878354465,
+   3878073022,
+   126735109,
+   1613748583,
+   3406986070,
+   1738130742,
+   627120340,
+   1314778542,
+   25749459,
+   4224933234,
+   2842873836,
+   46722557,
+   1645146664,
+   1483305164,
+   2891550971,
+   413322259,
+   4105817454,
+   2419590177,
+   174440074,
+   1765228207,
+   2294438140,
+   2336933973,
+   3306770374,
+   2594135681,
+   31075453,
+   401432296,
+   2791191880,
+   1226028024,
+   2199023893,
+   4027402776,
+   100933770,
+   1163922347,
+   1070901378,
+   3850937873,
+   1316607079,
+   4291660064,
+   3106627860,
+   1170551778,
+   109187210,
+   3675431453,
+   124417739,
+   2612074170,
+   2870462045,
+   2832676768,
+   421993548,
+   2258683399,
+   1864463725,
+   2599941275,
+   4184495839,
+   954832632,
+   3636676704,
+   1104081379,
+   2810921721,
+   2369251018,
+   2611265956,
+   2764632160,
+   1120896084,
+   441832581,
+   722920913,
+   2542350439,
+   1549582078,
+   4233596921,
+   426551267,
+   1070901550,
+   1777907622,
+   3812615780,
+   1270024488,
+   4216284523,
+   2015392364,
+   2064978178,
+   4044573877,
+   3186895016,
+   2883789246,
+   3274809535,
+   2486493604,
+   2638652473,
+   1000822642,
+   2312658463,
+   2011750527,
+   500721872,
+   3710736551,
+   1060714213,
+   1840494994,
+   833019159,
+   1995335856,
+   1577295782,
+   2589086,
+   307717239,
+   3024649731,
+   1903556262,
+   2284651764,
+   661812691,
+   2156334553,
+   674394484,
+   2130661277,
+   3591562186,
+   1918121189,
+   3340815638,
+   2032686194,
+   1837462867,
+   3064138587,
+   1948175073,
+   2135204166,
+   2329519829,
+   4120956801,
+   1577863314,
+   3685293122,
+   285261213,
+   2520230859,
+   2878959355,
+   523973350,
+   3310624836,
+   4279525687,
+   562250084,
+   665914860,
+   3762672190,
+   1654678002,
+   1837627499,
+   3589278515,
+   513556840,
+   295468417,
+   3586844462,
+   738878110,
+   3928560604,
+   4085095799,
+   644294587,
+   3985797343,
+   1817351923,
+   3251141544,
+   3553877890,
+   1794819036,
+   852129355,
+   3428986197,
+   200457,
+   2490642303,
+   1300804035,
+   2133896770,
+   3422445103,
+   4040437371,
+   2507206010,
+   3007250670,
+   1501215120,
+   1203070896,
+   1013484106,
+   705309950,
+   2427937203,
+   3160143138,
+   2814041316,
+   4269916934,
+   2604277720,
+   576280108,
+   909331881,
+   1646261569,
+   728058736,
+   701688740,
+   2535804561,
+   3551791063,
+   3182518626,
+   731423042,
+   1700264927,
+   1371121209,
+   1073508861,
+   3015545533,
+   4233347576,
+   1320457756,
+   2415176399,
+   2981680401,
+   2850600479,
+   3010111351,
+   1962084569,
+   4137713343,
+   1417218619,
+   2758870757,
+   762644639,
+   2571220759,
+   3197409386,
+   394572488,
+   2768570487,
+   629869939,
+   2499414800,
+   1386391339,
+   757426934,
+   3182943897,
+   1645037439,
+   887860160,
+   3572982424,
+   756096959,
+   1687508839,
+   229365570,
+   169653699,
+   1467005685,
+   2974115998,
+   3559118389,
+   302034615,
+   3228516492,
+   2233813725,
+   667141105,
+   4244062410,
+   359819087,
+   1695279497,
+   2151831831,
+   1857448796,
+   3128021663,
+   1221728803,
+   3194695266,
+   549062688,
+   4006595211,
+   920828182,
+   116938055,
+   1864041851,
+   327219190,
+   2492101943,
+   1949717283,
+   446848392,
+   2627639086,
+   2807822404,
+   2909613081,
+   398390581,
+   945192047,
+   641363807,
+   2937292611,
+   3882685714,
+   1381602063,
+   860182434,
+   3484039899,
+   4231261337,
+   3506618697,
+   891773177,
+   131040510,
+   2344022076,
+   1074993725,
+   84437801,
+   2600117051,
+   1994135544,
+   844185400,
+   120675254,
+   4211735599,
+   2770449997,
+   4227942820,
+   3016291363,
+   2376621820,
+   206084957,
+   4142706185,
+   1204473604,
+   93737796,
+   87201410,
+   188242457,
+   2204357352,
+   624405135,
+   1138094890,
+   1410239561,
+   1428335859,
+   2027552118,
+   701731415,
+   3355591728,
+   1597335102,
+   126450924,
+   1553911795,
+   1379149097,
+   1154797073,
+   1094928727,
+   55745294,
+   435260417,
+   359428398,
+   293987643,
+   1502840184,
+   1185215111,
+   569577938,
+   947114873,
+   3942880016,
+   3167107566,
+   4051229225,
+   2831409006,
+   2237169061,
+   3326049355,
+   146862045,
+   3076922712,
+   2387479757,
+   3281550332,
+   2380146647,
+   1520627336,
+   2895901909,
+   3801273641,
+   3216590120,
+   911581763,
+   1146469486,
+   391268135,
+   1272503073,
+   2382008441,
+   11717401,
+   1002625690,
+   3408164597,
+   259632831,
+   1358600444,
+   3653815988,
+   4140967665,
+   764021959,
+   2006291593,
+   2860500313,
+   1109041038,
+   3740464375,
+   3825089646,
+   3577214951,
+   1187597072,
+   3839456166,
+   755815088,
+   446387041,
+   2623142568,
+   1879402131,
+   4237098418,
+   622923950,
+   3220818169,
+   3146862722,
+   2094601512,
+   889513225,
+   479430015,
+   2133682338,
+   126787604,
+   3953722799,
+   4168278111,
+   3692867323,
+   4100651171,
+   69402721,
+   587039376,
+   823574234,
+   3785825984,
+   1775944224,
+   553436623,
+   912263573,
+   2936411963,
+   2003901613,
+   2343107555,
+   1958991304,
+   1653561190,
+   1476284786,
+   2794783189,
+   2537293736,
+   77056721,
+   3318769504,
+   3015913239,
+   1271065802,
+   2290669129,
+   1368526871,
+   1751070499,
+   481985377,
+   144646829,
+   3951143100,
+   3026441402,
+   1260219452,
+   3483191919,
+   1163834686,
+   234650786,
+   344956782,
+   2801909829,
+   1914428722,
+   3111052485,
+   936951505,
+   2968331009,
+   1372880941,
+   3205507440,
+   2173901621,
+   1816880939,
+   3903803901,
+   4238559547,
+   4082085460,
+   2430339871,
+   2410846827,
+   1882834569,
+   230979513,
+   2002449745,
+   1145728892,
+   3445852250,
+   1876688796,
+   599421880,
+   2455541620,
+   3008249794,
+   3579200284,
+   1973961241,
+   3170541881,
+   4207092045,
+   3771289385,
+   282463315,
+   809222753,
+   2473901924,
+   557162768,
+   3512704784,
+   2051977563,
+   1620342952,
+   260275566,
+   2793500133,
+   1530653560,
+   211174797,
+   2154417743,
+   2725307757,
+   3152206395,
+   901758361,
+   3821739268,
+   1928424291,
+   1680648898,
+   1010338795,
+   2823042227,
+   2032836764,
+   2423529314,
+   1384489036,
+   2074643629,
+   4096406868,
+   38088317,
+   3881057178,
+   1471585724,
+   3427791371,
+   2669478472,
+   1790065428,
+   12051387,
+   2449565189,
+   936225872,
+   2092442931,
+   1529423523,
+   3683853415,
+   2717855270,
+   3387810039,
+   2924032630,
+   1307086534,
+   419310586,
+   3695074034,
+   1080147345,
+   3666884518,
+   562492513,
+   3947016141,
+   63923542,
+   74462201,
+   2133828304,
+   1970818311,
+   545932032,
+   2683084387,
+   733492828,
+   1799170018,
+   2624842131,
+   799952715,
+   562524904,
+   4132107218,
+   2173012968,
+   2609196311,
+   1115593779,
+   2282284401,
+   1793105963,
+   2317672630,
+   545195093,
+   2166420250,
+   1811698013,
+   969795753,
+   235240765,
+   3402740100,
+   2459809045,
+   1731652059,
+   3895538876,
+   2390171485,
+   960052748,
+   3279737218,
+   3140038371,
+   836482200,
+   2495233521,
+   2718783080,
+   3689539054,
+   2237776766,
+   1915651917,
+   1013679831,
+   865438704,
+   2152774652,
+   1252297764,
+   3754237921,
+   3340525522,
+   4205736959,
+   2485424733,
+   4235202981,
+   2209436388,
+   1953020039,
+   3131426348,
+   1467998224,
+   3479078338,
+   301693170,
+   2212585060,
+   3360115320,
+   2824590686,
+   2837732452,
+   1619952334,
+   4253267649,
+   1941579431,
+   3717380192,
+   688493335,
+   1773588196,
+   829420150,
+   2864731375,
+   4115563772,
+   2787590100,
+   2568636562,
+   2054697215,
+   449204440,
+   3015298512,
+   2852304497,
+   2713913103,
+   1640572579,
+   3210407849,
+   1102857278,
+   2337987641,
+   556775360,
+   967626538,
+   1009383835,
+   89234725,
+   830733728,
+   1874958180,
+   1662478604,
+   809642261,
+   3499634827,
+   1031679966,
+   915058719,
+   1883374570,
+   826756564,
+   1888788537,
+   2344686304,
+   3262717178,
+   3039476617,
+   2108713873,
+   2008786678,
+   213168874,
+   245541960,
+   2604282185,
+   650583589,
+   3047994988,
+   1206636897,
+   3129923487,
+   3170572470,
+   872164863,
+   3928220421,
+   1726474088,
+   3786902238,
+   2617537479,
+   4024564315,
+   1007794123,
+   4166350233,
+   3872067076,
+   2016462885,
+   1211895015,
+   3768277941,
+   3644075160,
+   2015631726,
+   3417582627,
+   2882830895,
+   3851740602,
+   1497029626,
+   849565756,
+   1208917979,
+   1989048612,
+   2022591127,
+   3827890249,
+   4212512045,
+   533333717,
+   2967449869,
+   2834559698,
+   3179544403,
+   2971200690,
+   1299571708,
+   531955684,
+   2240079835,
+   214978685,
+   1184563433,
+   1542183069,
+   38658038,
+   1479749136,
+   1552992875,
+   1627507228,
+   3732821381,
+   2949850109,
+   612250909,
+   1017612683,
+   4111964121,
+   224232840,
+   1892412035,
+   681129832,
+   2641226708,
+   1941699387,
+   1054874236,
+   1675365679,
+   1817663867,
+   3398157712,
+   3449553017,
+   3433192823,
+   2957570509,
+   3718287496,
+   481175586,
+   940458707,
+   533493483,
+   58100410,
+   1855027704,
+   3279441593,
+   3313085420,
+   1445299943,
+   1335443041,
+   50864682,
+   2023829517,
+   1521197258,
+   2695563592,
+   4237965146,
+   2678253808,
+   1797013793,
+   3470954964,
+   3048658990,
+   1337958605,
+   1270671709,
+   3342527335,
+   3236025914,
+   866872120,
+   3783342146,
+   4293777305,
+   1019418712,
+   1815070638,
+   4152215536,
+   1798426096,
+   3492141242,
+   3689111745,
+   545
+  ],
+  null
+ ],
+ "llm_usage": {
+  "calls": 72,
+  "input_tokens": 391945,
+  "output_tokens": 70840,
+  "cost_usd": 0.22747075000000003,
+  "by_model": {
+   "Gemini-3.1-Flash-Lite-Preview": 66,
+   "Gemini-3-Flash-Preview": 6
+  }
+ },
+ "timestamp": "2026-10-15T14:53:41+00:00"
+}

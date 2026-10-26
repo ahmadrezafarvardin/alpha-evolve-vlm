@@ -1,0 +1,7 @@
+transformers>=4.57.0,<5  # Qwen3-VL needs >=4.57; v5 renames AutoModelForVision2Seq
+qwen-vl-utils
+torch>=2.0.0
+torchvision
+pillow
+accelerate
+openai  # client for the mutation LLM (Gemini via ArvanCloud's OpenAI-compatible gateway)
